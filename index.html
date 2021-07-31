@@ -7,17 +7,27 @@
     <title>Hello World!</title>
 </head>
 <link rel="stylesheet" href="style/style.css">
-<body>
-<h1 class="text">Questa è l'app biblioteca cosa vuoi fare?</h1>
-<form>
-    <button id="add" class="button text">Aggiungi libro</button>
-    <button id="search" class="button text">Cerca libro</button>
-</form>
-<div>
-    <p id="tot"></p>
+<body class="index-body">
+<div class="div-all">
+    <h1 class="text h1-index">Questa è l'app biblioteca cosa vuoi fare?</h1>
+    <div class="btn-index-div">
+        <button id="add" class="button text btn2">Aggiungi libro</button>
+        <button id="search" class="button text btn2">Cerca libro</button>
+        <button style="background-color: #ff5252; margin-top: 20px" id="close" class="button text btn2">Esci</button>
+
+    </div>
+    <p id="tot" class="text">ciaooooo</p>
 </div>
-<script src="renderer.js"></script>
+<script src="script/renderer.js"></script>
 <script>
+    window.addEventListener("load", function () {
+        let fs = require('fs');
+        let biblioteca = fs.readFileSync('data/libri.json')
+        biblioteca = JSON.parse(biblioteca);
+        libro = biblioteca['biblioteca'];
+        let x = libro.length
+        document.getElementById('tot').innerText = 'In totale hai' + ' ' + x + ' ' + 'Libri';
+    })
 </script>
 </body>
 </html>

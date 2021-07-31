@@ -8,24 +8,23 @@
     <link rel="stylesheet" href="style-nuovolibro.css">
 </head>
 <body id="body">
-<script src="renderer.js"></script>
-<div>
-    <h1 class="text title" id="notifica">AGGIUNTA LIBRO</h1>
-</div>
-<form>
-    <input class="input-Title input text" type="text" placeholder="Titolo del libro" id="newTitle">
-    <datalist id="lis-aut"></datalist>
-    <input class="input-Autor input text" type="text" placeholder="Nome autore" id="autor" list="lis-aut">
-
-    <select id="select">
-    </select>
-    <button type="button" class="button text" id="add">Aggiungi Libro</button>
-    <div id="divGenere">
-        <script>
-
-        </script>
+<div class="div-all div-new">
+    <script src="script/renderer.js"></script>
+    <div class="div-title">
+        <h1 class="text h1-title" id="notifica">AGGIUNTA LIBRO</h1>
     </div>
-</form>
-<script src="script/nuovolibro-script.js"></script>
+    <form>
+        <input class="input-Title input text" type="text" placeholder="Titolo del libro" id="newTitle">
+        <datalist id="lis-aut"></datalist>
+        <input class="input-Autor input text" type="text" placeholder="Nome autore" id="autor" list="lis-aut">
+
+        <select id="select" class="select">
+        </select>
+        <button type="button" class="button text new-btn" id="add">Aggiungi Libro</button>
+        <div id="divGenere" class="general-div"></div>
+    </form>
+    <button style="background-color: #ff5252" class="btn-back button text" id="back">Indietro</button>
+</div>
 </body>
+<script src="script/nuovolibro-script.js"></script>
 </html>

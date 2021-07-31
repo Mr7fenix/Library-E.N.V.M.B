@@ -3,40 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-<input type="text" placeholder="Titolo" list="title-list" id="title">
-<datalist id="title-list"></datalist>
-<select id="autor-list"></select>
-<select id="editor-list"></select>
-<button id="find">Cerca</button>
-<button id="rest">Ripristina</button>
-<table id="table">
-    <tr>
-        <th>Titolo</th>
-        <th>Autore</th>
-        <th>Casa editrice</th>
-        <th>Genere</th>
-    </tr>
-</table>
+<div class="div-all">
+
+    <div>
+        <h1 class="text div-title">CERCA LIBRI</h1>
+    </div>
+    <div class="all-div-find">
+        <input style="width: 200px" class="input" type="text" placeholder="Titolo" list="title-list" id="title">
+        <datalist id="title-list"></datalist>
+        <select class="select" id="autor-list"></select>
+        <select class="select" id="editor-list"></select>
+    </div>
+
+    <div class="btn-div-find">
+        <button id="find" class="button">Cerca</button>
+        <button id="rest" class="button">Ripristina</button>
+        <button id='back' style="background-color: #ff5252" class="button">Indietro</button>
+    </div>
+    <table id="table">
+        <tr>
+            <th>Titolo</th>
+            <th>Autore</th>
+            <th>Casa editrice</th>
+            <th>Genere</th>
+        </tr>
+    </table>
+</div>
 </body>
 <style>
     table {
         font-family: arial, sans-serif;
         border-collapse: collapse;
         width: 100%;
+        border-radius: 5px;
     }
 
     td, th {
-        border: 1px solid #dddddd;
+        border: 1px solid #212121;
         text-align: left;
         padding: 8px;
     }
 
-    tr:nth-child(even) {
+    tr {
         background-color: #dddddd;
+
     }
 </style>
 <script src="script/cercalibro-script.js"></script>
+</div>
 </html>
 

@@ -2,7 +2,7 @@
   "name": "my-electron-app",
   "version": "1.0.0",
   "description": "Hello world",
-  "main": "main.js",
+  "main": "script/main.js",
   "scripts": {
     "start": "electron ."
   },
