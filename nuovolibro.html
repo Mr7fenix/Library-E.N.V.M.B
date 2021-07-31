@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style-nuovolibro.css">
+</head>
+<body id="body">
+<script src="renderer.js"></script>
+<div>
+    <h1 class="text title" id="notifica">AGGIUNTA LIBRO</h1>
+</div>
+<form>
+    <input class="input-Title input text" type="text" placeholder="Titolo del libro" id="title">
+    <datalist id="lis-aut"></datalist>
+        <script>
+            const fs = require('fs');
+            let rawbiblioteca = fs.readFileSync('libri.json');
+            let biblioteca = JSON.parse(rawbiblioteca);
+            let libri = biblioteca['biblioteca'];
+
+            let arrayAutor = []
+            for (i in libri) {
+                let x = libri[i].autore
+                let flag = false;
+                for (let j = 0; j < i; j++){
+                    if (arrayAutor[j] === undefined){
+                        arrayAutor.push(libri[i].autore);
+                    }else if(arrayAutor[j] === libri[i].autore){
+                        flag = true;
+                    }else arrayAutor.push(libri[i].autore);
+                }
+                if (!flag){
+                    let option = document.createElement('option');
+                    option.text = x;
+                    document.getElementById('lis-aut').appendChild(option);
+                }
+            }
+        </script>
+
+    <input class="input-Autor input text" type="text" placeholder="Nome autore" id="autor" list="lis-aut">
+
+    <select id="select">
+        <script>
+            //TODO usare Json per generi e casa editrice
+            let array = fs.readFileSync('editori.txt').toString().split('~');
+            array.sort()
+
+
+            for (i in array) {
+                document.getElementById('select').add(new Option(array[i]));
+            }
+        </script>
+    </select>
+    <button type="button" class="button text" id="add">Aggiungi Libro</button>
+    <div id="divGenere">
+        <script>
+            let generi = fs.readFileSync('genere.txt').toString().split('~');
+
+            window.addEventListener('load', function () {
+                for (idCheck in generi) {
+
+                    let div = document.getElementById('divGenere');
+                    let checkbox = document.createElement('input');
+                    let label = document.createElement('label');
+                    let newDiv = document.createElement('div');
+
+                    checkbox.type = 'checkbox';
+                    checkbox.id = 'gen' + idCheck;
+
+                    label.htmlFor = 'gen' + idCheck;
+                    label.appendChild(document.createTextNode('  ' + generi[idCheck][0].toUpperCase() + generi[idCheck].slice(1).toLowerCase()))
+                    label.classList = 'text';
+                    label.id = 'lab' + idCheck;
+
+                    newDiv.appendChild(label);
+                    newDiv.appendChild(checkbox);
+                    div.appendChild(newDiv)
+                }
+
+            })
+        </script>
+        <script>
+
+
+
+            document.getElementById('add').addEventListener('click', function () {
+
+                //Correzione del titolo
+                let title = document.getElementById('title').value[0].toUpperCase() + document.getElementById('title').value.slice(1).toLowerCase()
+                if(title.substring(title.length - 1) === ' '){
+                    title = title.substring(0, title.length -1);
+                }
+
+                let autor = document.getElementById('autor').value;
+                if(autor.substring(autor.length - 1) === ' '){
+                    autor = autor.substring(0, autor.length -1);
+                }
+
+                let genereFlag = false
+                for(i in generi){
+                    if (document.getElementById('gen' + i).checked){
+                        genereFlag = true
+                    }
+                }
+                if (!genereFlag) {
+                    document.getElementById('notifica').innerText = 'Seleziona un genere';
+                    document.getElementById('body').style.backgroundColor = '#ff5252';
+                    return;
+                }
+
+
+                let rawData = fs.readFileSync('libri.json');
+                let oldData = JSON.parse(rawData);
+                console.log(oldData)
+
+                let bibl = oldData['biblioteca'];
+                for(let i =0 ; i < bibl.length; i++){
+
+                    if (title.toLowerCase() === bibl[i].name.toLowerCase()){
+                        document.getElementById('notifica').innerText = 'Libro gia inserito';
+                        document.getElementById('body').style.backgroundColor = '#ff5252';
+                        return;
+                    }
+                }
+
+                if (document.getElementById('title').value === ""){
+                    document.getElementById('notifica').innerText = 'Titolo del libro non inserito';
+                    document.getElementById('body').style.backgroundColor = '#ff5252';
+
+                    return;
+                }else if (document.getElementById('autor').value === ""){
+                    document.getElementById('notifica').innerText = 'Autore non inserito';
+                    document.getElementById('body').style.backgroundColor = '#ff5252';
+
+                    return;
+                }
+
+
+                //Aggiunta libro
+                let globalGen;
+                for (i in generi) {
+                    let id = "gen" + i;
+                    let idLabel = "lab" + i;
+                    let genere = document.getElementById(id)
+
+                    if (genere.checked) {
+                        if (globalGen === undefined) {
+                            globalGen = i;
+                        }else globalGen = globalGen + '~' + i;
+                    }
+                }
+
+                let libro = {
+                    "name": title,
+                    "autore": autor,
+                    "editore": document.getElementById('select').value,
+                    "genere": globalGen
+                }
+                oldData["biblioteca"].push(libro);
+
+                let data = JSON.stringify(oldData);
+                fs.writeFileSync('libri.json', data)
+
+                document.getElementById('notifica').innerText = 'Libro aggiunto correttamente';
+                document.getElementById('body').style.backgroundColor = '#5eff52';
+
+            })
+        </script>
+    </div>
+</form>
+
+
+</body>
+</html>

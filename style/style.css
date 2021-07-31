@@ -1,0 +1,8 @@
+@font-face {
+    font-family: roboto;
+    src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+}
+
+.text{
+    font-family: roboto, sans-serif;
+}
