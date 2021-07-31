@@ -25,6 +25,7 @@ window.onload = function () {
         array.sort()
 
 
+        document.getElementById('select').add(new Option('Seleziona casa editrice'));
         for (i in array) {
             document.getElementById('select').add(new Option(array[i]));
         }
@@ -57,12 +58,17 @@ window.onload = function () {
     document.getElementById('add').addEventListener('click', function () {
 
         if (document.getElementById('newTitle').value === '') {
-            document.getElementById('notifica').innerText = 'Titolo non iserito';
+            document.getElementById('notifica').innerText = 'TITOLO NON INSERITO';
             document.getElementById('body').style.backgroundColor = '#ff5252';
             return;
         }
         if (document.getElementById('autor').value === "") {
-            document.getElementById('notifica').innerText = 'Autore non inserito';
+            document.getElementById('notifica').innerText = 'AUTORE NON INSERITO';
+            document.getElementById('body').style.backgroundColor = '#ff5252';
+            return;
+        }
+        if (document.getElementById('select').value === 'Seleziona casa editrice'){
+            document.getElementById('notifica').innerText = 'SELEZIONA CASA EDITRICE';
             document.getElementById('body').style.backgroundColor = '#ff5252';
             return;
         }
@@ -86,7 +92,7 @@ window.onload = function () {
             }
         }
         if (!genereFlag) {
-            document.getElementById('notifica').innerText = 'Seleziona un genere';
+            document.getElementById('notifica').innerText = 'SELEZIONA UN GENERE';
             document.getElementById('body').style.backgroundColor = '#ff5252';
             return;
         }
