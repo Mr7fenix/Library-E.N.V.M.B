@@ -1,5 +1,5 @@
 document.getElementById('add').addEventListener('click', function () {
-    window.open('nuovolibro.html', '_blank', 'frame=true')
+    window.open('nuovolibro.html', '_blank', 'menu=true')
     window.hide();
 })
 
