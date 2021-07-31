@@ -1,6 +1,7 @@
 window.onload = function () {
     const fs = require('fs');
-    let rawbiblioteca = fs.readFileSync('data/libri.json');
+    let path = require('path')
+    let rawbiblioteca = fs.readFileSync(path.resolve(__dirname, 'data', 'libri.json'));
     let biblioteca = JSON.parse(rawbiblioteca);
     let libri = biblioteca['biblioteca'];
 
@@ -21,7 +22,7 @@ window.onload = function () {
             document.getElementById('lis-aut').appendChild(option);
         }
 
-        let array = fs.readFileSync('data/editori.txt').toString().split('~');
+        let array = fs.readFileSync(path.resolve(__dirname, 'data', 'editori.txt')).toString().split('~');
         array.sort()
 
 
@@ -31,7 +32,7 @@ window.onload = function () {
         }
     }
 
-    let generi = fs.readFileSync('data/genere.txt').toString().split('~');
+    let generi = fs.readFileSync(path.resolve(__dirname, 'data', 'genere.txt')).toString().split('~');
     for (idCheck in generi) {
 
         let div = document.getElementById('divGenere');
@@ -98,7 +99,7 @@ window.onload = function () {
         }
 
 
-        let rawData = fs.readFileSync('data/libri.json');
+        let rawData = fs.readFileSync(path.resolve(__dirname, 'data', 'libri.json'));
         let oldData = JSON.parse(rawData);
         console.log(oldData)
 
@@ -135,7 +136,7 @@ window.onload = function () {
         oldData["biblioteca"].push(libro);
 
         let data = JSON.stringify(oldData);
-        fs.writeFileSync('data/libri.json', data)
+        fs.writeFileSync(path.resolve(__dirname, 'data', 'libri.json'), data)
 
         document.getElementById('notifica').innerText = 'Libro aggiunto correttamente';
         document.getElementById('body').style.backgroundColor = '#5eff52';

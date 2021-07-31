@@ -1,14 +1,16 @@
 {
-  "name": "my-electron-app",
+  "name": "app-bibliotaca",
   "version": "1.0.0",
-  "description": "Hello world",
-  "main": "script/main.js",
+  "description": "Aplicazione per gestire una piccola biblioteca",
+  "main": "main.js",
   "scripts": {
     "start": "electron ."
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^13.1.7"
+    "electron": "^13.1.7",
+    "electron-builder": "^22.11.7",
+    "electron-packager": "^15.3.0"
   }
 }

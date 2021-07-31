@@ -1,5 +1,7 @@
 const fs = require('fs');
-let rawbiblioteca = fs.readFileSync('data/libri.json');
+let path = require('path');
+
+let rawbiblioteca = fs.readFileSync(path.resolve(__dirname, 'data', 'libri.json'));
 let biblioteca = JSON.parse(rawbiblioteca);
 let libri = biblioteca['biblioteca'];
 
@@ -28,7 +30,7 @@ for (i in libri) {
     }
 }
 document.getElementById('editor-list').add(new Option('Seleziona casa editrice'));
-let array = fs.readFileSync('data/editori.txt').toString().split('~');
+let array = fs.readFileSync(path.resolve(__dirname, 'data', 'editori.txt')).toString().split('~');
 array.sort();
 
 for (i in array) {
@@ -52,7 +54,7 @@ for (i in libri) {
     thEditor.innerText = libri[i].editore;
     thEditor.id = 'bookid' + i + "editor"
 
-    let generi = fs.readFileSync('data/genere.txt').toString().split('~')
+    let generi = fs.readFileSync(path.resolve(__dirname, 'data', 'genere.txt')).toString().split('~')
     let genereCode = libri[i].genere.split('~');
     let genere;
     for (let k = 0; k < genereCode.length; k++) {
@@ -133,7 +135,7 @@ document.getElementById('find').addEventListener("click", function () {
             let thGenere = document.getElementById('bookid' + i + 'genere');
             let genere;
 
-            let generi = fs.readFileSync('data/genere.txt').toString().split('~');
+            let generi = fs.readFileSync(path.resolve(__dirname, 'data', 'genere.txt')).toString().split('~');
             let genereCode = newJson["find"][i].genere.split('~');
             for (let k = 0; k < genereCode.length; k++) {
                 for (let j = 0; j < generi.length; j++) {

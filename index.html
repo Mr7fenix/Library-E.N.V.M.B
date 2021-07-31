@@ -4,7 +4,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Hello World!</title>
+    <title>Biblioteca</title>
 </head>
 <link rel="stylesheet" href="style/style.css">
 <body class="index-body">
@@ -16,13 +16,14 @@
         <button style="background-color: #ff5252; margin-top: 20px" id="close" class="button text btn2">Esci</button>
 
     </div>
-    <p id="tot" class="text">ciaooooo</p>
+    <p id="tot" class="text">Caricamento...</p>
 </div>
 <script src="script/renderer.js"></script>
 <script>
     window.addEventListener("load", function () {
         let fs = require('fs');
-        let biblioteca = fs.readFileSync('data/libri.json')
+        let path = require('path')
+        let biblioteca = fs.readFileSync(path.resolve(__dirname, 'data', 'libri.json'))
         biblioteca = JSON.parse(biblioteca);
         libro = biblioteca['biblioteca'];
         let x = libro.length
