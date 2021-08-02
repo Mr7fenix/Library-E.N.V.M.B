@@ -22,14 +22,14 @@ window.onload = function () {
             document.getElementById('lis-aut').appendChild(option);
         }
 
-        let array = fs.readFileSync(path.resolve(__dirname, 'data', 'editori.txt')).toString().split('~');
-        array.sort()
+    }
+    let array = fs.readFileSync(path.resolve(__dirname, 'data', 'editori.txt')).toString().split('~');
+    array.sort()
 
 
-        document.getElementById('select').add(new Option('Seleziona casa editrice'));
-        for (i in array) {
-            document.getElementById('select').add(new Option(array[i]));
-        }
+    document.getElementById('select').add(new Option('Seleziona casa editrice'));
+    for (i in array) {
+        document.getElementById('select').add(new Option(array[i]));
     }
 
     let generi = fs.readFileSync(path.resolve(__dirname, 'data', 'genere.txt')).toString().split('~');
