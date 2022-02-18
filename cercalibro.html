@@ -11,19 +11,24 @@
     <div>
         <h1 class="text div-title">CERCA LIBRI</h1>
     </div>
-    <div class="all-div-find">
-        <input style="width: 200px" class="input" type="text" placeholder="Titolo" list="title-list" id="title">
-        <datalist id="title-list">
-            <option v-for="libro in libri">{{ libro.name }}</option>
-        </datalist>
-        <select class="select" id="autor-list">
-            <option v-for="autore in autori">{{ autore }}</option>
-        </select>
-        <select class="select" id="editor-list"></select>
-    </div>
+    <label>
+        <div class="all-div-find">
+            <input style="width: 200px" class="input" type="text" placeholder="Titolo" list="title-list" id="title">
+            <datalist id="title-list">
+                <option v-for="libro in libri">{{ libro.name }}</option>
+            </datalist>
+            <select class="select" id="autor-list">
+                <option v-for="autore in autori">{{ autore }}</option>
+            </select>
+            <select class="select" id="editor-list">
+                <option v-for="editore in editori">{{ editore }}</option>
+            </select>
+        </div>
+    </label>
 
     <div class="btn-div-find">
-        <button id="find" class="button">Cerca</button>
+        <button @click="search" id="find" class="button">Cerca</button>
+
         <button id="reset" class="button">Ripristina</button>
         <button id='back' style="background-color: #ff5252" class="button">Indietro</button>
     </div>

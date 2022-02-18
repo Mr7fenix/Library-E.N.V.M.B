@@ -7,7 +7,8 @@ Vue.createApp({
     data() {
         return {
             libri: [],
-            autori: []
+            autori: [],
+            editori: []
         }
     },
     created() {
@@ -22,12 +23,26 @@ Vue.createApp({
         }
 
 
-
-        this.autori = autorList(libri);
+        this.autori =  arrayFirs("Seleziona autore", autorList(libri))
+        this.editori = arrayFirs("Seleziona casa editrice", editorList());
         this.libri = libri;
 
     },
     methods: {
+        search(){
+            let rawbiblioteca = fs.readFileSync(path.resolve(__dirname, 'data', 'libri.json'));
+            let biblioteca = JSON.parse(rawbiblioteca);
+            let libri = biblioteca['biblioteca']
+
+            let title = document.getElementById("title").valueOf();
+            let autor = document.getElementById("autor-list").valueOf();
+            let editor = document.getElementById("editor-list".valueOf());
+
+            for (let i in libri){
+
+            }
+
+        }
     }
 }).mount('#prova');
 
@@ -63,78 +78,34 @@ function autorList(libri){
     return autorList;
 }
 
-/*
+//funzione che restituisce tutti gli editori
+function editorList(){
+    //prelevo dal file gli editori che sono salvati
+    let editorlist = fs.readFileSync(path.resolve(__dirname, 'data', 'editori.txt')).toString().split('~');
+    editorlist.sort();
 
-document.getElementById('autor-list').add(new Option('Seleziona autore'));
-let arrayAutor = []
-for (let i in libri) {
-    let flag = false;
-    for (let j = 0; j < i; j++) {
-        if (arrayAutor[j] === undefined) {
-            arrayAutor.push(libri[i].autore);
-        } else if (arrayAutor[j] === libri[i].autore) {
-            flag = true;
-        } else arrayAutor.push(libri[i].autore);
-    }
-    if (!flag) {
-        document.getElementById('autor-list').add(new Option(libri[i].autore));
-    }
+    return editorlist
 }
-document.getElementById('editor-list').add(new Option('Seleziona casa editrice'));
-let array = fs.readFileSync(path.resolve(__dirname, 'data', 'editori.txt')).toString().split('~');
-array.sort();
 
-for (let i in array) {
-    document.getElementById('editor-list').add(new Option(array[i]));
+//mette al pirmo posto dell'array passato la variabile passata
+function arrayFirs (first, array){
+
+    //crea un nuovo array vuoto e un array con l'array passato
+    let withFirst = []
+    let withoutFirs = array;
+
+    //inserisce al primo posto dell' array la variabile passata
+    withFirst.push(first)
+
+    //inserisce all'interno dell nuovo array l'array passato
+    for (let i in withoutFirs) withFirst.push(withoutFirs[i]);
+
+    return withFirst;
 }
-*/
-/*for (let i in libri) {
-    let tabel = document.getElementById('table');
-    let tr = document.createElement('tr');
-    let thTitle = document.createElement('th')
-    let thAutor = document.createElement('th')
-    let thEditor = document.createElement('th')
-    let thGenere = document.createElement('th')
 
-    tr.id = 'bookid' + i;
-    thTitle.innerText = libri[i].name;
-    thTitle.id = 'bookid' + i + "title"
 
-    thAutor.innerText = libri[i].autore;
-    thAutor.id = 'bookid' + i + "autor"
 
-    thEditor.innerText = libri[i].editore;
-    thEditor.id = 'bookid' + i + "editor"
-
-    let generi = fs.readFileSync(path.resolve(__dirname, 'data', 'genere.txt')).toString().split('~')
-    let genereCode = libri[i].genere.split('~');
-    let genere;
-    for (let k = 0; k < genereCode.length; k++) {
-        for (let j = 0; j < generi.length; j++) {
-            if (j.toString() === genereCode[k]) {
-                let x = generi[j][0].toUpperCase() + generi[j].slice(1).toLowerCase()
-                if (genere === undefined) {
-                    genere = x;
-                } else genere = genere + ', ' + x;
-            }
-        }
-    }
-
-    thGenere.innerText = genere;
-    thGenere.id = tr.id + "genere"
-    tr.appendChild(thTitle);
-    tr.appendChild(thAutor);
-    tr.appendChild(thEditor);
-    tr.appendChild(thGenere);
-
-    tabel.appendChild(tr)
-}
- */
-
-document.getElementById('reset').addEventListener("click", function () {
-    window.location.reload();
-})
-document.getElementById('find').addEventListener("click", function () {
+/* document.getElementById('find').addEventListener("click", function () {
     let title = document.getElementById('title').value;
     let autor = document.getElementById('autor-list').value;
     let editor = document.getElementById('editor-list').value;
@@ -194,8 +165,12 @@ document.getElementById('find').addEventListener("click", function () {
             thGenere.innerText = genereSplit(newJson["find"][i].genere.split('~'));
         }
     }
-})
+})*/
 
 document.getElementById('back').addEventListener("click", function (){
     window.location.replace('index.html')
+})
+
+document.getElementById('reset').addEventListener("click", function () {
+    window.location.reload();
 })
