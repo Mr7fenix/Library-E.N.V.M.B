@@ -34,14 +34,48 @@ Vue.createApp({
             let biblioteca = JSON.parse(rawbiblioteca);
             let libri = biblioteca['biblioteca']
 
-            let title = document.getElementById("title").valueOf();
-            let autor = document.getElementById("autor-list").valueOf();
-            let editor = document.getElementById("editor-list".valueOf());
-
-            for (let i in libri){
-
+            for (let i in libri) {
+                libri[i].genere = genereSplit(libri[i].genere.split('~'));
             }
 
+            let title = document.getElementById("title").value;
+            let autor = document.getElementById("autor-list").value;
+            let editor = document.getElementById('editor-list').value;
+
+            let all = libri;
+            let filtered = []
+
+            if (editor !== 'Seleziona casa editrice') {
+                for (let i in libri) {
+                    if (all[i].editore === editor) {
+                        filtered.push(all[i])
+                    }
+                }
+                all = filtered;
+                filtered = [];
+            }
+
+            if (autor !== 'Seleziona autore'){
+                for (let i in libri) {
+                    if (all[i].autore === autor) {
+                        filtered.push(all[i])
+                    }
+                }
+                all = filtered;
+                filtered = [];
+            }
+
+            if (title !== ''){
+                for (let i in libri) {
+                    if (all[i].name === title) {
+                        filtered.push(all[i])
+                    }
+                }
+                all = filtered;
+                filtered = [];
+            }
+
+            this.libri = all;
         }
     }
 }).mount('#prova');
@@ -103,69 +137,6 @@ function arrayFirs (first, array){
     return withFirst;
 }
 
-
-
-/* document.getElementById('find').addEventListener("click", function () {
-    let title = document.getElementById('title').value;
-    let autor = document.getElementById('autor-list').value;
-    let editor = document.getElementById('editor-list').value;
-
-    let newJson = {"find": []}
-    let flag = false;
-
-    if (autor !== 'Seleziona autore') {
-        flag = true;
-        for (let i in libri) {
-            if (libri[i].autore === autor) {
-                newJson["find"].push(libri[i])
-            }
-        }
-    }
-    if (editor !== 'Seleziona casa editrice') {
-        flag = true;
-        for (let i in libri) {
-            if (libri[i].editore === editor) {
-                newJson["find"].push(libri[i])
-            }
-        }
-    }
-    if (title !== '') {
-        flag = true;
-        for (let i in libri) {
-            if (libri[i].name === title) {
-                newJson["find"].push(libri[i])
-            }
-        }
-    }
-
-
-    if (flag) {
-        for (let i in libri) {
-            let thTitle = document.getElementById('bookid' + i + 'title');
-            let thAutor = document.getElementById('bookid' + i + 'autor');
-            let thEditor = document.getElementById('bookid' + i + 'editor');
-            let thGenere = document.getElementById('bookid' + i + 'genere');
-
-            thTitle.innerText = '';
-            thAutor.innerText = '';
-            thEditor.innerText = '';
-            thGenere.innerText = '';
-        }
-
-        for (let i in newJson['find'] + 1) {
-            let thTitle = document.getElementById('bookid' + i + 'title');
-            let thAutor = document.getElementById('bookid' + i + 'autor');
-            let thEditor = document.getElementById('bookid' + i + 'editor');
-            let thGenere = document.getElementById('bookid' + i + 'genere');
-
-
-            thTitle.innerText = newJson["find"][i].name;
-            thAutor.innerText = newJson["find"][i].autore;
-            thEditor.innerText = newJson["find"][i].editore;
-            thGenere.innerText = genereSplit(newJson["find"][i].genere.split('~'));
-        }
-    }
-})*/
 
 document.getElementById('back').addEventListener("click", function (){
     window.location.replace('index.html')
