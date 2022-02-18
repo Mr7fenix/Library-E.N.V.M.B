@@ -30,27 +30,33 @@ Vue.createApp({
     },
     methods: {
         search(){
+            //Acquisizione dei dati
             let rawbiblioteca = fs.readFileSync(path.resolve(__dirname, 'data', 'libri.json'));
             let biblioteca = JSON.parse(rawbiblioteca);
             let libri = biblioteca['biblioteca']
 
+            //Inserimento dei genere per ogni libro
             for (let i in libri) {
                 libri[i].genere = genereSplit(libri[i].genere.split('~'));
             }
 
+            //Creazione Variebili
             let title = document.getElementById("title").value;
             let autor = document.getElementById("autor-list").value;
             let editor = document.getElementById('editor-list').value;
 
             let all = libri;
             let filtered = []
-
+            //TODO: Non si possono effettuare ricerche multiple, risolvere il problema
+            //Viene visto se è stata fatta una ricesca su questo campo
             if (editor !== 'Seleziona casa editrice') {
                 for (let i in libri) {
+                    //Controllo che serve trovare i libri richiesti
                     if (all[i].editore === editor) {
                         filtered.push(all[i])
                     }
                 }
+                //Reset della variabile filtered e rispettiva modifica della variabile all
                 all = filtered;
                 filtered = [];
             }
