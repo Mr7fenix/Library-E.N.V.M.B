@@ -13,8 +13,12 @@
     </div>
     <div class="all-div-find">
         <input style="width: 200px" class="input" type="text" placeholder="Titolo" list="title-list" id="title">
-        <datalist id="title-list"></datalist>
-        <select class="select" id="autor-list"></select>
+        <datalist id="title-list">
+            <option v-for="libro in libri">{{ libro.name }}</option>
+        </datalist>
+        <select class="select" id="autor-list">
+            <option v-for="autore in autori">{{ autore }}</option>
+        </select>
         <select class="select" id="editor-list"></select>
     </div>
 

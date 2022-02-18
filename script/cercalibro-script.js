@@ -7,7 +7,7 @@ Vue.createApp({
     data() {
         return {
             libri: [],
-            searchOption: []
+            autori: []
         }
     },
     created() {
@@ -18,11 +18,12 @@ Vue.createApp({
 
         //Per ogni libro ne restituisce il rispettivo genere
         for (let i in libri) {
-            libri[i].genere = genereSplit(libri[i].genere.split('~'));;
+            libri[i].genere = genereSplit(libri[i].genere.split('~'));
         }
 
 
 
+        this.autori = autorList(libri);
         this.libri = libri;
 
     },
@@ -47,14 +48,22 @@ function genereSplit(genereCode){
     }
     return genere;
 }
-/*for (let i in libri) {
-    let x = libri[i].name
 
-    let option = document.createElement('option');
-    option.text = x;
-    option.id = 'opt' + i;
-    document.getElementById('title-list').appendChild(option);
+//restituisce la lista di tutti gli autori
+function autorList(libri){
+    //array contenente tutti gli autori
+    let autorList = []
+
+    for (let i in libri){
+        //controlle se l'autore è gia presente all'iterno dei dati in caso negativo lo aggiunge
+        if (!autorList.includes(libri[i].autore)){
+            autorList.push(libri[i].autore)
+        }
+    }
+    return autorList;
 }
+
+/*
 
 document.getElementById('autor-list').add(new Option('Seleziona autore'));
 let arrayAutor = []
