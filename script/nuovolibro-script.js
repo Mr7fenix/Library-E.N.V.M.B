@@ -144,5 +144,5 @@ window.onload = function () {
     })
 }
 document.getElementById('back').addEventListener("click", function (){
-    window.close()
+    window.location.replace('index.html')
 })

@@ -6,6 +6,7 @@ const path = require('path')
 
 const fs = require('fs')
 
+
 function createWindow () {
     // Create the browser window.
     const mainWindow = new BrowserWindow({
@@ -16,7 +17,8 @@ function createWindow () {
         webPreferences: {
             preload: path.join(__dirname, 'script/preload.js'),
             nodeIntegration: true,
-            contextIsolation: false
+            contextIsolation: false,
+            enableRemoteModule: true,
         }
     })
     // and load the index.html of the app.
@@ -38,6 +40,14 @@ app.whenReady().then(() => {
         // dock icon is clicked and there are no other windows open.
         if (BrowserWindow.getAllWindows().length === 0) createWindow()
     })
+
+    app.on('ready', () => {
+        mainWindow = new BrowserWindow({
+            webPreferences: {
+                nodeIntegration: true
+            }
+        });
+    });
 })
 
 // Quit when all windows are closed, except on macOS. There, it's common

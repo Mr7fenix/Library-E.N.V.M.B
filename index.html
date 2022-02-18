@@ -20,7 +20,8 @@
 </div>
 <script src="script/renderer.js"></script>
 <script>
-    window.addEventListener("load", function () {
+
+    // TODO: Rimuovwere file.
         let fs = require('fs');
         let path = require('path')
         let biblioteca = fs.readFileSync(path.resolve(__dirname, 'data', 'libri.json'))
@@ -28,7 +29,6 @@
         libro = biblioteca['biblioteca'];
         let x = libro.length
         document.getElementById('tot').innerText = 'In totale hai' + ' ' + x + ' ' + 'Libri';
-    })
 </script>
 </body>
 </html>

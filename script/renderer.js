@@ -1,9 +1,9 @@
 document.getElementById('add').addEventListener('click', function () {
-    window.open('nuovolibro.html', '_blank', 'frame=false')
+    window.location.replace('nuovolibro.html')
 })
 
 document.getElementById('search').addEventListener('click', function () {
-    window.open('cercalibro.html', '_blanck', 'frame=false')
+    window.location.replace('cercalibro.html')
 
 })
 

@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-<div class="div-all">
+<div id="prova" class="div-all">
 
     <div>
         <h1 class="text div-title">CERCA LIBRI</h1>
@@ -20,7 +20,7 @@
 
     <div class="btn-div-find">
         <button id="find" class="button">Cerca</button>
-        <button id="rest" class="button">Ripristina</button>
+        <button id="reset" class="button">Ripristina</button>
         <button id='back' style="background-color: #ff5252" class="button">Indietro</button>
     </div>
     <table id="table">
@@ -29,6 +29,12 @@
             <th>Autore</th>
             <th>Casa editrice</th>
             <th>Genere</th>
+        </tr>
+        <tr v-for="libro in libri">
+            <td>{{ libro.name }}</td>
+            <td>{{ libro.autore }}</td>
+            <td>{{ libro.editore }}</td>
+            <td>{{ libro.genere }}</td>
         </tr>
     </table>
 </div>
