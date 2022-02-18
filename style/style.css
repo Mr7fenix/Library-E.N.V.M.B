@@ -43,6 +43,7 @@ body{
     height: 20px;
     width: 150px;
     color: black;
+    margin: 5px;
 }
 .select{
     height: 26px;
@@ -82,4 +83,13 @@ body{
 .btn-back{
     margin-top: 170px;
     margin-left: -163px;
+}
+
+.buttonSerch{
+    margin: 5px;
+    color: white;
+}
+
+.select{
+    margin: 5px;
 }
