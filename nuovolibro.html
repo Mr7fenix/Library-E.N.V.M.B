@@ -5,27 +5,28 @@
     <title>Biblioteca</title>
 
     <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style-nuovolibro.css">
 </head>
 <body id="body">
 <div id="app" class="div-all div-new">
-    <script src="script/renderer.js"></script>
     <div class="div-title">
         <h1 class="text h1-title" id="notifica">AGGIUNTA LIBRO</h1>
     </div>
     <label>
         <div>
             <input class="input-Title input text" type="text" placeholder="Titolo del libro" id="newTitle">
-            <datalist id="lis-aut"></datalist>
+            <datalist id="lis-aut">
+                <option v-for="autore in autori">{{ autore }}</option>
+            </datalist>
             <input class="input-Autor input text" type="text" placeholder="Nome autore" id="autor" list="lis-aut">
 
-            <select id="select" class="select">
+            <select id="editor" class="select">
+                <option v-for="editore in editori">{{ editore }}</option>
             </select>
             <div id="divGenere" class="general-div">
                 <div class="check-div" v-for="genere in generi">
                     <label class="text">
-                        <input type="checkbox">
-                        <a>{{ genere }}</a>
+                        <input type="checkbox" v-model="genere.check">
+                        <a>{{ genere.name }}</a>
                     </label>
 
                 </div>
@@ -33,8 +34,8 @@
         </div>
     </label>
     <div class="btn-div-find" style="margin-top: 300px; alignment: left">
-        <button type="button" class="button text new-btn" id="add">Aggiungi Libro</button>
-        <button style="background-color: #ff5252" class="button text new-btn" id="back">Indietro</button>
+        <button type="button" class="button text new-btn" @click="result">Aggiungi Libro</button>
+        <button style="background-color: #ff5252" class="button text new-btn" @click="back">Indietro</button>
     </div>
 </div>
 </body>
