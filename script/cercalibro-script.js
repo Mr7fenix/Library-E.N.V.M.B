@@ -3,54 +3,41 @@ const fs = require('fs');
 let path = require('path');
 const ut = require('./script/function.js');
 
+let biblioteca = JSON.parse(fs.readFileSync(path.resolve('data', 'libri.json')))
+let generi = ut.genereList();
+
 Vue.createApp({
     data() {
         return {
             libri: [],
             autori: [],
-            editori: []
+            editori: [],
+            modifica: [],
+            generi: [],
+            popUpModify: false,
+            popUpRemove: false
         }
     },
     created() {
-        //Prende dal file i dati relativi alla lista dei libri inseriti
-        let rawbiblioteca = fs.readFileSync(path.resolve('data', 'libri.json'));
-        let biblioteca = JSON.parse(rawbiblioteca);
-        let libri = biblioteca['biblioteca']
-
-        //Per ogni libro ne restituisce il rispettivo genere
-        for (let i in libri) {
-            libri[i].genere = genereSplit(libri[i].genere);
-        }
-
-
         this.autori = ut.arrayFirs("Seleziona autore", ut.authorList())
         this.editori = ut.arrayFirs("Seleziona casa editrice", ut.editorList());
-        this.libri = libri;
+
+        this.libri = biblioteca;
 
     },
     methods: {
         search() {
-            //Acquisizione dei dati
-            let rawbiblioteca = fs.readFileSync(path.resolve('data', 'libri.json'));
-            let biblioteca = JSON.parse(rawbiblioteca);
-            let libri = biblioteca['biblioteca']
-
-            //Inserimento dei genere per ogni libro
-            for (let i in libri) {
-                libri[i].genere = genereSplit(libri[i].genere.split('~'));
-            }
-
             //Creazione Variebili
             let title = document.getElementById("title").value;
             let autor = document.getElementById("autor-list").value;
             let editor = document.getElementById('editor-list').value;
 
-            let all = libri;
+            let all = biblioteca;
             let filtered = []
-            //TODO: Non si possono effettuare ricerche multiple, risolvere il problema
+
             //Viene visto se è stata fatta una ricesca su questo campo
             if (editor !== 'Seleziona casa editrice') {
-                for (let i in libri) {
+                for (let i in all) {
                     //Controllo che serve trovare i libri richiesti
                     if (all[i].editore === editor) {
                         filtered.push(all[i])
@@ -62,7 +49,7 @@ Vue.createApp({
             }
 
             if (autor !== 'Seleziona autore') {
-                for (let i in libri) {
+                for (let i in all) {
                     if (all[i].autore === autor) {
                         filtered.push(all[i])
                     }
@@ -72,7 +59,7 @@ Vue.createApp({
             }
 
             if (title !== '') {
-                for (let i in libri) {
+                for (let i in all) {
                     if (all[i].name === title) {
                         filtered.push(all[i])
                     }
@@ -80,30 +67,91 @@ Vue.createApp({
                 all = filtered;
                 filtered = [];
             }
-
             this.libri = all;
-        }
-    }
-}).mount('#prova');
+        },
+        modifyPopUp(libro) {
+            //Visualizza la finestra di popUp
+            if (!this.popUpRemove) this.popUpModify = true;
+            //Viene passato il libro selezionato
+            this.modifica = {...libro};
 
-//Restituische il genere di un libro partendo dal suo genereCode
-function genereSplit(genereCode) {
-    let genere
-    let generi = ut.genereList();
+            //Viene prelevata la lista di tutti i generi
+            let generi = ut.genereList();
+            let check = [];
 
-    for (let i in genereCode) {
-        for (let k = 0; k <= generi.length; k++) {
-            if (genereCode[i] === k) {
+            //Prende il codice del genere del libro selezionato
+            let genereCode = biblioteca[ut.indexOf(this.modifica.id, biblioteca)].genere;
 
-                if (genere === undefined) {
-                    genere = generi[k];
-                } else genere += ', ' + generi[k];
+            //Visualizza checked i check box dei generi del libro
+            for (let i = 0; i < generi.length; i++) {
+                check.push({"name": generi[i], "check": false})
             }
+            for (let i = 0; i < genereCode.length; i++) {
+                check[genereCode[i]].check = true
+            }
+
+            //Restituische i generi cheked
+            this.generi = check;
+        },
+        //Restituische il genere di un libro partendo dal suo genereCode
+        genereSplit(genereCode) {
+            let genere
+
+            for (let i in genereCode) {
+                for (let k = 0; k <= generi.length; k++) {
+                    if (genereCode[i] === k) {
+                        if (genere === undefined) {
+                            genere = generi[k];
+                        } else genere += ', ' + generi[k];
+                    }
+                }
+            }
+
+            return genere;
+        },
+        popUpClose() {
+            this.popUpModify = false;
+            this.popUpRemove = false;
+        },
+        deletePopUp(libro) {
+            if (!this.popUpModify) this.popUpRemove = true;
+            this.modifica = libro;
+        },
+        remove() {
+            console.log(biblioteca);
+            this.popUpClose();
+            this.$nextTick(() => {
+                for (let i = 0; i < biblioteca.length; i++) {
+                    if (biblioteca[i].id === this.modifica.id) {
+                        biblioteca.splice(i, 1);
+                        break;
+                    }
+                }
+                let data = JSON.stringify(biblioteca, null, 2);
+                fs.writeFileSync(path.resolve(__dirname, 'data', 'libri.json'), data)
+            })
+        },
+        modify(){
+
+            let index = ut.indexOf(this.modifica.id, biblioteca)
+
+            this.modifica.genere = [];
+
+            for (let i = 0; i < this.generi.length; i++){
+                if(this.generi[i].check){
+                    this.modifica.genere.push(i);
+                }
+            }
+
+
+            biblioteca[index] = this.modifica;
+
+            let data = JSON.stringify(biblioteca, null, 2);
+            fs.writeFileSync(path.resolve(__dirname, 'data', 'libri.json'), data)
+            this.popUpClose();
         }
     }
-
-    return genere;
-}
+}).mount('#app');
 
 document.getElementById('back').addEventListener("click", function () {
     window.location.replace('index.html')

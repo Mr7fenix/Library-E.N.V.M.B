@@ -2,8 +2,7 @@ const fs = require("fs");
 const path = require("path");
 
 let rawbiblioteca = fs.readFileSync(path.resolve('data', 'libri.json'));
-let biblioteca = JSON.parse(rawbiblioteca);
-let libri = biblioteca['biblioteca']
+let libri = JSON.parse(rawbiblioteca);
 
 //restituisce la lista di tutti gli autori
 function authorList(){
@@ -64,11 +63,19 @@ function genereList(){
     return generi;
 }
 
+function indexOf(id, biblioteca){
+    for (let i = 0; i < biblioteca.length; i++) {
+        if (biblioteca[i].id === id) {
+            return i;
+        }
+    }
+}
 
 module.exports = {
     authorList,
     editorList,
     arrayFirs,
     isPresent,
-    genereList
+    genereList,
+    indexOf
 }

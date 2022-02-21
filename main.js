@@ -6,6 +6,8 @@ const path = require('path')
 
 const fs = require('fs')
 
+process.env['ELECTRON_DISABLE_SECURITY_WARNINGS'] = 'true';
+
 
 function createWindow () {
     // Create the browser window.

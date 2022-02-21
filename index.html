@@ -11,23 +11,23 @@
 <div class="div-all">
     <h1 class="text h1-index">Questa è l'app biblioteca cosa vuoi fare?</h1>
     <div class="btn-index-div">
-        <button id="add" class="button text btn2">Aggiungi libro</button>
-        <button id="search" class="button text btn2">Cerca libro</button>
-        <button style="background-color: #ff5252; margin-top: 20px" id="close" class="button text btn2">Esci</button>
-
+        <a href="nuovolibro.html" class="button text btn2 btnShadow">Aggiungi libro</a>
+        <a href="" class="button text btn2 btnShadow">Case editrici</a>
+        <a href="cercalibro.html" class="button text btn2 btnShadow">Cerca libro</a>
     </div>
+    <div class="btn-index-div">
+        <button style="background-color: #ff5252; margin-top: 20px" onclick="window.close()" class="button text btn2">Esci</button>
+    </div>
+
     <p id="tot" class="text">Caricamento...</p>
 </div>
-<script src="script/renderer.js"></script>
 <script>
-
     // TODO: Rimuovwere file.
         let fs = require('fs');
         let path = require('path')
         let biblioteca = fs.readFileSync(path.resolve(__dirname, 'data', 'libri.json'))
         biblioteca = JSON.parse(biblioteca);
-        libro = biblioteca['biblioteca'];
-        let x = libro.length
+        let x = biblioteca.length
         document.getElementById('tot').innerText = 'In totale hai' + ' ' + x + ' ' + 'Libri';
 </script>
 </body>

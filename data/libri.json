@@ -1,1 +1,85 @@
-{"biblioteca":[{"name":"Notre Dame de Paris","autore":"Victor Hugo","editore":"BUR Delux","genere":[18]},{"name":"Nel Bianco","autore":"Ken Follett","editore":"Mondadori Editore","genere":[4,17]},{"name":"Un letto di leoni","autore":"Ken Follett","editore":"Mondadori Editore","genere":[4,5]},{"name":"I miserabili","autore":"Victor Hugo","editore":"Newton Compton","genere":[18]},{"name":"Casa desolata","autore":"Charles Dickens","editore":"Giulio Einaudi Editore","genere":[18]},{"name":"La teoria di sto cazzo","autore":"Ben Ten","editore":"Bollati Boringhieri","genere":[0,3,16]}]}
+[
+  {
+    "id": 0,
+    "name": "Notre Dame de Paris",
+    "autore": "Victor Hugo",
+    "editore": "BUR Delux",
+    "genere": [
+      18
+    ]
+  },
+  {
+    "id": 1,
+    "name": "Nel Bianco",
+    "autore": "Ken Follett",
+    "editore": "Mondadori Editore",
+    "genere": [
+      4,
+      17
+    ]
+  },
+  {
+    "id": 3,
+    "name": "I miserabili",
+    "autore": "Victor Hugo",
+    "editore": "Newton Compton",
+    "genere": [
+      18
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Casa desolata",
+    "autore": "Charles Dickens",
+    "editore": "Giulio Einaudi Editore",
+    "genere": [
+      18
+    ]
+  },
+  {
+    "id": 5,
+    "name": "La teoria di sto cazzo",
+    "autore": "Ben Ten",
+    "editore": "Elliot",
+    "genere": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+    ]
+  },
+  {
+    "id": 7,
+    "name": "La mia cosa nei pantaloni",
+    "autore": "Ben Ten",
+    "editore": "Adelphi Edizioni",
+    "genere": [
+      6,
+      9
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Armando",
+    "autore": "Cagnolino",
+    "editore": "Bompiani Editore",
+    "genere": [
+      7
+    ]
+  }
+]

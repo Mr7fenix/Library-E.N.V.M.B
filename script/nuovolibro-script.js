@@ -2,8 +2,6 @@ const Vue = require('vue');
 const fs = require('fs');
 const ut = require('./script/function.js');
 let path = require('path')
-const {createBlock} = require("vue");
-const url = require("url");
 
 Vue.createApp({
     data() {
@@ -14,7 +12,10 @@ Vue.createApp({
         }
     },
     created() {
+        //Crea un alista di generi
         let generi = ut.genereList();
+
+        //Crea un array che contiene si generi che chek e non check
         let check = [];
         for (let i in generi) {
             check.push({"name": generi[i], "check": false})
@@ -27,7 +28,6 @@ Vue.createApp({
     methods: {
         result() {
             let libroGenere = [];
-            let prova = [];
             let generi = this.generi;
 
             let titolo = document.getElementById('newTitle').value;
@@ -58,25 +58,31 @@ Vue.createApp({
                 return;
             }
 
-
+            //Controlla se il libro è gia presente
             if (ut.isPresent(correctedTitle(), editore)) {
                 error("Libro già presente");
                 return;
             }
 
+            let rawData = fs.readFileSync(path.resolve(__dirname, 'data', 'libri.json'));
+            let oldData = JSON.parse(rawData);
+            console.log(oldData)
+
+
+            //Crea un nuovo libro
             let libro = {
+                "id" : oldData.length,
                 "name": correctedTitle(),
                 "autore": correctedAutor(),
                 "editore": editore,
                 "genere": libroGenere
             }
 
-            let rawData = fs.readFileSync(path.resolve(__dirname, 'data', 'libri.json'));
-            let oldData = JSON.parse(rawData);
-            console.log(oldData)
-            oldData["biblioteca"].push(libro);
+            oldData.push(libro);
 
-            let data = JSON.stringify(oldData);
+
+
+            let data = JSON.stringify(oldData,null, 2);
             fs.writeFileSync(path.resolve(__dirname, 'data', 'libri.json'), data)
 
             document.getElementById('notifica').innerText = 'Libro aggiunto correttamente';
