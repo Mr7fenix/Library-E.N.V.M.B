@@ -3,6 +3,7 @@ const fs = require('fs');
 const ut = require('./script/function.js');
 let path = require('path')
 
+
 Vue.createApp({
     data() {
         return {
@@ -71,7 +72,7 @@ Vue.createApp({
 
             //Crea un nuovo libro
             let libro = {
-                "id" : oldData.length,
+                "id": oldData.length,
                 "name": correctedTitle(),
                 "autore": correctedAutor(),
                 "editore": editore,
@@ -81,8 +82,7 @@ Vue.createApp({
             oldData.push(libro);
 
 
-
-            let data = JSON.stringify(oldData,null, 2);
+            let data = JSON.stringify(oldData, null, 2);
             fs.writeFileSync(path.resolve(__dirname, 'data', 'libri.json'), data)
 
             document.getElementById('notifica').innerText = 'Libro aggiunto correttamente';
@@ -118,3 +118,53 @@ function correctedAutor() {
     return autor;
 }
 
+function risolutorediproblemisupremo() {
+    let mysql = require('mysql2');
+
+    let con = mysql.createConnection({
+        host: "mario.dicyplay.com",
+        user: "biblioteca",
+        password: "@xXStoCazz0Xx@",
+        database: "biblioteca"
+    });
+
+    con.connect(function (err) {
+        if (err) throw err;
+        console.log("Connected!");
+    });
+
+    let lista = JSON.parse(fs.readFileSync(path.resolve(__dirname, 'data', 'libri.json')));
+    //let lista = ut.genereList();
+    //console.log(lista)
+    //
+    //for (let i = 0; i < lista.length; i++) {
+    //    con.query(
+    //        `INSERT INTO generi (name) values (?)`,
+    //        [lista[i]],
+    //        function (err) {
+    //            if (err) {
+    //                console.log("error at i:" + i + ", genere: " + lista[i], err)
+    //            }
+    //        }
+    //    )
+    //    console.log(i);
+    //}
+
+    //for (let i = 0; i < lista.length; i++){
+    //    for (let k = 0; k < lista[i].genere.length; k++) {
+    //        //console.log(lista[i].name, lista[i].genere[k]);
+    //        con.query(
+    //            `INSERT INTO libri_generi (libro, genere) values ((SELECT id FROM libri WHERE titolo = ? LIMIT 1), ?)`,
+    //            [lista[i].name, lista[i].genere[k] + 1],
+    //
+    //            function (err) {
+    //                if (err) {
+    //                    console.log("error at i:" + i + ", k: " + k + ", genere+1: " + lista[i].genere[k], lista[i].name, err)
+    //                }
+    //            }
+    //        )
+    //    }
+    //    console.log(i);
+    //}
+
+}

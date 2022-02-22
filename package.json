@@ -1,10 +1,11 @@
 {
   "name": "app-bibliotaca",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Aplicazione per gestire una piccola biblioteca",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "build": "electron-packager . app --platform win32 --arch x64 --out dist/"
   },
   "author": "",
   "license": "ISC",
@@ -14,7 +15,7 @@
     "electron-packager": "^15.3.0"
   },
   "dependencies": {
-    "mysql": "^2.18.1",
+    "mysql2": "^2.3.3",
     "vue": "^3.2.31"
   }
 }

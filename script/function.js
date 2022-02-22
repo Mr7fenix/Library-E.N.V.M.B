@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 
-let rawbiblioteca = fs.readFileSync(path.resolve('data', 'libri.json'));
+let rawbiblioteca = fs.readFileSync(path.resolve(__dirname, '../data', 'libri.json'));
 let libri = JSON.parse(rawbiblioteca);
 
 //restituisce la lista di tutti gli autori
@@ -21,7 +21,7 @@ function authorList(){
 //funzione che restituisce tutti gli editori
 function editorList(){
     //prelevo dal file gli editori che sono salvati
-    let editorlist = fs.readFileSync(path.resolve( 'data', 'editori.txt')).toString().split('~');
+    let editorlist = fs.readFileSync(path.resolve(__dirname, '../data', 'editori.txt')).toString().split('~');
     editorlist.sort();
 
     return editorlist
@@ -53,7 +53,7 @@ function isPresent(title, editor){
 //Funzione che restituisce un array di generi con il case giusto (Case giusto: Example, Case sbagliato: EXAMPLE)
 //TODO: Modificare i generi nel file cosi da non dover più usare questa funzione.
 function genereList(){
-    let generi = fs.readFileSync(path.resolve( 'data', 'genere.txt')).toString().split('~');
+    let generi = fs.readFileSync(path.resolve( __dirname, '../data', 'genere.txt')).toString().split('~');
 
     for (let i in generi) {
         generi[i] = generi[i].toLowerCase();

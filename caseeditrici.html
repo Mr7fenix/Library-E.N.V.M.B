@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case Editrici</title>
+</head>
+<body>
+<div id="app">
+    <div v-if="addFlag">
+        <input v-model="newEditor" type="text">
+        <button @click="add">Aggiungi</button>
+        <button @click="closePopup">Indietro</button>
+    </div>
+    <div>
+        <button @click="addPopup">Aggiungi Casa editrice</button>
+        <table>
+            <tr>
+                <th>Casa editrice</th>
+                <th>Comandi</th>
+            </tr>
+            <tr v-for="editore in editori">
+                <td>{{ editore }}</td>
+                <td>
+                    <button>Rinomina</button>
+                    <button>Elimina</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+</body>
+<script src="script/casaeditrice.js"></script>
+</html>

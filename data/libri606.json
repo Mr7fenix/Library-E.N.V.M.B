@@ -1,0 +1,3752 @@
+[
+  {
+    "name": "Notre Dame de Paris",
+    "autore": "Victor Hugo",
+    "editore": "BUR Delux",
+    "genere": "18"
+  },
+  {
+    "name": "Nel Bianco",
+    "autore": "Ken Follett",
+    "editore": "Mondadori Editore",
+    "genere": "4~17"
+  },
+  {
+    "name": "Un letto di leoni",
+    "autore": "Ken Follett",
+    "editore": "Mondadori Editore",
+    "genere": "4~5"
+  },
+  {
+    "name": "I miserabili",
+    "autore": "Victor Hugo",
+    "editore": "Newton Compton",
+    "genere": "18"
+  },
+  {
+    "name": "Casa desolata",
+    "autore": "Charles Dickens",
+    "editore": "Giulio Einaudi Editore",
+    "genere": "18"
+  },
+  {
+    "name": "Shining",
+    "autore": "Stephen King",
+    "editore": "Bompiani Editore",
+    "genere": "10"
+  },
+  {
+    "name": "Il cimitero di braga",
+    "autore": "Umberto Eco",
+    "editore": "Bompiani Editore",
+    "genere": "1~17"
+  },
+  {
+    "name": "Via dalla pazza folla",
+    "autore": "Thomas Hardy",
+    "editore": "RBA Editore",
+    "genere": "18"
+  },
+  {
+    "name": "Mary barton",
+    "autore": "Elizabeth Gaskell",
+    "editore": "RBA Editore",
+    "genere": "18"
+  },
+  {
+    "name": "Le bostoniane",
+    "autore": "Henry James",
+    "editore": "RBA Editore",
+    "genere": "18"
+  },
+  {
+    "name": "Il segreto di lady audley",
+    "autore": "Mary Elizabheth Braddon",
+    "editore": "RBA Editore",
+    "genere": "18"
+  },
+  {
+    "name": "Una coppia quasi perfetta",
+    "autore": "Emily Eden",
+    "editore": "RBA Editore",
+    "genere": "18"
+  },
+  {
+    "name": "Estate",
+    "autore": "Edith Wharton",
+    "editore": "RBA Editore",
+    "genere": "18"
+  },
+  {
+    "name": "Shirley",
+    "autore": "Charlotte Bronte",
+    "editore": "RBA Editore",
+    "genere": "18"
+  },
+  {
+    "name": "La coppa d'oro 1",
+    "autore": "Henry James",
+    "editore": "RBA Editore",
+    "genere": "18"
+  },
+  {
+    "name": "La coppa d'oro 2",
+    "autore": "Henry James",
+    "editore": "RBA Editore",
+    "genere": "18"
+  },
+  {
+    "name": "La piccola fedette",
+    "autore": "George Sand",
+    "editore": "RBA Editore",
+    "genere": "18"
+  },
+  {
+    "name": "Raggi di luna",
+    "autore": "Edith Wharton",
+    "editore": "RBA Editore",
+    "genere": "18"
+  },
+  {
+    "name": "Il sonno del crepuscolo",
+    "autore": "Edith Wharton",
+    "editore": "RBA Editore",
+    "genere": "18"
+  },
+  {
+    "name": "Lady roxana",
+    "autore": "Daniel Defoe",
+    "editore": "RBA Editore",
+    "genere": "18"
+  },
+  {
+    "name": "Silas marner",
+    "autore": "George Eliot",
+    "editore": "RBA Editore",
+    "genere": "18"
+  },
+  {
+    "name": "Una casa quasi perfetta",
+    "autore": "Emily Eden",
+    "editore": "RBA Editore",
+    "genere": "18"
+  },
+  {
+    "name": "Persuasione",
+    "autore": "Jane Austen",
+    "editore": "RBA Editore",
+    "genere": "18"
+  },
+  {
+    "name": "Anna karenina",
+    "autore": "Lev Tolstoj",
+    "editore": "RBA Editore",
+    "genere": "18"
+  },
+  {
+    "name": "La signora delle camelie",
+    "autore": "Alexandre Dumas",
+    "editore": "RBA Editore",
+    "genere": "18"
+  },
+  {
+    "name": "La lettera scarlatta",
+    "autore": "Nathaniel Hawthorne",
+    "editore": "RBA Editore",
+    "genere": "18"
+  },
+  {
+    "name": "L'abbazia di northanger",
+    "autore": "Jane Austen",
+    "editore": "RBA Editore",
+    "genere": "18"
+  },
+  {
+    "name": "Piccole donne",
+    "autore": "Louisa May Alcott",
+    "editore": "RBA Editore",
+    "genere": "18"
+  },
+  {
+    "name": "Piccole donne crescono",
+    "autore": "Louisa May Alcott",
+    "editore": "RBA Editore",
+    "genere": "18"
+  },
+  {
+    "name": "Moll flanders",
+    "autore": "Daniel Defoe",
+    "editore": "RBA Editore",
+    "genere": "18"
+  },
+  {
+    "name": "Agnes grey",
+    "autore": "Anne Bronte",
+    "editore": "RBA Editore",
+    "genere": "18"
+  },
+  {
+    "name": "Washington square",
+    "autore": "Henry James",
+    "editore": "RBA Editore",
+    "genere": "18"
+  },
+  {
+    "name": "Cime tempestose",
+    "autore": "Emily Bronte",
+    "editore": "RBA Editore",
+    "genere": "18"
+  },
+  {
+    "name": "Il mulino sulla floss",
+    "autore": "George Eliot",
+    "editore": "RBA Editore",
+    "genere": "18"
+  },
+  {
+    "name": "Orgoglio e pregiudizio",
+    "autore": "Jane Austen",
+    "editore": "RBA Editore",
+    "genere": "18"
+  },
+  {
+    "name": "Ragione e sentimento",
+    "autore": "Jane Austen",
+    "editore": "RBA Editore",
+    "genere": "18"
+  },
+  {
+    "name": "Emma",
+    "autore": "Jane Austen",
+    "editore": "RBA Editore",
+    "genere": "18"
+  },
+  {
+    "name": "Madame bovary",
+    "autore": "Gustave Flaubert",
+    "editore": "RBA Editore",
+    "genere": "18"
+  },
+  {
+    "name": "Sotto gli alberi (rba)",
+    "autore": "Thomas Hardy",
+    "editore": "RBA Editore",
+    "genere": "18"
+  },
+  {
+    "name": "Gli ambasciatori",
+    "autore": "Henry James",
+    "editore": "RBA Editore",
+    "genere": "18"
+  },
+  {
+    "name": "Middle march",
+    "autore": "George Eliot",
+    "editore": "RBA Editore",
+    "genere": "18"
+  },
+  {
+    "name": "Juvenilia",
+    "autore": "Jane Austen",
+    "editore": "RBA Editore",
+    "genere": "18"
+  },
+  {
+    "name": "L'usanza del paese",
+    "autore": "Edith Wharton",
+    "editore": "RBA Editore",
+    "genere": "18"
+  },
+  {
+    "name": "La ricompensa di una madre",
+    "autore": "Edith Wharton",
+    "editore": "RBA Editore",
+    "genere": "18"
+  },
+  {
+    "name": "Mansfield park",
+    "autore": "Jane Austen",
+    "editore": "RBA Editore",
+    "genere": "18"
+  },
+  {
+    "name": "L'età dell'innocenza",
+    "autore": "Edith Wharton",
+    "editore": "RBA Editore",
+    "genere": "18"
+  },
+  {
+    "name": "La casa della gioia",
+    "autore": "Edith Wharton",
+    "editore": "RBA Editore",
+    "genere": "18"
+  },
+  {
+    "name": "Tess dei d'urberville",
+    "autore": "Thomas Hardy",
+    "editore": "RBA Editore",
+    "genere": "18"
+  },
+  {
+    "name": "La fiera della vanità",
+    "autore": "Williamo M. Thackeray",
+    "editore": "RBA Editore",
+    "genere": "18"
+  },
+  {
+    "name": "Le relazioni pericolose",
+    "autore": "Pierre Choderlos de laclos",
+    "editore": "RBA Editore",
+    "genere": "18"
+  },
+  {
+    "name": "Lady susan i watson sanditon",
+    "autore": "Jane Austen",
+    "editore": "RBA Editore",
+    "genere": "18"
+  },
+  {
+    "name": "Nanon",
+    "autore": "George Sand",
+    "editore": "RBA Editore",
+    "genere": "18"
+  },
+  {
+    "name": "Ritratto di signora",
+    "autore": "Henry James",
+    "editore": "RBA Editore",
+    "genere": "18"
+  },
+  {
+    "name": "Jane eyre",
+    "autore": "Charlotte Bronte",
+    "editore": "RBA Editore",
+    "genere": "18"
+  },
+  {
+    "name": "Il professore",
+    "autore": "Charlotte Bronte",
+    "editore": "RBA Editore",
+    "genere": "18"
+  },
+  {
+    "name": "Cranford",
+    "autore": "Elizabeth Gaskell",
+    "editore": "RBA Editore",
+    "genere": "18"
+  },
+  {
+    "name": "La signora di wildfell",
+    "autore": "Anne Bronte",
+    "editore": "RBA Editore",
+    "genere": "18"
+  },
+  {
+    "name": "Una ghirlanda per ragazze",
+    "autore": "Louisa May Alcott",
+    "editore": "RBA Editore",
+    "genere": "18"
+  },
+  {
+    "name": "Le ali della colomba",
+    "autore": "Henry James",
+    "editore": "RBA Editore",
+    "genere": "18"
+  },
+  {
+    "name": "Il risveglio",
+    "autore": "Kate Chopin",
+    "editore": "RBA Editore",
+    "genere": "18"
+  },
+  {
+    "name": "Indiana",
+    "autore": "George Sand",
+    "editore": "RBA Editore",
+    "genere": "18"
+  },
+  {
+    "name": "Cuore",
+    "autore": "Edmondo De Anicis",
+    "editore": "Giunti Editore",
+    "genere": "18"
+  },
+  {
+    "name": "Carlo magno",
+    "autore": "F. Vittorino Joannes",
+    "editore": "Giunti Editore",
+    "genere": "18"
+  },
+  {
+    "name": "Cristofolo colombo",
+    "autore": "Leo Steiner",
+    "editore": "Del Drago editore",
+    "genere": "1"
+  },
+  {
+    "name": "I misteri della giungla nera",
+    "autore": "Emilio Salgari",
+    "editore": "Del Drago editore",
+    "genere": "5"
+  },
+  {
+    "name": "I promessi sposi",
+    "autore": "Alessandro Manzoni",
+    "editore": "Del Drago editore",
+    "genere": "1"
+  },
+  {
+    "name": "Il ritratto di dorian gray",
+    "autore": "Oscar Wilde",
+    "editore": "Bompiani Editore",
+    "genere": "3"
+  },
+  {
+    "name": "Il rosso e il nero",
+    "autore": "Stendhal",
+    "editore": "Bompiani Editore",
+    "genere": "18"
+  },
+  {
+    "name": "Memorie del sottosuolo",
+    "autore": "Fedodor Dostoevvskij",
+    "editore": "Giulio Einaudi Editore",
+    "genere": "18"
+  },
+  {
+    "name": "Il castello dei destini incrociati",
+    "autore": "Italo Calvino",
+    "editore": "Mondadori Editore",
+    "genere": "17~18"
+  },
+  {
+    "name": "Primo amore il canto dell'amore trionfante",
+    "autore": "Ivan Turgenev",
+    "editore": "BUR Delux",
+    "genere": "18"
+  },
+  {
+    "name": "Memorie di un cacciatore",
+    "autore": "Ivan Turgenev",
+    "editore": "BUR Delux",
+    "genere": "18"
+  },
+  {
+    "name": "I nostri antenati,il visconte dimenzzato,il barone rampante,il cavaliere inesistente",
+    "autore": "Italo calvino",
+    "editore": "Mondadori Editore",
+    "genere": "17"
+  },
+  {
+    "name": "La canzone di achille",
+    "autore": "Madeline Miller",
+    "editore": "Marsilio",
+    "genere": "1~8"
+  },
+  {
+    "name": "Il buio oltre la siepe",
+    "autore": "Harper Lee",
+    "editore": "Feltrinelli Editore",
+    "genere": "17"
+  },
+  {
+    "name": "La guardia bianca",
+    "autore": "Michail Bulgakov",
+    "editore": "Feltrinelli Editore",
+    "genere": "18"
+  },
+  {
+    "name": "Carmilla",
+    "autore": "J.S.Fanu",
+    "editore": "Feltrinelli Editore",
+    "genere": "3"
+  },
+  {
+    "name": "Pian della tortilla",
+    "autore": "John Steinbeck",
+    "editore": "Bompiani Editore",
+    "genere": "17~18"
+  },
+  {
+    "name": "Fahrenheit 451",
+    "autore": "Ray Bradbury",
+    "editore": "Mondadori Editore",
+    "genere": "7"
+  },
+  {
+    "name": "Il vangelo secondo gesù cristo",
+    "autore": "Josè Saramago",
+    "editore": "Feltrinelli Editore",
+    "genere": "17~18"
+  },
+  {
+    "name": "Sostiene pereira",
+    "autore": "Antonio Tabucchi",
+    "editore": "Feltrinelli Editore",
+    "genere": "17"
+  },
+  {
+    "name": "La lettera scarlatta (feltrinelli)",
+    "autore": "Nathaniel Hawthorne",
+    "editore": "Feltrinelli Editore",
+    "genere": "18"
+  },
+  {
+    "name": "Un estate con la strega dell ovest",
+    "autore": "Kaho Nashiki",
+    "editore": "Feltrinelli Editore",
+    "genere": "17"
+  },
+  {
+    "name": "L'idiota",
+    "autore": "Fedor Dostoevskij",
+    "editore": "Crescere edizioni",
+    "genere": "18"
+  },
+  {
+    "name": "Circe",
+    "autore": "Madeline Miller",
+    "editore": "Marsilio",
+    "genere": "1"
+  },
+  {
+    "name": "Ivanhoe",
+    "autore": "Walter Scott",
+    "editore": "Crescere edizioni",
+    "genere": "18"
+  },
+  {
+    "name": "Uccelli di rovo",
+    "autore": "Colleen McCullough",
+    "editore": "Bompiani Editore",
+    "genere": "13"
+  },
+  {
+    "name": "Ombre giapponesi",
+    "autore": "Lafcadio Hearn",
+    "editore": "Adelphi Edizioni",
+    "genere": "17~18"
+  },
+  {
+    "name": "L'ora delle streghe",
+    "autore": "Anna Rice",
+    "editore": "Tea Editore",
+    "genere": "3"
+  },
+  {
+    "name": "Una fortuna pericolosa",
+    "autore": "Ken Follett",
+    "editore": "Mondadori Editore",
+    "genere": "4"
+  },
+  {
+    "name": "Fu sera e fu mattina",
+    "autore": "Ken Follett",
+    "editore": "Mondadori Editore",
+    "genere": "1"
+  },
+  {
+    "name": "La colonna di fuoco",
+    "autore": "Ken Follett",
+    "editore": "Mondadori Editore",
+    "genere": "1"
+  },
+  {
+    "name": "Mondo senza fine",
+    "autore": "Ken Follett",
+    "editore": "Mondadori Editore",
+    "genere": "1"
+  },
+  {
+    "name": "I pilastri della terra",
+    "autore": "Ken Follett",
+    "editore": "Mondadori Editore",
+    "genere": "1"
+  },
+  {
+    "name": "Un letto da leoni",
+    "autore": "Ken Follett",
+    "editore": "Mondadori Editore",
+    "genere": "4"
+  },
+  {
+    "name": "Il terzo gemello",
+    "autore": "Ken Follett",
+    "editore": "Mondadori Editore",
+    "genere": "4"
+  },
+  {
+    "name": "Sulle ali delle aquile",
+    "autore": "Ken Follett",
+    "editore": "Mondadori Editore",
+    "genere": "4"
+  },
+  {
+    "name": "Un luogo chiamato libertà",
+    "autore": "Ken Follett",
+    "editore": "Mondadori Editore",
+    "genere": "1"
+  },
+  {
+    "name": "Il volo del calabrone",
+    "autore": "Ken Follett",
+    "editore": "Mondadori Editore",
+    "genere": "4"
+  },
+  {
+    "name": "Il pittore di anime",
+    "autore": "Ildefonso Falcones",
+    "editore": "Longanesi",
+    "genere": "1"
+  },
+  {
+    "name": "Gli eredi della terra",
+    "autore": "Ildefonso Falcones",
+    "editore": "Longanesi",
+    "genere": "1"
+  },
+  {
+    "name": "La mano di fatima",
+    "autore": "Ildefonso Falcones",
+    "editore": "Longanesi",
+    "genere": "1"
+  },
+  {
+    "name": "La cattedrale del mare",
+    "autore": "Ildefonso Falcones",
+    "editore": "Longanesi",
+    "genere": "1"
+  },
+  {
+    "name": "La regina scalza",
+    "autore": "Ildefonso Falcones",
+    "editore": "Longanesi",
+    "genere": "1"
+  },
+  {
+    "name": "L'eredità dell'abate nero",
+    "autore": "Marcello Simoni",
+    "editore": "Newton Compton",
+    "genere": "4"
+  },
+  {
+    "name": "I sette templari",
+    "autore": "Guido Dieckmann",
+    "editore": "Newton Compton",
+    "genere": "1"
+  },
+  {
+    "name": "Il segreto dello scrivano",
+    "autore": "Peter Harris",
+    "editore": "Newton Compton",
+    "genere": "1"
+  },
+  {
+    "name": "I medici",
+    "autore": "Matteo Strukul",
+    "editore": "Newton Compton",
+    "genere": "1"
+  },
+  {
+    "name": "I medici un uomo al potere",
+    "autore": "Matteo Strukul",
+    "editore": "Newton Compton",
+    "genere": "1"
+  },
+  {
+    "name": "I medici una regina al potere",
+    "autore": "Matteo Strukul",
+    "editore": "Newton Compton",
+    "genere": "1"
+  },
+  {
+    "name": "Assassino sul nilo",
+    "autore": "Agatha Christie",
+    "editore": "Mondadori Editore",
+    "genere": "2"
+  },
+  {
+    "name": "Salvare le ossa",
+    "autore": "Jesmyn Ward",
+    "editore": "NN editore",
+    "genere": "17"
+  },
+  {
+    "name": "L'amore al tempo del colera",
+    "autore": "Gabriel Garcia Maerquez",
+    "editore": "Mondadori Editore",
+    "genere": "17~18"
+  },
+  {
+    "name": "I buddenbrook",
+    "autore": "Thomas Mann",
+    "editore": "Mondadori Editore",
+    "genere": "17~18"
+  },
+  {
+    "name": "Amatissima",
+    "autore": "Toni Morrison",
+    "editore": "Frassinelli",
+    "genere": "17"
+  },
+  {
+    "name": "La forza della ragione",
+    "autore": "Oriana fallaci",
+    "editore": "Rizzoli",
+    "genere": "17"
+  },
+  {
+    "name": "L'apocalisse",
+    "autore": "Oriana fallaci",
+    "editore": "Rizzoli",
+    "genere": "17"
+  },
+  {
+    "name": "La rabbia e l'orgoglio",
+    "autore": "Oriana fallaci",
+    "editore": "Rizzoli",
+    "genere": "17"
+  },
+  {
+    "name": "Il piccolo principe",
+    "autore": "Antoine de Saint-Exupery",
+    "editore": "BUR Delux",
+    "genere": "12~17"
+  },
+  {
+    "name": "Frankenstein (giunti)",
+    "autore": "Mary Shelly",
+    "editore": "Giunti Editore",
+    "genere": "3"
+  },
+  {
+    "name": "Frankenstein",
+    "autore": "Mary Shelly",
+    "editore": "BUR Delux",
+    "genere": "3"
+  },
+  {
+    "name": "Il cavaliere inesistente",
+    "autore": "Italo Calvino",
+    "editore": "Mondadori Editore",
+    "genere": "17"
+  },
+  {
+    "name": "Romeo e giulietta",
+    "autore": "William Shakespeare",
+    "editore": "Garzanti Editore",
+    "genere": "18"
+  },
+  {
+    "name": "Firenze ai tempi dei medici",
+    "autore": "L Lucas Dubreton",
+    "editore": "Rizzoli",
+    "genere": "1"
+  },
+  {
+    "name": "Degli egizi e dei loro dei",
+    "autore": "la vita quotidiana",
+    "editore": "Fabri Editore",
+    "genere": "16"
+  },
+  {
+    "name": "I tre moschettieri",
+    "autore": "Alexandre Dumas",
+    "editore": "Fabri Editori",
+    "genere": "18"
+  },
+  {
+    "name": "Il conte di montecristo",
+    "autore": "Alexandre Dumas",
+    "editore": "Fabri Editori",
+    "genere": "18"
+  },
+  {
+    "name": "Le mille e una notte",
+    "autore": "Vari sconosciuti",
+    "editore": "Fabri Editori",
+    "genere": "17~18"
+  },
+  {
+    "name": "Il canto di natale (gribaudo)",
+    "autore": "Charles Dickens",
+    "editore": "Feltrinelli Editore",
+    "genere": "18"
+  },
+  {
+    "name": "Le mille e una notte vol.2",
+    "autore": "narratori sconosciuti",
+    "editore": "Fabri Editori",
+    "genere": "18"
+  },
+  {
+    "name": "Vita su un pianeta nervoso",
+    "autore": "Matt Haig",
+    "editore": "E/O edizione",
+    "genere": "16"
+  },
+  {
+    "name": "La biblioteca di mezza notte",
+    "autore": "Matt Haig",
+    "editore": "E/O edizione",
+    "genere": "8"
+  },
+  {
+    "name": "Di notte sotto il ponte di pietra",
+    "autore": "Leo Perutz",
+    "editore": "E/O edizione",
+    "genere": "17"
+  },
+  {
+    "name": "Cassandra",
+    "autore": "Christa Wolf",
+    "editore": "E/O edizione",
+    "genere": "17"
+  },
+  {
+    "name": "Ho servito il re d'aianghilterra",
+    "autore": "Bohumil Hrabal",
+    "editore": "E/O edizione",
+    "genere": "17"
+  },
+  {
+    "name": "L'illuminazione del susino selvatico",
+    "autore": "Shokoofeh Azar",
+    "editore": "E/O edizione",
+    "genere": "17"
+  },
+  {
+    "name": "Come fermare il tempo",
+    "autore": "Matt Haig",
+    "editore": "E/O edizione",
+    "genere": "8"
+  },
+  {
+    "name": "La follia mazzarino",
+    "autore": "Michel Bussi",
+    "editore": "E/O edizione",
+    "genere": "3"
+  },
+  {
+    "name": "Anna karenina (garzanti)",
+    "autore": "Lev Tolstoj",
+    "editore": "Garzanti Editore",
+    "genere": "18"
+  },
+  {
+    "name": "Guerra e pace",
+    "autore": "Emily Eden",
+    "editore": "Garzanti Editore",
+    "genere": "18"
+  },
+  {
+    "name": "Lynn picknett",
+    "autore": "Lynn Picknett",
+    "editore": "Editori Riuniti",
+    "genere": "16"
+  },
+  {
+    "name": "L'incredibile scoperta dell'arca di noè",
+    "autore": "charles Sellier David Balsiger",
+    "editore": "Piemme",
+    "genere": "17"
+  },
+  {
+    "name": "La grande storia di gesù",
+    "autore": "Sandro Mayer",
+    "editore": "Editori Riuniti",
+    "genere": "17"
+  },
+  {
+    "name": "Vicolo della duchessa",
+    "autore": "sveva Casati mondignani",
+    "editore": "Sperling e Kupfer editori",
+    "genere": "13"
+  },
+  {
+    "name": "Vento dell'est",
+    "autore": "M.M. Kaye",
+    "editore": "Sperling e Kupfer editori",
+    "genere": "13"
+  },
+  {
+    "name": "I giorni dell'addio",
+    "autore": "Noel Barber",
+    "editore": "Sperling e Kupfer editori",
+    "genere": "13"
+  },
+  {
+    "name": "Ai tempi dei cavlieri della tavola rotonda",
+    "autore": "Michel Pastoureau",
+    "editore": "BUR Delux",
+    "genere": "16"
+  },
+  {
+    "name": "In grecia ai tempi della guerra di troia",
+    "autore": "PaulFaure",
+    "editore": "BUR Delux",
+    "genere": "16"
+  },
+  {
+    "name": "L'estate di katia",
+    "autore": "Trevanian",
+    "editore": "Rizzoli",
+    "genere": "13"
+  },
+  {
+    "name": "Dove finisce l'arcobaleno",
+    "autore": "Wilbur Smith",
+    "editore": "Longanesi",
+    "genere": "5"
+  },
+  {
+    "name": "Il signore delle mosche",
+    "autore": "William Golding",
+    "editore": "Mondadori Editore",
+    "genere": "17"
+  },
+  {
+    "name": "I fu mattia pascal,l'esclusa,suo marito",
+    "autore": "Pirandello",
+    "editore": "Newton Compton",
+    "genere": "18"
+  },
+  {
+    "name": "Thor e il potere di mjolnir",
+    "autore": "sconosciuto",
+    "editore": "RBA Editore",
+    "genere": "8~17"
+  },
+  {
+    "name": "L-amante di lady chatterley",
+    "autore": "David Herbert Lawrence",
+    "editore": "De Agostini Editore",
+    "genere": "18"
+  },
+  {
+    "name": "Cime tempestose (de agostini)",
+    "autore": "Emily Bronte",
+    "editore": "De Agostini Editore",
+    "genere": "18"
+  },
+  {
+    "name": "Il deserto dei tarari",
+    "autore": "Dino Buzzati",
+    "editore": "De Agostini Editore",
+    "genere": "18"
+  },
+  {
+    "name": "Il vecchio e il mare",
+    "autore": "Ernest hemingway",
+    "editore": "De Agostini Editore",
+    "genere": "18"
+  },
+  {
+    "name": "La figlia di mistral",
+    "autore": "Judith Krantz",
+    "editore": "De Agostini Editore",
+    "genere": "18"
+  },
+  {
+    "name": "Il nostro agente dell'avana",
+    "autore": "Graham Greene",
+    "editore": "De Agostini Editore",
+    "genere": "18"
+  },
+  {
+    "name": "Cronache marziane",
+    "autore": "Ray Bradbury",
+    "editore": "De Agostini Editore",
+    "genere": "18"
+  },
+  {
+    "name": "Un amore",
+    "autore": "Dino Buzzati",
+    "editore": "De Agostini Editore",
+    "genere": "18"
+  },
+  {
+    "name": "Mar morto",
+    "autore": "Jorge Amado",
+    "editore": "De Agostini Editore",
+    "genere": "18"
+  },
+  {
+    "name": "Ti con zero",
+    "autore": "Italo calvino",
+    "editore": "De Agostini Editore",
+    "genere": "18"
+  },
+  {
+    "name": "L'isola di arturo",
+    "autore": "Elsa Morante",
+    "editore": "De Agostini Editore",
+    "genere": "18"
+  },
+  {
+    "name": "Illusioni d'amore",
+    "autore": "Cynthia Freeman",
+    "editore": "De Agostini Editore",
+    "genere": "18"
+  },
+  {
+    "name": "1q84 libro aprile settembre",
+    "autore": "Murakami Haruki",
+    "editore": "Giulio Einaudi Editore",
+    "genere": "8~17"
+  },
+  {
+    "name": "1q84 ottobre dicembre",
+    "autore": "Murakami Haruki",
+    "editore": "Giulio Einaudi Editore",
+    "genere": "8~17"
+  },
+  {
+    "name": "Isalici ciechi e la donna addormentata",
+    "autore": "Murakami Haruki",
+    "editore": "Giulio Einaudi Editore",
+    "genere": "17"
+  },
+  {
+    "name": "A sud del confine,a ovest del sole",
+    "autore": "Murakami Haruki",
+    "editore": "Giulio Einaudi Editore",
+    "genere": "17"
+  },
+  {
+    "name": "After dark",
+    "autore": "Murakami Haruki",
+    "editore": "Giulio Einaudi Editore",
+    "genere": "17"
+  },
+  {
+    "name": "L'incolore tazaki tsukuru e i suoi anni di pelligrinaggio",
+    "autore": "Murakami Haruki",
+    "editore": "Giulio Einaudi Editore",
+    "genere": "17"
+  },
+  {
+    "name": "Uomini senza donne",
+    "autore": "Murakami Haruki",
+    "editore": "Giulio Einaudi Editore",
+    "genere": "17"
+  },
+  {
+    "name": "Vento e flipper",
+    "autore": "Murakami Haruki",
+    "editore": "Giulio Einaudi Editore",
+    "genere": "17"
+  },
+  {
+    "name": "Nel segno della pecora",
+    "autore": "Murakami Haruki",
+    "editore": "Giulio Einaudi Editore",
+    "genere": "17"
+  },
+  {
+    "name": "Kafka sulla spiaggia",
+    "autore": "Murakami Haruki",
+    "editore": "Giulio Einaudi Editore",
+    "genere": "3~17"
+  },
+  {
+    "name": "L'uccello che girava le viti del mondo",
+    "autore": "Murakami Haruki",
+    "editore": "Giulio Einaudi Editore",
+    "genere": "17"
+  },
+  {
+    "name": "La fine del mondo e il paese delle meraviglie",
+    "autore": "Murakami Haruki",
+    "editore": "Giulio Einaudi Editore",
+    "genere": "8~17"
+  },
+  {
+    "name": "Norwegian wood",
+    "autore": "Murakami Haruki",
+    "editore": "Giulio Einaudi Editore",
+    "genere": "17"
+  },
+  {
+    "name": "L'assassino del commendatore libro pimo",
+    "autore": "Murakami Haruki",
+    "editore": "Giulio Einaudi Editore",
+    "genere": "3~17"
+  },
+  {
+    "name": "Lassassino del commendadore libro secondo",
+    "autore": "Murakami Haruki",
+    "editore": "Giulio Einaudi Editore",
+    "genere": "3~17"
+  },
+  {
+    "name": "Sabato",
+    "autore": "Ian McEwan",
+    "editore": "Giulio Einaudi Editore",
+    "genere": "17"
+  },
+  {
+    "name": "Nel guscio",
+    "autore": "Ian McEwan",
+    "editore": "Giulio Einaudi Editore",
+    "genere": "17"
+  },
+  {
+    "name": "Macchine come me",
+    "autore": "Ian McEwan",
+    "editore": "Giulio Einaudi Editore",
+    "genere": "17"
+  },
+  {
+    "name": "Espiazione",
+    "autore": "Ian McEwan",
+    "editore": "Giulio Einaudi Editore",
+    "genere": "17"
+  },
+  {
+    "name": "Solar",
+    "autore": "Ian McEwan",
+    "editore": "Giulio Einaudi Editore",
+    "genere": "17"
+  },
+  {
+    "name": "La strada",
+    "autore": "Cormac McCarthy",
+    "editore": "Giulio Einaudi Editore",
+    "genere": "17"
+  },
+  {
+    "name": "Delitto e castigo",
+    "autore": "Fedor Dostoevskij",
+    "editore": "Giulio Einaudi Editore",
+    "genere": "18"
+  },
+  {
+    "name": "La chimera",
+    "autore": "Sebastiano Vassalli",
+    "editore": "Giulio Einaudi Editore",
+    "genere": "18"
+  },
+  {
+    "name": "4321",
+    "autore": "Paul Auster",
+    "editore": "Giulio Einaudi Editore",
+    "genere": "17"
+  },
+  {
+    "name": "La sirena e mr hancock",
+    "autore": "Imogen Hermes Gowar",
+    "editore": "Giulio Einaudi Editore",
+    "genere": "17"
+  },
+  {
+    "name": "Il petalo cremisi e il bianco",
+    "autore": "Michael Faber",
+    "editore": "Giulio Einaudi Editore",
+    "genere": "17~18"
+  },
+  {
+    "name": "Il conte di montecristo(mondadori)",
+    "autore": "Alexandre Dumas",
+    "editore": "Mondadori Editore",
+    "genere": "18"
+  },
+  {
+    "name": "Dannati",
+    "autore": "Glenn Cooper",
+    "editore": "Nord",
+    "genere": "4~8"
+  },
+  {
+    "name": "La porta delle tenabre",
+    "autore": "Glenn Cooper",
+    "editore": "Nord",
+    "genere": "4~8"
+  },
+  {
+    "name": "L'invasione delle tenebre",
+    "autore": "Glenn Cooper",
+    "editore": "Nord",
+    "genere": "4~8"
+  },
+  {
+    "name": "Il calice della vita",
+    "autore": "Glenn Cooper",
+    "editore": "Nord",
+    "genere": "4"
+  },
+  {
+    "name": "Il marchio del diavolo",
+    "autore": "Glenn Cooper",
+    "editore": "Nord",
+    "genere": "4"
+  },
+  {
+    "name": "L'ultimo giorno",
+    "autore": "Glenn Cooper",
+    "editore": "Nord",
+    "genere": "4"
+  },
+  {
+    "name": "La biblioteca dei morti",
+    "autore": "Glenn Cooper",
+    "editore": "Nord",
+    "genere": "4"
+  },
+  {
+    "name": "Il libro delle anime",
+    "autore": "Glenn Cooper",
+    "editore": "Nord",
+    "genere": "4"
+  },
+  {
+    "name": "Il segno della croce",
+    "autore": "Glenn Cooper",
+    "editore": "Nord",
+    "genere": "4"
+  },
+  {
+    "name": "Il debito",
+    "autore": "Glenn Cooper",
+    "editore": "Nord",
+    "genere": "4"
+  },
+  {
+    "name": "I custodi della biblioteca",
+    "autore": "Glenn Cooper",
+    "editore": "Nord",
+    "genere": "4"
+  },
+  {
+    "name": "La verità del ghiaccio",
+    "autore": "Dan Brown",
+    "editore": "Mondadori Editore",
+    "genere": "4"
+  },
+  {
+    "name": "Crypto",
+    "autore": "Dan Brown",
+    "editore": "Mondadori Editore",
+    "genere": "4"
+  },
+  {
+    "name": "Il simbolo perduto",
+    "autore": "Dan Brown",
+    "editore": "Mondadori Editore",
+    "genere": "4"
+  },
+  {
+    "name": "Origin",
+    "autore": "Dan Brown",
+    "editore": "Mondadori Editore",
+    "genere": "4"
+  },
+  {
+    "name": "Angeli e demoni",
+    "autore": "Dan Brown",
+    "editore": "Mondadori Editore",
+    "genere": "4"
+  },
+  {
+    "name": "Il codice da vinci",
+    "autore": "Dan Brown",
+    "editore": "Mondadori Editore",
+    "genere": "4"
+  },
+  {
+    "name": "Inferno",
+    "autore": "Dan Brown",
+    "editore": "Mondadori Editore",
+    "genere": "4"
+  },
+  {
+    "name": "Il cavaliere d'inverno",
+    "autore": "Paullina Simons",
+    "editore": "Sonzogno editore",
+    "genere": "13"
+  },
+  {
+    "name": "Tatiana e alexander",
+    "autore": "Paullina Simons",
+    "editore": "Sonzogno editore",
+    "genere": "13"
+  },
+  {
+    "name": "Il giardino",
+    "autore": "d'estate",
+    "editore": "Sonzogno editore",
+    "genere": "13"
+  },
+  {
+    "name": "La ragazza scomparsa",
+    "autore": "Shirley Jackson",
+    "editore": "Adelphi Edizioni",
+    "genere": "3"
+  },
+  {
+    "name": "L'incubo di hill house",
+    "autore": "Shirley Jackson",
+    "editore": "Adelphi Edizioni",
+    "genere": "3"
+  },
+  {
+    "name": "Lizzie",
+    "autore": "Shirley Jackson",
+    "editore": "Adelphi Edizioni",
+    "genere": "3"
+  },
+  {
+    "name": "Abbiamo sempre vissuto nel castello",
+    "autore": "Shirley Jackson",
+    "editore": "Adelphi Edizioni",
+    "genere": "3"
+  },
+  {
+    "name": "L'uomo che scambiò sua moglie per un cappello",
+    "autore": "Oliver Sacks",
+    "editore": "Adelphi Edizioni",
+    "genere": "16~17"
+  },
+  {
+    "name": "Vita e destino",
+    "autore": "Vasilij Grossman",
+    "editore": "Adelphi Edizioni",
+    "genere": "18"
+  },
+  {
+    "name": "Martin chuzzlewit",
+    "autore": "Charles Dickens",
+    "editore": "Adelphi Edizioni",
+    "genere": "18"
+  },
+  {
+    "name": "Il circolo pickwick",
+    "autore": "Charles Dickens",
+    "editore": "Adelphi Edizioni",
+    "genere": "18"
+  },
+  {
+    "name": "La piccola dorrit",
+    "autore": "Charles Dickens",
+    "editore": "Giulio Einaudi Editore",
+    "genere": "18"
+  },
+  {
+    "name": "Da leggersi all'imbrunire",
+    "autore": "Charles Dickens",
+    "editore": "Giulio Einaudi Editore",
+    "genere": "18"
+  },
+  {
+    "name": "Le anime morte",
+    "autore": "Nikolaj Gogol",
+    "editore": "Giulio Einaudi Editore",
+    "genere": "18"
+  },
+  {
+    "name": "Il castello di otranto",
+    "autore": "Horace Walpole",
+    "editore": "Rusconi libri Editore",
+    "genere": "18"
+  },
+  {
+    "name": "Il castello",
+    "autore": "Franz Kafka",
+    "editore": "Rusconi libri Editore",
+    "genere": "18"
+  },
+  {
+    "name": "Il giro di vite",
+    "autore": "Henry James",
+    "editore": "Rusconi libri Editore",
+    "genere": "18"
+  },
+  {
+    "name": "L'assassinio di rue saint-roch",
+    "autore": "Alexandre Dumas",
+    "editore": "Editori Riuniti",
+    "genere": "18"
+  },
+  {
+    "name": "Le luci di atlantide",
+    "autore": "Marion Zimmer Bradley",
+    "editore": "Tea Editore",
+    "genere": "8"
+  },
+  {
+    "name": "Pastorale americana",
+    "autore": "Philip Roth",
+    "editore": "Giulio Einaudi Editore",
+    "genere": "17"
+  },
+  {
+    "name": "The dome",
+    "autore": "Stephen King",
+    "editore": "Pickwick",
+    "genere": "10"
+  },
+  {
+    "name": "Una stanza piena di gente",
+    "autore": "Daniel Keyes",
+    "editore": "Nord",
+    "genere": "0"
+  },
+  {
+    "name": "Le case infestate",
+    "autore": "Camille Flammarion",
+    "editore": "Editori Riuniti",
+    "genere": "3~16"
+  },
+  {
+    "name": "Il romanzo della foresta",
+    "autore": "Ann Radcliffe",
+    "editore": "Elliot",
+    "genere": "3~4"
+  },
+  {
+    "name": "Romanzo siciliano",
+    "autore": "Ann Radcliffe",
+    "editore": "Superbeat",
+    "genere": "3~4"
+  },
+  {
+    "name": "Lo scudo di talos",
+    "autore": "Valerio Massimo Manfredi",
+    "editore": "Mondadori Editore",
+    "genere": "1"
+  },
+  {
+    "name": "Shogun",
+    "autore": "james Clavell",
+    "editore": "Bompiani Editore",
+    "genere": "1"
+  },
+  {
+    "name": "Tai-pan",
+    "autore": "james Clavell",
+    "editore": "Bompiani Editore",
+    "genere": "1"
+  },
+  {
+    "name": "Gai-jin",
+    "autore": "james Clavell",
+    "editore": "Bompiani Editore",
+    "genere": "1"
+  },
+  {
+    "name": "La valle dell'eden",
+    "autore": "John Steinbeck",
+    "editore": "Bompiani Editore",
+    "genere": "1~18"
+  },
+  {
+    "name": "Furore",
+    "autore": "John Steinbeck",
+    "editore": "Bompiani Editore",
+    "genere": "1~18"
+  },
+  {
+    "name": "Uomini e topi",
+    "autore": "John Steinbeck",
+    "editore": "Bompiani Editore",
+    "genere": "17~18"
+  },
+  {
+    "name": "La peste",
+    "autore": "Albbert Camus",
+    "editore": "Bompiani Editore",
+    "genere": "17"
+  },
+  {
+    "name": "Gli ultimi giorni dei nostri padri",
+    "autore": "Joel Decker",
+    "editore": "Bompiani Editore",
+    "genere": "17"
+  },
+  {
+    "name": "La verità sul caso harry quebert",
+    "autore": "Joel Decker",
+    "editore": "Bompiani Editore",
+    "genere": "3~17"
+  },
+  {
+    "name": "La regina delle nevi",
+    "autore": "Michael Cunningham",
+    "editore": "Bompiani Editore",
+    "genere": "17"
+  },
+  {
+    "name": "Alberto moravia",
+    "autore": "Gli indifferenti",
+    "editore": "Bompiani Editore",
+    "genere": "17"
+  },
+  {
+    "name": "Loney",
+    "autore": "Andrew Michael Hurley",
+    "editore": "Bompiani Editore",
+    "genere": "17"
+  },
+  {
+    "name": "Il miniaturista",
+    "autore": "Jessie Burton",
+    "editore": "Bompiani Editore",
+    "genere": "1"
+  },
+  {
+    "name": "Lascia dire alle ombre",
+    "autore": "Jess Kidd",
+    "editore": "Bompiani Editore",
+    "genere": "3"
+  },
+  {
+    "name": "La divina commedia",
+    "autore": "Dante Alighieri",
+    "editore": "Centauria",
+    "genere": "18"
+  },
+  {
+    "name": "Le cinque donne",
+    "autore": "Hallie Rubenhold",
+    "editore": "Neri Pozza",
+    "genere": "1~16"
+  },
+  {
+    "name": "Le sette morti di evelyn hardcastle",
+    "autore": "Stuart Turton",
+    "editore": "Neri Pozza",
+    "genere": "2~3"
+  },
+  {
+    "name": "La lunga vita di marianna ucria",
+    "autore": "Dacia Maraini",
+    "editore": "Rizzoli",
+    "genere": "17~18"
+  },
+  {
+    "name": "Storia di una ladra di libri",
+    "autore": "Markus Zusak",
+    "editore": "Frassinelli",
+    "genere": "1"
+  },
+  {
+    "name": "Le nebbie di avalon",
+    "autore": "Marion Zimmer Bradley",
+    "editore": "HarperCollins Italia Editore",
+    "genere": "8"
+  },
+  {
+    "name": "Sedici alberi",
+    "autore": "Lars Mytting",
+    "editore": "De Agostini Editore",
+    "genere": "17"
+  },
+  {
+    "name": "Il mago m",
+    "autore": "Renè Barjavel",
+    "editore": "L'orma Editore",
+    "genere": "8"
+  },
+  {
+    "name": "Il libro oscuro",
+    "autore": "Gordon Dahlquist",
+    "editore": "Bompiani Editore",
+    "genere": "3~4"
+  },
+  {
+    "name": "L'ultimo faraone",
+    "autore": "Wilbur Smith",
+    "editore": "Longanesi",
+    "genere": "1"
+  },
+  {
+    "name": "Il peso dell'inchiostro",
+    "autore": "Rachel Kadish",
+    "editore": "Neri Pozza",
+    "genere": "17"
+  },
+  {
+    "name": "Il serpente dell'essex",
+    "autore": "Sara Perry",
+    "editore": "Neri Pozza",
+    "genere": "17~18"
+  },
+  {
+    "name": "Tutti i racconti del mistero dell'incubo e del terrore",
+    "autore": "E.A.Poe",
+    "editore": "Newton Compton",
+    "genere": "3"
+  },
+  {
+    "name": "Gli eredi dell'eden",
+    "autore": "Wilbur Smith",
+    "editore": "Longanesi",
+    "genere": "5"
+  },
+  {
+    "name": "Alle fonti del nilo",
+    "autore": "Wilbur Smith",
+    "editore": "Longanesi",
+    "genere": "5"
+  },
+  {
+    "name": "Figli del nilo",
+    "autore": "Wilbur Smith",
+    "editore": "Longanesi",
+    "genere": "5"
+  },
+  {
+    "name": "Il settimo papiro",
+    "autore": "Wilbur Smith",
+    "editore": "Longanesi",
+    "genere": "5"
+  },
+  {
+    "name": "Il dio del fiume",
+    "autore": "Wilbur Smith",
+    "editore": "Longanesi",
+    "genere": "5"
+  },
+  {
+    "name": "Langolo dei lettori ribelli",
+    "autore": "Rebecca Mkkai",
+    "editore": "Piemme",
+    "genere": "17"
+  },
+  {
+    "name": "Miss peregrine la casa dei ragazzi speciali",
+    "autore": "Ransom Riggs",
+    "editore": "Rizzoli",
+    "genere": "8"
+  },
+  {
+    "name": "Hollow city il secondo libro di miss peregrine la casa dei ragazzi speciali",
+    "autore": "Ransom Riggs",
+    "editore": "Rizzoli",
+    "genere": "8"
+  },
+  {
+    "name": "Uccellino del paradiso",
+    "autore": "Joyce Carol Oates",
+    "editore": "Mondadori Editore",
+    "genere": "3"
+  },
+  {
+    "name": "Ipazia la vera storia",
+    "autore": "Silvia Ronchey",
+    "editore": "Rizzoli",
+    "genere": "16"
+  },
+  {
+    "name": "L''uomouomo della pioggia",
+    "autore": "John Grisham",
+    "editore": "Mondadori Editore",
+    "genere": "2~4"
+  },
+  {
+    "name": "La riscossa del guerriero di bambù (il battello a vapore)per ragazzi",
+    "autore": "Tommaso Percivale",
+    "editore": "Piemme",
+    "genere": "8~17"
+  },
+  {
+    "name": "Twilight",
+    "autore": "Stephenie Meyer",
+    "editore": "Fazi editore",
+    "genere": "8"
+  },
+  {
+    "name": "Assassin's creed",
+    "autore": "Black Flag",
+    "editore": "Sperling e Kupfer editori",
+    "genere": "1~5~6~8"
+  },
+  {
+    "name": "Will moogley il fantasma del grattacelo (il battello a vapore) narrativa per ragazzi",
+    "autore": "Pierdomenico Baccalario",
+    "editore": "Piemme",
+    "genere": "8~17"
+  },
+  {
+    "name": "Il maestro di fulmini (il battello a vapore)narrativa per ragazzi",
+    "autore": "Ulisses Moore",
+    "editore": "Piemme",
+    "genere": "2~4~5"
+  },
+  {
+    "name": "L'arte di essere fragili",
+    "autore": "Alessandro D'Avenia",
+    "editore": "Mondadori Editore",
+    "genere": "17"
+  },
+  {
+    "name": "Il gusto proibito dello zenzero",
+    "autore": "Jamie Ford",
+    "editore": "Garzanti Editore",
+    "genere": "1"
+  },
+  {
+    "name": "Come un fiore ribelle",
+    "autore": "Jamie Ford",
+    "editore": "Garzanti Editore",
+    "genere": "1"
+  },
+  {
+    "name": "A passo di gambero",
+    "autore": "Umberto Eco",
+    "editore": "Bompiani Editore",
+    "genere": "16"
+  },
+  {
+    "name": "Il pendolo di foucault",
+    "autore": "Umberto Eco",
+    "editore": "Bompiani Editore",
+    "genere": "1"
+  },
+  {
+    "name": "Budolino",
+    "autore": "Umberto Eco",
+    "editore": "Bompiani Editore",
+    "genere": "1"
+  },
+  {
+    "name": "Il secondo diario minimo",
+    "autore": "Umberto Eco",
+    "editore": "Bompiani Editore",
+    "genere": "16"
+  },
+  {
+    "name": "Il nome della rosa",
+    "autore": "Umberto Eco",
+    "editore": "Bompiani Editore",
+    "genere": "1~4"
+  },
+  {
+    "name": "L'isola del giorno prima",
+    "autore": "Umberto Eco",
+    "editore": "Bompiani Editore",
+    "genere": "1"
+  },
+  {
+    "name": "La misteriosa fiamma della regina loana",
+    "autore": "Umberto Eco",
+    "editore": "Bompiani Editore",
+    "genere": "17"
+  },
+  {
+    "name": "Ai confini del mare",
+    "autore": "Patrick O'brian",
+    "editore": "Longanesi",
+    "genere": "5"
+  },
+  {
+    "name": "Il giro del mondo in 80 giorni(2 libri collezione hetzel)",
+    "autore": "Jules Verne",
+    "editore": "RBA Editore",
+    "genere": "6"
+  },
+  {
+    "name": "Lisola misteriosa(2 libri collezione hetzel)",
+    "autore": "Jules Verne",
+    "editore": "RBA Editore",
+    "genere": "6"
+  },
+  {
+    "name": "La casa a vapore (hetzel)",
+    "autore": "Jules Verne",
+    "editore": "RBA Editore",
+    "genere": "6"
+  },
+  {
+    "name": "Le avventure del capitano hatterras (hetzel)",
+    "autore": "Jules Verne",
+    "editore": "RBA Editore",
+    "genere": "6"
+  },
+  {
+    "name": "Cinque settimane in pallone (2libri collezione hetzel)",
+    "autore": "Jules Verne",
+    "editore": "RBA Editore",
+    "genere": "6"
+  },
+  {
+    "name": "Viaggio al centro della terra(2libri collezione hetzel)",
+    "autore": "Jules Verne",
+    "editore": "RBA Editore",
+    "genere": "6"
+  },
+  {
+    "name": "20000 leghe sotto i mari (2 libri collezionehetzel)",
+    "autore": "Jules Verne",
+    "editore": "RBA Editore",
+    "genere": "6"
+  },
+  {
+    "name": "Michele strogoff (hetzel)",
+    "autore": "Jules Verne",
+    "editore": "RBA Editore",
+    "genere": "6"
+  },
+  {
+    "name": "La caccia alla meteora (hetzel)",
+    "autore": "Jules Verne",
+    "editore": "RBA Editore",
+    "genere": "6"
+  },
+  {
+    "name": "La strada per la francia (hetzel)",
+    "autore": "Jules Verne",
+    "editore": "RBA Editore",
+    "genere": "6"
+  },
+  {
+    "name": "I naufragi del chancellor(hetzel)",
+    "autore": "Jules Verne",
+    "editore": "RBA Editore",
+    "genere": "6"
+  },
+  {
+    "name": "La scuola dei robinson (hetzel)",
+    "autore": "Jules Verne",
+    "editore": "RBA Editore",
+    "genere": "6"
+  },
+  {
+    "name": "Dalla terra alla luna (2libri collezione hetzel)",
+    "autore": "Jules Verne",
+    "editore": "RBA Editore",
+    "genere": "6"
+  },
+  {
+    "name": "Ifigli del capitano grant volume 1 (hetzel)        1",
+    "autore": "Jules Verne",
+    "editore": "RBA Editore",
+    "genere": "6"
+  },
+  {
+    "name": "Il paese delle pellicce (hetzel)",
+    "autore": "Jules Verne",
+    "editore": "RBA Editore",
+    "genere": "6"
+  },
+  {
+    "name": "Avventure di tre russi e tre inglesi nell'africa australe(hetzel)",
+    "autore": "Jules Verne",
+    "editore": "RBA Editore",
+    "genere": "6"
+  },
+  {
+    "name": "Le tigri di mompracen",
+    "autore": "Emilio Salgari",
+    "editore": "Mondadori Editore",
+    "genere": "5~18"
+  },
+  {
+    "name": "Sandocan alla riscossa",
+    "autore": "Emilio Salgari",
+    "editore": "RBA Editore",
+    "genere": "5~18"
+  },
+  {
+    "name": "La macchina del tempo",
+    "autore": "H.G.Wells",
+    "editore": "RBA Editore",
+    "genere": "6"
+  },
+  {
+    "name": "Via col vento",
+    "autore": "Margaret Mitchell",
+    "editore": "Mondadori Editore",
+    "genere": "1~18"
+  },
+  {
+    "name": "Shadowhunters (città di ossa)",
+    "autore": "Cassandra Clare",
+    "editore": "Mondadori Editore",
+    "genere": "8"
+  },
+  {
+    "name": "Shadowhunters (città di cenere)",
+    "autore": "Cassandra Clare",
+    "editore": "Mondadori Editore",
+    "genere": "8"
+  },
+  {
+    "name": "Shadowhunters (città di vetro)",
+    "autore": "Cassandra Clare",
+    "editore": "Mondadori Editore",
+    "genere": "8"
+  },
+  {
+    "name": "Shadowhunters (città degli angeli caduti)",
+    "autore": "Cassandra Clare",
+    "editore": "Mondadori Editore",
+    "genere": "8"
+  },
+  {
+    "name": "Shadowhunters (citta delle anime perdute)",
+    "autore": "Cassandra Clare",
+    "editore": "Mondadori Editore",
+    "genere": "8"
+  },
+  {
+    "name": "Shadowhuunters - le origini- (l'angelo)   o",
+    "autore": "Cassandra Clare",
+    "editore": "Mondadori Editore",
+    "genere": "8"
+  },
+  {
+    "name": "Shadowhunters -le origini- (il principe)                                      ",
+    "autore": "Cassandra Clare",
+    "editore": "De Agostini Editore",
+    "genere": "8"
+  },
+  {
+    "name": "Shadowhunters -le origini- (la principessa)",
+    "autore": "Cassandra Clare",
+    "editore": "Mondadori Editore",
+    "genere": "8"
+  },
+  {
+    "name": "Shadowhunters (città del fuoco celeste)",
+    "autore": "Cassandra Clare",
+    "editore": "Mondadori Editore",
+    "genere": "8"
+  },
+  {
+    "name": "Shadowhunters (le cronache di magnus bane)",
+    "autore": "Cassandra Clare",
+    "editore": "Mondadori Editore",
+    "genere": "8"
+  },
+  {
+    "name": "Shadowhunters(le cronache dell'accademia)",
+    "autore": "Cassandra Clare",
+    "editore": "Mondadori Editore",
+    "genere": "8"
+  },
+  {
+    "name": "Shadowhumters (signora della mezzanotte)",
+    "autore": "Cassandra Clare",
+    "editore": "Mondadori Editore",
+    "genere": "8"
+  },
+  {
+    "name": "Shadowhunters (signore delle ombre)",
+    "autore": "Cassandra Clare",
+    "editore": "Mondadori Editore",
+    "genere": "8"
+  },
+  {
+    "name": "Magisterium l'anno di ferro",
+    "autore": "Cassandra Clare Holly Black",
+    "editore": "Mondadori Editore",
+    "genere": "8"
+  },
+  {
+    "name": "Questo canto selvaggio",
+    "autore": "Victoria Schwab",
+    "editore": "Giunti Editore",
+    "genere": "8"
+  },
+  {
+    "name": "Legend",
+    "autore": "Victoria Schwab",
+    "editore": "Newton Compton",
+    "genere": "8"
+  },
+  {
+    "name": "Magic",
+    "autore": "Victoria Schwab",
+    "editore": "Newton Compton",
+    "genere": "8"
+  },
+  {
+    "name": "Talon",
+    "autore": "Julie Kagawa",
+    "editore": "Mondadori Editore",
+    "genere": "8"
+  },
+  {
+    "name": "Rogue",
+    "autore": "Julie Kagawa",
+    "editore": "HarperCollins Italia Editore",
+    "genere": "8"
+  },
+  {
+    "name": "Divergent",
+    "autore": "Veronica Roth",
+    "editore": "De Agostini Editore",
+    "genere": "6"
+  },
+  {
+    "name": "I segreti di nicholas flamel l'immortale",
+    "autore": "Michael Scott",
+    "editore": "Mondadori Editore",
+    "genere": "8~18"
+  },
+  {
+    "name": "Il regno diviso",
+    "autore": "Rubert Thomson",
+    "editore": "Editori Riuniti",
+    "genere": "17"
+  },
+  {
+    "name": "Maze runner il codice",
+    "autore": "James Dashner",
+    "editore": "Fanucci Editore",
+    "genere": "6"
+  },
+  {
+    "name": "Maze runner il labirinto",
+    "autore": "James Dashner",
+    "editore": "Fanucci Editore",
+    "genere": "6"
+  },
+  {
+    "name": "Maze ranner la fuga",
+    "autore": "James Dashner",
+    "editore": "Fanucci Editore",
+    "genere": "6"
+  },
+  {
+    "name": "Maze runner",
+    "autore": "James Dashner",
+    "editore": "Fanucci Editore",
+    "genere": "6"
+  },
+  {
+    "name": "Maze runner la mutazione",
+    "autore": "James Dashner",
+    "editore": "Fanucci Editore",
+    "genere": "6"
+  },
+  {
+    "name": "Virtnet runner il gioco della vita",
+    "autore": "James Dashner",
+    "editore": "Fanucci Editore",
+    "genere": "6"
+  },
+  {
+    "name": "Virtnet runner il programma",
+    "autore": "James Dashner",
+    "editore": "Fanucci Editore",
+    "genere": "6"
+  },
+  {
+    "name": "Virtnet runner",
+    "autore": "James Dashner",
+    "editore": "Fanucci Editore",
+    "genere": "6"
+  },
+  {
+    "name": "Spiderwick le cronache",
+    "autore": "Holly Black Tony Di Terlizzi",
+    "editore": "Mondadori Editore",
+    "genere": "8"
+  },
+  {
+    "name": "Sherlock holmes nube mortale",
+    "autore": "Andrew Lane",
+    "editore": "De Agostini Editore",
+    "genere": "2"
+  },
+  {
+    "name": "Quanta stella c'è nel cielo",
+    "autore": "Edith Bruck",
+    "editore": "Garzanti Editore",
+    "genere": "17"
+  },
+  {
+    "name": "Ramesses ii il grande",
+    "autore": "Franco Cimmino",
+    "editore": "Rusconi libri Editore",
+    "genere": "0"
+  },
+  {
+    "name": "La moglie del califfo",
+    "autore": "Renèe Ahdieh",
+    "editore": "Newton Compton",
+    "genere": "11"
+  },
+  {
+    "name": "La rosa del califfo",
+    "autore": "Renèe Ahdieh",
+    "editore": "Newton Compton",
+    "genere": "11"
+  },
+  {
+    "name": "Blue",
+    "autore": "Kerstin Gier",
+    "editore": "Corbaccio",
+    "genere": "8~11"
+  },
+  {
+    "name": "Green",
+    "autore": "Kerstin Gier",
+    "editore": "Corbaccio",
+    "genere": "8~11"
+  },
+  {
+    "name": "Red",
+    "autore": "Kerstin Gier",
+    "editore": "Corbaccio",
+    "genere": "8~11"
+  },
+  {
+    "name": "Di professione fantasma (il battello a vapore)",
+    "autore": "Hubert Monteilhet",
+    "editore": "Piemme",
+    "genere": "17"
+  },
+  {
+    "name": "Gatti ,attori e battaglie libro per ragazzi (il mulino a vento)",
+    "autore": "Lega del filo doro",
+    "editore": "Editori Riuniti",
+    "genere": "16"
+  },
+  {
+    "name": "Kol la città sulle isole libro per ragazzi (il mulino a vento)",
+    "autore": "Lega del filo d'oro",
+    "editore": "Editori Riuniti",
+    "genere": "16"
+  },
+  {
+    "name": "Il vampiro assetato",
+    "autore": "James gelsey",
+    "editore": "Piemme",
+    "genere": "17"
+  },
+  {
+    "name": "Davd copperfield (editalia)",
+    "autore": "Charles Dickens",
+    "editore": "Editori Riuniti",
+    "genere": "18"
+  },
+  {
+    "name": "Heidi (editalia)",
+    "autore": "Spyri",
+    "editore": "Editori Riuniti",
+    "genere": "18"
+  },
+  {
+    "name": "L'ultimo dei mohicani (editalia)",
+    "autore": "James Fenimore Cooper",
+    "editore": "E/O edizione",
+    "genere": "18"
+  },
+  {
+    "name": "Mastro don gesualdo (editalia)",
+    "autore": "Giovanni Verga",
+    "editore": "Editori Riuniti",
+    "genere": "18"
+  },
+  {
+    "name": "L'attraversaspecchi - fidanzati dell'inverno - 1",
+    "autore": "Christelle Dabos",
+    "editore": "E/O edizione",
+    "genere": "8"
+  },
+  {
+    "name": "L'attraversaspecchi - gli scomparsi di chiardiluna - 2   a",
+    "autore": "Christelle Dabos",
+    "editore": "E/O edizione",
+    "genere": "8"
+  },
+  {
+    "name": "L'attraversaspecchi -la memoria di babel - 3",
+    "autore": "Christelle Dabos",
+    "editore": "E/O edizione",
+    "genere": "8"
+  },
+  {
+    "name": "L'attraversaspecchi -echi in tempesta - 3",
+    "autore": "Christelle Dabos",
+    "editore": "E/O edizione",
+    "genere": "8"
+  },
+  {
+    "name": "La via dei re",
+    "autore": "Brandon Sanderson",
+    "editore": "Fanucci Editore",
+    "genere": "1~8"
+  },
+  {
+    "name": "Malice (libro in inglese) 1",
+    "autore": "John Gwynne",
+    "editore": "Fanucci Editore",
+    "genere": "8"
+  },
+  {
+    "name": "Valour (libro in inglese)",
+    "autore": "John Gwynne",
+    "editore": "Fanucci Editore",
+    "genere": "8"
+  },
+  {
+    "name": "Ruin (libro in inglese)",
+    "autore": "John Gwynne",
+    "editore": "Fanucci Editore",
+    "genere": "8"
+  },
+  {
+    "name": "Wrath (libro in inglese)",
+    "autore": "John Gwynne",
+    "editore": "Fanucci Editore",
+    "genere": "8"
+  },
+  {
+    "name": "I miserabili (newton e comton)",
+    "autore": "Victor Hugo",
+    "editore": "Newton Compton",
+    "genere": "1~18"
+  },
+  {
+    "name": "Lo strano caso del dottor jekyll e del signor hyde",
+    "autore": "Robert Louis Stevenson",
+    "editore": "BUR Delux",
+    "genere": "3~18"
+  },
+  {
+    "name": "Notre -dame de paris",
+    "autore": "Victor Hugo",
+    "editore": "BUR Delux",
+    "genere": "1~18"
+  },
+  {
+    "name": "Jane eyre (burdeluxe)",
+    "autore": "Charlotte Bronte",
+    "editore": "BUR Delux",
+    "genere": "18"
+  },
+  {
+    "name": "I racconti del mistero",
+    "autore": "Edgar Allan Poe",
+    "editore": "BUR Delux",
+    "genere": "3~18"
+  },
+  {
+    "name": "Cime tempestose (burdeluxe)",
+    "autore": "Emily Bronte",
+    "editore": "BUR Delux",
+    "genere": "3~18"
+  },
+  {
+    "name": "Il maestro e margherita",
+    "autore": "Michail Bulgakov",
+    "editore": "BUR Delux",
+    "genere": "3~18"
+  },
+  {
+    "name": "Lo hobbit",
+    "autore": "J.R.R.Tolkien",
+    "editore": "Bompiani Editore",
+    "genere": "8~18"
+  },
+  {
+    "name": "Il priorato dell'albero delle arance",
+    "autore": "Samantha Shannon",
+    "editore": "Mondadori Editore",
+    "genere": "8"
+  },
+  {
+    "name": "Nevernight (mai dimenticare)",
+    "autore": "Jay Kristoff",
+    "editore": "Mondadori Editore",
+    "genere": "8"
+  },
+  {
+    "name": "Nevernight (i grandi giochi)",
+    "autore": "Jay Kristoff",
+    "editore": "Mondadori Editore",
+    "genere": "8"
+  },
+  {
+    "name": "Nevernight (alba oscra)",
+    "autore": "Jay Kristoff",
+    "editore": "Mondadori Editore",
+    "genere": "8"
+  },
+  {
+    "name": "I codici del labirinto",
+    "autore": "Kate Mosse",
+    "editore": "Piemme",
+    "genere": "4"
+  },
+  {
+    "name": "L'ottavo arcano",
+    "autore": "Kate Mosse",
+    "editore": "Piemme",
+    "genere": "4"
+  },
+  {
+    "name": "La caduta del sole di ferro",
+    "autore": "Michel Bussi",
+    "editore": "E/O edizione",
+    "genere": "6"
+  },
+  {
+    "name": "Sotto gli alberi ( fazi editore)",
+    "autore": "Thomas Hardy",
+    "editore": "Fabri Editori",
+    "genere": "18"
+  },
+  {
+    "name": "Anima",
+    "autore": "Wajdi Mouawad",
+    "editore": "Fabri Editori",
+    "genere": "3"
+  },
+  {
+    "name": "Favola di new york",
+    "autore": "victor Iavalle",
+    "editore": "Fazi editore",
+    "genere": "3"
+  },
+  {
+    "name": "La primula rossa",
+    "autore": "Emma Orezy",
+    "editore": "Fazi editore",
+    "genere": "1~18"
+  },
+  {
+    "name": "Turbine",
+    "autore": "Juli zeh",
+    "editore": "Fazi editore",
+    "genere": "17"
+  },
+  {
+    "name": "La famiglia aubrey",
+    "autore": "Rebecca West",
+    "editore": "Fazi editore",
+    "genere": "17"
+  },
+  {
+    "name": "Il sognatore",
+    "autore": "Laini Taylor",
+    "editore": "Fazi editore",
+    "genere": "8"
+  },
+  {
+    "name": "La musa degli incubi",
+    "autore": "Laini Taylor",
+    "editore": "Fazi editore",
+    "genere": "8"
+  },
+  {
+    "name": "Il circo della notte",
+    "autore": "Erin Morgenstern",
+    "editore": "Rizzoli",
+    "genere": "8"
+  },
+  {
+    "name": "Il mare senza stelle",
+    "autore": "Erin Morgenstern",
+    "editore": "Rizzoli",
+    "genere": "8"
+  },
+  {
+    "name": "Storia d'inverno",
+    "autore": "Mark Helprin",
+    "editore": "Superbeat",
+    "genere": "17"
+  },
+  {
+    "name": "Il trghettatore",
+    "autore": "William Blatty",
+    "editore": "Fazi editore",
+    "genere": "3"
+  },
+  {
+    "name": "La pietra di luna",
+    "autore": "Wilkie Collins",
+    "editore": "Fazi editore",
+    "genere": "2~10"
+  },
+  {
+    "name": "La donna in bianco",
+    "autore": "Wilkie Collins",
+    "editore": "Fazi editore",
+    "genere": "2~10"
+  },
+  {
+    "name": "Piranesi",
+    "autore": "Susanna Clarke",
+    "editore": "Fazi editore",
+    "genere": "8~17"
+  },
+  {
+    "name": "Gli anni della leggerezza (cazalet)",
+    "autore": "Elizabeth Jane Howard",
+    "editore": "Fazi editore",
+    "genere": "17"
+  },
+  {
+    "name": "Il tempo della attesa (cazalet)",
+    "autore": "Elizabeth Jane Howard",
+    "editore": "Fazi editore",
+    "genere": "17"
+  },
+  {
+    "name": "Confusione (cazalet)",
+    "autore": "Elizabeth Jane Howard",
+    "editore": "Fazi editore",
+    "genere": "17"
+  },
+  {
+    "name": "Leopardo nero lupo rosso",
+    "autore": "Marlon James",
+    "editore": "Feltrinelli Editore",
+    "genere": "8"
+  },
+  {
+    "name": "Gli incanti di locke lamora",
+    "autore": "Scott Lynch",
+    "editore": "Mondadori Editore",
+    "genere": "8"
+  },
+  {
+    "name": "La quinta stagione",
+    "autore": "N.K.Jemisin",
+    "editore": "Mondadori Editore",
+    "genere": "6"
+  },
+  {
+    "name": "Il portale degli obelischi",
+    "autore": "N.K.Jemisin",
+    "editore": "Mondadori Editore",
+    "genere": "6"
+  },
+  {
+    "name": "Io,gesù",
+    "autore": "Robert Graves",
+    "editore": "Longanesi",
+    "genere": "1"
+  },
+  {
+    "name": "Dio di illusioni",
+    "autore": "Donna Tartt",
+    "editore": "BUR Delux",
+    "genere": "17"
+  },
+  {
+    "name": "Il mio piccolo amico",
+    "autore": "Donna Tartt",
+    "editore": "BUR Delux",
+    "genere": "17"
+  },
+  {
+    "name": "Il cardellino",
+    "autore": "Donna Tartt",
+    "editore": "Rizzoli",
+    "genere": "17"
+  },
+  {
+    "name": "Idi di marzo",
+    "autore": "Valerio Massimo Manfredi",
+    "editore": "Mondadori Editore",
+    "genere": "1"
+  },
+  {
+    "name": "Limpero dei draghi",
+    "autore": "Valerio Massimo Manfredi",
+    "editore": "Mondadori Editore",
+    "genere": "1"
+  },
+  {
+    "name": "Mare di fuoco",
+    "autore": "Josè Llorèns",
+    "editore": "Mondadori Editore",
+    "genere": "1"
+  },
+  {
+    "name": "Oltre l'inverno",
+    "autore": "Isabel Allende",
+    "editore": "Mondadori Editore",
+    "genere": "17"
+  },
+  {
+    "name": "L'avventura del graal",
+    "autore": "Andrew Sinclair",
+    "editore": "Mondadori Editore",
+    "genere": "16"
+  },
+  {
+    "name": "Lungo petalo di mare",
+    "autore": "Isabel Allende",
+    "editore": "Feltrinelli Editore",
+    "genere": "17"
+  },
+  {
+    "name": "La morte di ivan il'ic",
+    "autore": "Lev Tolstoj",
+    "editore": "Feltrinelli Editore",
+    "genere": "18"
+  },
+  {
+    "name": "L'eterno contrsto",
+    "autore": "Jane Austen",
+    "editore": "Fabri Editori",
+    "genere": "17"
+  },
+  {
+    "name": "Idillio ai tropici",
+    "autore": "Irene Shaw",
+    "editore": "Fabri Editori",
+    "genere": "17"
+  },
+  {
+    "name": "Il santo graal",
+    "autore": "Michael Baigent-Richard Leigh-Henry Lincoln",
+    "editore": "Mondadori Editore",
+    "genere": "16"
+  },
+  {
+    "name": "Il sigillo maledetto dei templari",
+    "autore": "David Gibbins",
+    "editore": "Newton Compton",
+    "genere": "1"
+  },
+  {
+    "name": "Ti prento e ti porto via",
+    "autore": "Niccolò Ammaniti",
+    "editore": "Mondadori Editore",
+    "genere": "17"
+  },
+  {
+    "name": "I giardini della luna",
+    "autore": "Steven Erikson",
+    "editore": "Armenia Editore",
+    "genere": "8"
+  },
+  {
+    "name": "Il collezionista di quadri perduto",
+    "autore": "Fabio Delizzos",
+    "editore": "Newton Compton",
+    "genere": "1"
+  },
+  {
+    "name": "La cattedrale dei vangeli perduti",
+    "autore": "Fabio Delizzos",
+    "editore": "Newton Compton",
+    "genere": "1"
+  },
+  {
+    "name": "Ilcacciatore di libri  proibiti",
+    "autore": "Fabio Delizzos",
+    "editore": "Newton Compton",
+    "genere": "1"
+  },
+  {
+    "name": "Alexandros",
+    "autore": "Valerio Massimo Manfredi",
+    "editore": "Mondadori Editore",
+    "genere": "1"
+  },
+  {
+    "name": "Ninfee nere",
+    "autore": "Michel Bussi",
+    "editore": "E/O edizione",
+    "genere": "17"
+  },
+  {
+    "name": "L'ultimo cavaliere",
+    "autore": "Stephen King",
+    "editore": "Pickwick",
+    "genere": "10"
+  },
+  {
+    "name": "La casa degli sguardi",
+    "autore": "Daniele Mencarelli",
+    "editore": "Mondadori Editore",
+    "genere": "17"
+  },
+  {
+    "name": "Cera una volta un fiume",
+    "autore": "Dane Setterfield",
+    "editore": "Mondadori Editore",
+    "genere": "1"
+  },
+  {
+    "name": "Blood",
+    "autore": "Robyn Young",
+    "editore": "Leone edizione",
+    "genere": "1"
+  },
+  {
+    "name": "La fortezza",
+    "autore": "Jennifer egan",
+    "editore": "Minimum fax",
+    "genere": "17"
+  },
+  {
+    "name": "Carlo magno (saggio)",
+    "autore": "Alessandro Barbero",
+    "editore": "Laterza Editore",
+    "genere": "16"
+  },
+  {
+    "name": "Donne madonne mercanti e cavalieri",
+    "autore": "Alessandro Barbero",
+    "editore": "Laterza Editore",
+    "genere": "16"
+  },
+  {
+    "name": "Il fantasma sul trono",
+    "autore": "James Romm",
+    "editore": "Keller edizione",
+    "genere": "16"
+  },
+  {
+    "name": "L'eredità delle dee",
+    "autore": "Kateina Tuckovà",
+    "editore": "Keller edizione",
+    "genere": "17"
+  },
+  {
+    "name": "Non dite che non abbiamo niete",
+    "autore": "Madeleine Thien",
+    "editore": "66tha2nd",
+    "genere": "17"
+  },
+  {
+    "name": "It",
+    "autore": "Stephen King",
+    "editore": "Pickwick",
+    "genere": "10"
+  },
+  {
+    "name": "Hrry potter la pietra filosofale",
+    "autore": "J.K.Rowling",
+    "editore": "Salani Editore",
+    "genere": "8"
+  },
+  {
+    "name": "Heery potter e la camera dei segreti",
+    "autore": "J.K.Rowling",
+    "editore": "Salani Editore",
+    "genere": "8"
+  },
+  {
+    "name": "Herry potter e l'ordine della fenice",
+    "autore": "J.K.Rowling",
+    "editore": "Salani Editore",
+    "genere": "8"
+  },
+  {
+    "name": "Herry potter e il paero di azkaban",
+    "autore": "J.K.Rowling",
+    "editore": "Salani Editore",
+    "genere": "8"
+  },
+  {
+    "name": "Hrry potter ei doni della morte",
+    "autore": "J.K.Rowling",
+    "editore": "Salani Editore",
+    "genere": "8"
+  },
+  {
+    "name": "Hrry potter e il calice di fuoco",
+    "autore": "J.K.Rowling",
+    "editore": "Salani Editore",
+    "genere": "8"
+  },
+  {
+    "name": "Herry potter e il principe mezzosangue",
+    "autore": "J.K.Rowling",
+    "editore": "Salani Editore",
+    "genere": "8"
+  },
+  {
+    "name": "Herry potter e la maledizione dell'erede",
+    "autore": "J.K.Rowling John tffany e Jack Thorne",
+    "editore": "Salani Editore",
+    "genere": "8"
+  },
+  {
+    "name": "Animali fantastici e dove trovarli",
+    "autore": "J.K.Rowling",
+    "editore": "Salani Editore",
+    "genere": "8"
+  },
+  {
+    "name": "Le fiabe di beda il bardo",
+    "autore": "J.K.Rowling",
+    "editore": "Salani Editore",
+    "genere": "8"
+  },
+  {
+    "name": "Il quidditch attraverso i secoli",
+    "autore": "J.K.Rowling",
+    "editore": "Salani Editore",
+    "genere": "8"
+  },
+  {
+    "name": "Buona vita a tutti",
+    "autore": "J.K.Rowling",
+    "editore": "Salani Editore",
+    "genere": "16"
+  },
+  {
+    "name": "Il richiamo del cuculo",
+    "autore": "J.K.Rowling",
+    "editore": "Salani Editore",
+    "genere": "2~4"
+  },
+  {
+    "name": "Il baco da seta",
+    "autore": "J.K.Rowling (Robert Galbraith)",
+    "editore": "Salani Editore",
+    "genere": "2~4"
+  },
+  {
+    "name": "La via del male",
+    "autore": "J.K.Rowling (Robert Galbraith)",
+    "editore": "Salani Editore",
+    "genere": "2~4"
+  },
+  {
+    "name": "Il seggio vacante",
+    "autore": "J.K.Rowling",
+    "editore": "Salani Editore",
+    "genere": "17"
+  },
+  {
+    "name": "Marina",
+    "autore": "Carlos Ruiz Zafon",
+    "editore": "Mondadori Editore",
+    "genere": "3"
+  },
+  {
+    "name": "Il palazzo della mezzanotte",
+    "autore": "Carlos Ruiz Zafon",
+    "editore": "Mondadori Editore",
+    "genere": "0~10"
+  },
+  {
+    "name": "Il principe della nebbia",
+    "autore": "Carlos Ruiz Zafon",
+    "editore": "Mondadori Editore",
+    "genere": "3~10"
+  },
+  {
+    "name": "Le luci di settembre",
+    "autore": "Carlos Ruiz Zafon",
+    "editore": "Mondadori Editore",
+    "genere": "3~10"
+  },
+  {
+    "name": "L'ombra del vento",
+    "autore": "Carlos Ruiz Zafon",
+    "editore": "Mondadori Editore",
+    "genere": "3~17"
+  },
+  {
+    "name": "Il gioco dell'angelo",
+    "autore": "Carlos Ruiz Zafon",
+    "editore": "Mondadori Editore",
+    "genere": "3~17"
+  },
+  {
+    "name": "Il prigioniero del cielo",
+    "autore": "Carlos Ruiz Zafon",
+    "editore": "Mondadori Editore",
+    "genere": "3~17"
+  },
+  {
+    "name": "Il labirinto degli spiriti",
+    "autore": "Carlos Ruiz Zafon",
+    "editore": "Mondadori Editore",
+    "genere": "3~17"
+  },
+  {
+    "name": "Moby dick",
+    "autore": "Herman Melville",
+    "editore": "BUR Delux Editore",
+    "genere": "18"
+  },
+  {
+    "name": "Il demone incarnato",
+    "autore": "Anne Rice",
+    "editore": "Tea Editore",
+    "genere": "10"
+  },
+  {
+    "name": "Le cronache dell'acero e del ciliegio (la maschera del no)",
+    "autore": "Camille monceaux",
+    "editore": "Ippocampo Editore",
+    "genere": "17"
+  },
+  {
+    "name": "Dalla parte di swann",
+    "autore": "Marcel Proust",
+    "editore": "Rusconi libri Editore",
+    "genere": "18"
+  },
+  {
+    "name": "La torre della solitudine",
+    "autore": "Valerio Massimo Manfredi",
+    "editore": "Mondadori Editore",
+    "genere": "1"
+  },
+  {
+    "name": "Mare greco",
+    "autore": "Valerio Massimo Manfredi",
+    "editore": "Mondadori Editore",
+    "genere": "1"
+  },
+  {
+    "name": "La scimmia di pietra",
+    "autore": "Jeffery Deaver",
+    "editore": "Sonzogno editore",
+    "genere": "4"
+  },
+  {
+    "name": "L'uomo scomparso",
+    "autore": "Jeffery Deaver",
+    "editore": "Sonzogno editore",
+    "genere": "4"
+  },
+  {
+    "name": "Il filo che brucia",
+    "autore": "Jeffery Deaver",
+    "editore": "Rizzoli",
+    "genere": "4"
+  },
+  {
+    "name": "La finestra rotta",
+    "autore": "Jeffery Deaver",
+    "editore": "Rusconi libri Editore",
+    "genere": "4"
+  },
+  {
+    "name": "Nero a manhattan",
+    "autore": "Jeffery Deaver",
+    "editore": "Rizzoli",
+    "genere": "4"
+  },
+  {
+    "name": "L'ombra del collezionista",
+    "autore": "Jeffery Deaver",
+    "editore": "Rizzoli",
+    "genere": "4"
+  },
+  {
+    "name": "Il bacio d'acciaio",
+    "autore": "Jeffery Deaver",
+    "editore": "Rizzoli",
+    "genere": "4"
+  },
+  {
+    "name": "Lo scheletro che balla",
+    "autore": "Jeffery Deaver",
+    "editore": "Rusconi libri Editore",
+    "genere": "4"
+  },
+  {
+    "name": "La leggenda di artù",
+    "autore": "Mike Ashley",
+    "editore": "Newton Compton",
+    "genere": "1"
+  },
+  {
+    "name": "La terza traduzione",
+    "autore": "Matt Bondurant",
+    "editore": "Sperling e Kupfer editori",
+    "genere": "4"
+  },
+  {
+    "name": "Icercatori di amuleti (huntik)",
+    "autore": "Frank j.Martucci",
+    "editore": "Fabri Editori",
+    "genere": "8"
+  },
+  {
+    "name": "Il tenente del diavolo",
+    "autore": "Maria Fagyas",
+    "editore": "Elliot",
+    "genere": "1~2"
+  },
+  {
+    "name": "Il segreto dell'alchimista",
+    "autore": "Mariangela Cerrino",
+    "editore": "Longanesi",
+    "genere": "1"
+  },
+  {
+    "name": "Il libro di krsna vol.3",
+    "autore": "I grandi classici dell'India",
+    "editore": "Editori Riuniti",
+    "genere": "18"
+  },
+  {
+    "name": "Libro primo delle cronache del ghiaccio e del fuoco (trono di spade)",
+    "autore": "George R.R.Martin",
+    "editore": "Mondadori Editore",
+    "genere": "8"
+  },
+  {
+    "name": "Libro terzo delle cronache del ghiaccio e del fuoco (trono di spade)",
+    "autore": "George R.R.Martin",
+    "editore": "Mondadori Editore",
+    "genere": "8"
+  },
+  {
+    "name": "Libro secondo delle cronache del ghiaccio e del fuoco (trono di spade)",
+    "autore": "George R.R.Martin",
+    "editore": "Mondadori Editore",
+    "genere": "8"
+  },
+  {
+    "name": "Il libro quarto delle cronache del ghiaccio e del fuoco (trono di spade)",
+    "autore": "George R.R.Martin",
+    "editore": "Mondadori Editore",
+    "genere": "8"
+  },
+  {
+    "name": "Il templare",
+    "autore": "Jan Juillon",
+    "editore": "Garzanti Editore",
+    "genere": "1"
+  },
+  {
+    "name": "Il saladino",
+    "autore": "Jan Guillou",
+    "editore": "Corbaccio",
+    "genere": "1"
+  },
+  {
+    "name": "La badessa",
+    "autore": "Jan Guillou",
+    "editore": "Corbaccio",
+    "genere": "1"
+  },
+  {
+    "name": "L'a passione di artemisia",
+    "autore": "Susan Vreeland",
+    "editore": "Neri Pozza",
+    "genere": "1"
+  },
+  {
+    "name": "La ragazza in blu",
+    "autore": "Susan Vreeland",
+    "editore": "Neri Pozza",
+    "genere": "1"
+  },
+  {
+    "name": "Il mercante di lana",
+    "autore": "Valeria Montaldi",
+    "editore": "Piemme",
+    "genere": "1"
+  },
+  {
+    "name": "Il signore del falco",
+    "autore": "Valeria Montaldi",
+    "editore": "Piemme",
+    "genere": "1"
+  },
+  {
+    "name": "Anima templi",
+    "autore": "Robyn Young",
+    "editore": "Nord",
+    "genere": "1"
+  },
+  {
+    "name": "Requiem",
+    "autore": "Robyn Young",
+    "editore": "Nord",
+    "genere": "1"
+  },
+  {
+    "name": "Crociata",
+    "autore": "Robyn Young",
+    "editore": "Nord",
+    "genere": "1"
+  },
+  {
+    "name": "Malinverno",
+    "autore": "Domenico Dara",
+    "editore": "Feltrinelli Editore",
+    "genere": "17"
+  },
+  {
+    "name": "Outlander la straniera",
+    "autore": "Diana Gabaldon",
+    "editore": "Corbaccio",
+    "genere": "1~8"
+  },
+  {
+    "name": "Outlander l'amuleto d'ambra",
+    "autore": "Diana Gabaldon",
+    "editore": "Corbaccio",
+    "genere": "1~8"
+  },
+  {
+    "name": "Outlander il ritorno",
+    "autore": "Diana Gabaldon",
+    "editore": "Corbaccio",
+    "genere": "1~8"
+  },
+  {
+    "name": "Outlander legami di sangue",
+    "autore": "Diana Gabaldon",
+    "editore": "Corbaccio",
+    "genere": "1~8"
+  },
+  {
+    "name": "L'armata dei sonnambuli",
+    "autore": "Wu Ming",
+    "editore": "Giulio Einaudi Editore",
+    "genere": "1"
+  },
+  {
+    "name": "La spada perduta",
+    "autore": "Bernard Cornwell",
+    "editore": "Mondadori Editore",
+    "genere": "1~8"
+  },
+  {
+    "name": "Il tradimento (excalibur)",
+    "autore": "Bernard Cornwell",
+    "editore": "Mondadori Editore",
+    "genere": "1~8"
+  },
+  {
+    "name": "La torre in fiamme (excslibur)",
+    "autore": "Bernard Cornwell",
+    "editore": "Mondadori Editore",
+    "genere": "1~8"
+  },
+  {
+    "name": "Il cuore di derfel (excalibur)",
+    "autore": "Bernard Cornwell",
+    "editore": "Mondadori Editore",
+    "genere": "1~8"
+  },
+  {
+    "name": "Il re d'inverno (excalibur)",
+    "autore": "Bernard Cornwell",
+    "editore": "Mondadori Editore",
+    "genere": "1~8"
+  },
+  {
+    "name": "L'arciere del re",
+    "autore": "Bernard Cornwell",
+    "editore": "Longanesi",
+    "genere": "1"
+  },
+  {
+    "name": "Il cavaliere nero",
+    "autore": "Bernard Cornwell",
+    "editore": "Longanesi",
+    "genere": "1"
+  },
+  {
+    "name": "La spada e il calice",
+    "autore": "Bernard Cornwell",
+    "editore": "Longanesi",
+    "genere": "1"
+  },
+  {
+    "name": "L'arciere di azincourt",
+    "autore": "Bernard Cornwell",
+    "editore": "Longanesi",
+    "genere": "1"
+  },
+  {
+    "name": "I guerrieri della tempesta",
+    "autore": "Bernard Cornwell",
+    "editore": "Longanesi",
+    "genere": "1"
+  },
+  {
+    "name": "Il trono senza re",
+    "autore": "Bernard Cornwell",
+    "editore": "Longanesi",
+    "genere": "1"
+  },
+  {
+    "name": "L'eroe di poitiers",
+    "autore": "Bernard Cornwell",
+    "editore": "Longanesi",
+    "genere": "1"
+  },
+  {
+    "name": "Re senza dio",
+    "autore": "Bernard Cornwell",
+    "editore": "Longanesi",
+    "genere": "1"
+  },
+  {
+    "name": "La morte dei re",
+    "autore": "Bernard Cornwell",
+    "editore": "Longanesi",
+    "genere": "1"
+  },
+  {
+    "name": "Il filo della spada",
+    "autore": "Bernard Cornwell",
+    "editore": "Longanesi",
+    "genere": "1"
+  },
+  {
+    "name": "I re del nord",
+    "autore": "Bernard Cornwell",
+    "editore": "Longanesi",
+    "genere": "1"
+  },
+  {
+    "name": "Un cavaliere e il suo re",
+    "autore": "Bernard Cornwell",
+    "editore": "Longanesi",
+    "genere": "1"
+  },
+  {
+    "name": "L'ultimo re",
+    "autore": "Bernard Cornwell",
+    "editore": "Longanesi",
+    "genere": "1"
+  },
+  {
+    "name": "La fratellanza dell'impero",
+    "autore": "Jack Whyte",
+    "editore": "Newton Compton",
+    "genere": "1"
+  },
+  {
+    "name": "Il falco e il leone (hyperversum)",
+    "autore": "Cecilia Randall",
+    "editore": "Giunti Editore",
+    "genere": "1~8"
+  },
+  {
+    "name": "Il cavaliere del tempo (hyperversum)",
+    "autore": "Cecilia Randall",
+    "editore": "Giunti Editore",
+    "genere": "1~8"
+  },
+  {
+    "name": "Hyperversum",
+    "autore": "Cecilia Randall",
+    "editore": "Giunti Editore",
+    "genere": "1~8"
+  },
+  {
+    "name": "Next (hyperversum)",
+    "autore": "Cecilia Randall",
+    "editore": "Giunti Editore",
+    "genere": "1~8"
+  },
+  {
+    "name": "Unknown (hyperversum)",
+    "autore": "Cecilia Randall",
+    "editore": "Giunti Editore",
+    "genere": "1~8"
+  },
+  {
+    "name": "Ultimate (hyperversum)",
+    "autore": "Cecilia Randall",
+    "editore": "Giunti Editore",
+    "genere": "1~8"
+  },
+  {
+    "name": "I custodi del codice",
+    "autore": "Jack Whyte",
+    "editore": "Piemme",
+    "genere": "1"
+  },
+  {
+    "name": "Il leone dei templari",
+    "autore": "Jack Whyte",
+    "editore": "Piemme",
+    "genere": "1"
+  },
+  {
+    "name": "La caduta dei templari",
+    "autore": "Jack Whyte",
+    "editore": "Piemme",
+    "genere": "1"
+  },
+  {
+    "name": "I figli della libertà",
+    "autore": "Jack Whyte",
+    "editore": "Piemme",
+    "genere": "1"
+  },
+  {
+    "name": "Il rinnegato",
+    "autore": "Jack Whyte",
+    "editore": "Piemme",
+    "genere": "1"
+  },
+  {
+    "name": "Il guardiano",
+    "autore": "Jack Whyte",
+    "editore": "Piemme",
+    "genere": "1"
+  },
+  {
+    "name": "La pietra del cielo",
+    "autore": "Jack Whyte",
+    "editore": "Piemme",
+    "genere": "1~8"
+  },
+  {
+    "name": "La spada che canta",
+    "autore": "Jack Whyte",
+    "editore": "Piemme",
+    "genere": "1~8"
+  },
+  {
+    "name": "La stirpe dell'aquila",
+    "autore": "Jack Whyte",
+    "editore": "Piemme",
+    "genere": "1~8"
+  },
+  {
+    "name": "Il segno di excalibur",
+    "autore": "Jack Whyte",
+    "editore": "Piemme",
+    "genere": "1~8"
+  },
+  {
+    "name": "Il forte sul fiume",
+    "autore": "Jack Whyte",
+    "editore": "Piemme",
+    "genere": "1~8"
+  },
+  {
+    "name": "Il sogno di merlino",
+    "autore": "Jack Whyte",
+    "editore": "Piemme",
+    "genere": "1~8"
+  },
+  {
+    "name": "Le porte di camelot",
+    "autore": "Jack Whyte",
+    "editore": "Piemme",
+    "genere": "1~8"
+  },
+  {
+    "name": "La donna di avalon",
+    "autore": "Jack Whyte",
+    "editore": "Piemme",
+    "genere": "1~8"
+  },
+  {
+    "name": "Iil cavaliere di artù (io lancillotto)",
+    "autore": "Jack Whyte",
+    "editore": "Piemme",
+    "genere": "1~8"
+  },
+  {
+    "name": "Il marchio di merlino",
+    "autore": "Jack Whyte",
+    "editore": "Piemme",
+    "genere": "1~8"
+  },
+  {
+    "name": "Il destino di camelot (io lancillotto)",
+    "autore": "Jack Whyte",
+    "editore": "Piemme",
+    "genere": "1~8"
+  },
+  {
+    "name": "Il sogno di ginevra (iolancillotto)",
+    "autore": "Jack Whyte",
+    "editore": "Piemme",
+    "genere": "1~8"
+  },
+  {
+    "name": "On",
+    "autore": "bu",
+    "editore": "66tha2nd",
+    "genere": "8"
+  },
+  {
+    "name": "Dracula",
+    "autore": "Bram Stoker",
+    "editore": "Bompiani Editore",
+    "genere": "10"
+  },
+  {
+    "name": "Chesil beach",
+    "autore": "Ian McEwan",
+    "editore": "Giulio Einaudi Editore",
+    "genere": "17"
+  },
+  {
+    "name": "Resto qui",
+    "autore": "Marco Bolzano",
+    "editore": "Giulio Einaudi Editore",
+    "genere": "1"
+  },
+  {
+    "name": "La ballata di adam henry",
+    "autore": "Ian McEwan",
+    "editore": "Giulio Einaudi Editore",
+    "genere": "17"
+  },
+  {
+    "name": "Nessundove",
+    "autore": "Neil Gaiman",
+    "editore": "Mondadori Editore",
+    "genere": "8"
+  },
+  {
+    "name": "Il mago merlino e il potere del drago",
+    "autore": "narratori sconosciuti",
+    "editore": "RBA Editore",
+    "genere": "8"
+  },
+  {
+    "name": "Uno studio in rosso (sherlock holmes)",
+    "autore": "Arthur Conan Doyle",
+    "editore": "RBA Editore",
+    "genere": "2"
+  },
+  {
+    "name": "Decameron",
+    "autore": "Giovanni Boccaccio",
+    "editore": "Centauria",
+    "genere": "18"
+  },
+  {
+    "name": "Il mastino dei baskerville (sherlock holmes)",
+    "autore": "Arthur Conan Doyle",
+    "editore": "RBA Editore",
+    "genere": "2"
+  },
+  {
+    "name": "Canti operette morali",
+    "autore": "Giacomo Leopardi",
+    "editore": "Centauria",
+    "genere": "18"
+  },
+  {
+    "name": "Il re artù ed excalibur nella roccia",
+    "autore": "narratori sconosciuti",
+    "editore": "RBA Editore",
+    "genere": "8"
+  },
+  {
+    "name": "La fata morgana e il fuoco della vendetta",
+    "autore": "narratori sconosciuti",
+    "editore": "RBA Editore",
+    "genere": "8"
+  },
+  {
+    "name": "Armadale",
+    "autore": "Wilkie Collins",
+    "editore": "Fazi editore",
+    "genere": "2"
+  },
+  {
+    "name": "L'importanza di essere franco",
+    "autore": "Oscar Wilde",
+    "editore": "Rusconi libri Editore",
+    "genere": "15"
+  },
+  {
+    "name": "Il corsaro nero (collezzione)",
+    "autore": "Emilio Salgari",
+    "editore": "RBA Editore",
+    "genere": "5~18"
+  },
+  {
+    "name": "I misteri della jungla nera",
+    "autore": "Emilio Salgari",
+    "editore": "RBA Editore",
+    "genere": "5~18"
+  },
+  {
+    "name": "Tito di gormenghast",
+    "autore": "Meruyn Peake",
+    "editore": "Adelphi Edizioni",
+    "genere": "8"
+  },
+  {
+    "name": "L'amante di lady chatterley",
+    "autore": "David Herbert Lawrence",
+    "editore": "Mondadori Editore",
+    "genere": "18"
+  },
+  {
+    "name": "Alice adams",
+    "autore": "Booth Tarkington",
+    "editore": "Elliot",
+    "genere": "18"
+  },
+  {
+    "name": "Le ragazze invisibili",
+    "autore": "Henning Mankell",
+    "editore": "Marsilio",
+    "genere": "17"
+  },
+  {
+    "name": "Senza nome",
+    "autore": "Wilkie Collins",
+    "editore": "Fazi editore",
+    "genere": "2"
+  },
+  {
+    "name": "Il sogno dei quattro (sherlock holmes)",
+    "autore": "Arthur Conan Doyle",
+    "editore": "RBA Editore",
+    "genere": "2"
+  },
+  {
+    "name": "Il mistero del mare",
+    "autore": "Bram Stoker",
+    "editore": "Nutrimenti",
+    "genere": "10"
+  },
+  {
+    "name": "I pirati dell'oceano rosso",
+    "autore": "Scott Lynch",
+    "editore": "Mondadori Editore",
+    "genere": "8"
+  },
+  {
+    "name": "Umiliati e offesi",
+    "autore": "Fedodor Dostoevvskij",
+    "editore": "Feltrinelli Editore",
+    "genere": "18"
+  },
+  {
+    "name": "Il fantasma dell'opera",
+    "autore": "Gaston Leroux",
+    "editore": "RBA Editore",
+    "genere": "3~10"
+  },
+  {
+    "name": "La metà scomparsa",
+    "autore": "Brit Bennett",
+    "editore": "Bompiani Editore",
+    "genere": "17"
+  },
+  {
+    "name": "Uno scandolo in boemia (sherlock holmes)",
+    "autore": "Arthur Conan Doyle",
+    "editore": "RBA Editore",
+    "genere": "2"
+  },
+  {
+    "name": "L'isola dei senza memoria",
+    "autore": "Yoko Ogawa",
+    "editore": "Saggiatore",
+    "genere": "17"
+  },
+  {
+    "name": "Il diavolo e l'aqua scura",
+    "autore": "Stuart Turton",
+    "editore": "Neri Pozza",
+    "genere": "1~2"
+  },
+  {
+    "name": "I misteri del castello d'udolfo",
+    "autore": "Ann Radcliffe",
+    "editore": "Elliot",
+    "genere": "10"
+  },
+  {
+    "name": "Mia cugina rachele",
+    "autore": "Daphne Du Maurier",
+    "editore": "Neri Pozza",
+    "genere": "3"
+  },
+  {
+    "name": "Il carbonchio azzurro",
+    "autore": " Sherlock Holmes",
+    "editore": "RBA Editore",
+    "genere": "2"
+  },
+  {
+    "name": "Ilcarbonchio azzurro (sherlock holmes)",
+    "autore": "Arthur Conan Doyle",
+    "editore": "RBA Editore",
+    "genere": "2"
+  },
+  {
+    "name": "Crossroads",
+    "autore": "Jonathan Franzen",
+    "editore": "Giulio Einaudi Editore",
+    "genere": "17"
+  },
+  {
+    "name": "Barbaglio d'argento (sherlock holmes)",
+    "autore": "Arthur Conan Doyle",
+    "editore": "RBA Editore",
+    "genere": "2"
+  },
+  {
+    "name": "Belle greene",
+    "autore": "Alexandra Lapierre",
+    "editore": "E/O edizione",
+    "genere": "1"
+  },
+  {
+    "name": "La meridiana",
+    "autore": "Shirley Jackson",
+    "editore": "Adelphi Edizioni",
+    "genere": "17"
+  },
+  {
+    "name": "La casa vuota (sherlock holmes)",
+    "autore": "Arthur Conan Doyle",
+    "editore": "RBA Editore",
+    "genere": "2~18"
+  },
+  {
+    "name": "Il problema finale (sherlock holmes)",
+    "autore": "Arthur Conan Doyle",
+    "editore": "RBA Editore",
+    "genere": "2~18"
+  },
+  {
+    "name": "Il dottor zivago",
+    "autore": "Boris Pasternak",
+    "editore": "Feltrinelli Editore",
+    "genere": "17~18"
+  },
+  {
+    "name": "Il signore della guerra",
+    "autore": "Bernard Cornwell",
+    "editore": "Longanesi",
+    "genere": "1"
+  },
+  {
+    "name": "L'ottava vita",
+    "autore": "Nino Haratischwili",
+    "editore": "Marsilio",
+    "genere": "17"
+  },
+  {
+    "name": "La lancia di ferro (edizione tropea)",
+    "autore": "Stephen R.Lawhead",
+    "editore": "Editori Riuniti",
+    "genere": "1"
+  },
+  {
+    "name": "La rosa mistica (edizione  tropea)",
+    "autore": "Stephen R.Lawhead",
+    "editore": "Editori Riuniti",
+    "genere": "1"
+  },
+  {
+    "name": "La croce nera (edizione tropea)",
+    "autore": "Stephen R.Lawhead",
+    "editore": "Editori Riuniti",
+    "genere": "1"
+  },
+  {
+    "name": "Nel nome del figlio (edizione guanda)",
+    "autore": "Maggie O'Farrell",
+    "editore": "Editori Riuniti",
+    "genere": "1"
+  },
+  {
+    "name": "Charles augustus milverton (sherlock holmes)",
+    "autore": "Arthur Conan Doyle",
+    "editore": "RBA Editore",
+    "genere": "2"
+  },
+  {
+    "name": "Jonathan strange e il signor norrell",
+    "autore": "Susanna Clarke",
+    "editore": "Fazi editore",
+    "genere": "8"
+  },
+  {
+    "name": "Il mio cadavere",
+    "autore": "Mastriani Francesco",
+    "editore": "Rusconi libri Editore",
+    "genere": "3~4"
+  },
+  {
+    "name": "Rebecca la prima moglie",
+    "autore": "Daphne Du Maurier",
+    "editore": "Saggiatore",
+    "genere": "3~4"
+  },
+  {
+    "name": "Wisteria lodge(sherlock holmes)",
+    "autore": "Arthur Conan Doyle",
+    "editore": "RBA Editore",
+    "genere": "2"
+  },
+  {
+    "name": "La valle della paura (sherlock holmens) k",
+    "autore": "Arthur Conan Doyle",
+    "editore": "RBA Editore",
+    "genere": "2~18"
+  },
+  {
+    "name": "Cent'anni di solitudine",
+    "autore": "Gabriel Garcia Maerquez",
+    "editore": "Mondadori Editore",
+    "genere": "17"
+  },
+  {
+    "name": "Foto di gruppo con signora",
+    "autore": "Heinrich  Boll",
+    "editore": "Giulio Einaudi Editore",
+    "genere": "17~18"
+  },
+  {
+    "name": "Il sirmalillio",
+    "autore": "J.R.R.Tolkien",
+    "editore": "Bompiani Editore",
+    "genere": "8"
+  },
+  {
+    "name": "Libertà",
+    "autore": "Jonathan Franzen",
+    "editore": "Giulio Einaudi Editore",
+    "genere": "17"
+  },
+  {
+    "name": "Niente posto per le fiabe (caravaggio editoe)",
+    "autore": "Martina Asero",
+    "editore": "Editori Riuniti",
+    "genere": "17"
+  },
+  {
+    "name": "Lombra dello scorpione",
+    "autore": "Stephen King",
+    "editore": "Bompiani Editore",
+    "genere": "10"
+  },
+  {
+    "name": "L'adolescente",
+    "autore": "Fedor Dostoevskij",
+    "editore": "Giulio Einaudi Editore",
+    "genere": "18"
+  },
+  {
+    "name": "Dracula in love",
+    "autore": "Karen Essex",
+    "editore": "Bompiani Editore",
+    "genere": "3~4"
+  },
+  {
+    "name": "La contessaq di charny (tuliio pironti editore)",
+    "autore": "Alexandre Dumas",
+    "editore": "Editori Riuniti",
+    "genere": "18"
+  },
+  {
+    "name": "Il monaco inglese",
+    "autore": "Valeria Montaldi",
+    "editore": "Rizzoli",
+    "genere": "1"
+  },
+  {
+    "name": "Ombre sullo hudson",
+    "autore": "Isaac Bashevis Singer",
+    "editore": "Adelphi Edizioni",
+    "genere": "17"
+  },
+  {
+    "name": "Taltos il ritorno",
+    "autore": "Anne Rice",
+    "editore": "Tea Editore",
+    "genere": "10"
+  },
+  {
+    "name": "La luna di miele di mrs.smith",
+    "autore": "Shirley Jackson",
+    "editore": "Adelphi Edizioni",
+    "genere": "10"
+  },
+  {
+    "name": "David copperfield",
+    "autore": "Charles Dickens",
+    "editore": "BUR Delux Editore",
+    "genere": "18"
+  },
+  {
+    "name": "I tre moschettieri (feltrinelli)",
+    "autore": "Alexandre Dumas",
+    "editore": "Feltrinelli Editore",
+    "genere": "18"
+  },
+  {
+    "name": "Vent'anni dopo",
+    "autore": "Alexandre Dumas",
+    "editore": "Feltrinelli Editore",
+    "genere": "18"
+  },
+  {
+    "name": "Tony e susan",
+    "autore": "Austin Wright",
+    "editore": "Adelphi Edizioni",
+    "genere": "17"
+  },
+  {
+    "name": "Una vita come tante",
+    "autore": "Hanya Yanagihara",
+    "editore": "Sellerio",
+    "genere": "17"
+  },
+  {
+    "name": "L'apprendista assassino",
+    "autore": "Robin Hobb",
+    "editore": "Fanucci Editore",
+    "genere": "8"
+  },
+  {
+    "name": "La peste scarlatta",
+    "autore": "jack london",
+    "editore": "Adelphi Edizioni",
+    "genere": "18"
+  },
+  {
+    "name": "Dombey e figlio",
+    "autore": "Charles Dickens",
+    "editore": "BUR Editore",
+    "genere": "18"
+  },
+  {
+    "name": "Il sosia",
+    "autore": "Fedodor Dostoevvskij",
+    "editore": "Feltrinelli Editore",
+    "genere": "18"
+  },
+  {
+    "name": "L'idiota (feltrinelli)",
+    "autore": "Fedor Dostoevskij",
+    "editore": "Feltrinelli Editore",
+    "genere": "18"
+  },
+  {
+    "name": "Mille splendidi soli",
+    "autore": "Khaled Hosseini",
+    "editore": "Piemme",
+    "genere": "17"
+  },
+  {
+    "name": "La storia",
+    "autore": "Elsa Morante",
+    "editore": "Giulio Einaudi Editore",
+    "genere": "18"
+  },
+  {
+    "name": "La bottega dell'antiquariato",
+    "autore": "Charles Dickens",
+    "editore": "BUR Editore",
+    "genere": "18"
+  },
+  {
+    "name": "Le due citta",
+    "autore": "Charles Dickens",
+    "editore": "BUR Editore",
+    "genere": "18"
+  },
+  {
+    "name": "Follia",
+    "autore": "Patrick Mcgrath",
+    "editore": "Adelphi Edizioni",
+    "genere": "17"
+  }
+]

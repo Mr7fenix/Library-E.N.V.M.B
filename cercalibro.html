@@ -7,16 +7,16 @@
 </head>
 <body>
 <div id="app">
-    <div v-if="popUpModify == true" class="popup">
+    <div v-show="popUpModify == true" class="popup" style="display: none">
         <label>
             <div class="all-div-find">
                 <!--suppress HtmlUnknownAttribute -->
-                <input style="width: 200px" class="input" :value="modifica.name" type="text">
+                <input style="width: 200px" class="input" type="text" v-model="modifica.titolo">
                 <select class="select" v-model="modifica.autore">
-                    <option v-for="autore in autori">{{ autore }}</option>
+                    <option v-for="autore in autori">{{ autore.name }}</option>
                 </select>
                 <select class="select" v-model="modifica.editore">
-                    <option v-for="editore in editori">{{ editore }}</option>
+                    <option v-for="editore in editori">{{ editore.name }}</option>
                 </select>
             </div>
             <div id="divGenere" class="general-div" style="margin-left: 50px">
@@ -36,10 +36,10 @@
 
         </label>
     </div>
-    <div class="popup text" style="color: black; max-height: 50vh; max-width: 50vw;" v-if="popUpRemove">
+    <div class="popup text" style="display: none; color: black; max-height: 50vh; max-width: 50vw;" v-show="popUpRemove">
         <div class="all-div-find">
             <h1>Sei sicuro di voler rimuovere: </h1>
-            <h1>{{modifica.name}}?</h1>
+            <h1>{{modifica.titolo}}?</h1>
         </div>
         <div class="all-div-find" style="margin-top: 40px">
             <button class="text table-button" style="background-color: #009322" @click="remove">Si</button>
@@ -55,13 +55,15 @@
             <div class="all-div-find">
                 <input style="width: 200px" class="input" type="text" placeholder="Titolo" list="titleList" id="title">
                 <datalist id="titleList">
-                    <option v-for="libro in libri">{{ libro.name }}</option>
+                    <option v-for="libro in libri">{{ libro.titolo }}</option>
                 </datalist>
                 <select class="select" id="autor-list">
-                    <option v-for="autore in autori">{{ autore }}</option>
+                    <option selected value="">Seleziona autore</option>
+                    <option v-for="autore in autori" :value="autore.id">{{ autore.name }}</option>
                 </select>
                 <select class="select" id="editor-list">
-                    <option v-for="editore in editori">{{ editore }}</option>
+                    <option selected value="">Seleziona casa editrice</option>
+                    <option v-for="editore in editori" :value="editore.id">{{ editore.name }}</option>
                 </select>
             </div>
         </label>
@@ -80,10 +82,10 @@
                 <th>Comandi</th>
             </tr>
             <tr v-for="libro in libri">
-                <td>{{ libro.name }}</td>
+                <td>{{ libro.titolo }}</td>
                 <td>{{ libro.autore }}</td>
                 <td>{{ libro.editore }}</td>
-                <td>{{ genereSplit(libro.genere) }}</td>
+                <td>{{ libro.genere }}</td>
                 <td>
                     <button class="text table-button" style="background-color: #009322" @click="modifyPopUp(libro)">
                         Modifica
@@ -100,10 +102,9 @@
 </body>
 <style>
     table {
-        font-family: arial, sans-serif;
+        font-family: Roboto, sans-serif;
         border-collapse: collapse;
         width: 100%;
-        border-radius: 5px;
     }
 
     td, th {
@@ -141,6 +142,6 @@
         box-sizing: border-box;
     }
 </style>
-<script src="script/cercalibro-script.js"></script>
+<script src="script/cercalibro.js"></script>
 </html>
 
