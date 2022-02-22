@@ -3,12 +3,12 @@ const fs = require('fs');
 let path = require('path');
 const ut = require('./script/function.js');
 
-let biblioteca = JSON.parse(fs.readFileSync(path.resolve('data', 'libri.json')))
 let generi = ut.genereList();
 
 Vue.createApp({
     data() {
         return {
+            biblioteca: [],
             libri: [],
             autori: [],
             editori: [],
@@ -19,10 +19,12 @@ Vue.createApp({
         }
     },
     created() {
+        //Prendo i dati dal file JSON
+        this.biblioteca = JSON.parse(fs.readFileSync(path.resolve('data', 'libri.json')))
         this.autori = ut.arrayFirs("Seleziona autore", ut.authorList())
         this.editori = ut.arrayFirs("Seleziona casa editrice", ut.editorList());
 
-        this.libri = biblioteca;
+        this.libri = this.biblioteca;
 
     },
     methods: {
@@ -32,7 +34,7 @@ Vue.createApp({
             let autor = document.getElementById("autor-list").value;
             let editor = document.getElementById('editor-list').value;
 
-            let all = biblioteca;
+            let all = this.biblioteca;
             let filtered = []
 
             //Viene visto se è stata fatta una ricesca su questo campo
@@ -69,6 +71,7 @@ Vue.createApp({
             }
             this.libri = all;
         },
+        //Visualizza la finestra di modifica con i dati del libro selezionato già inseriti
         modifyPopUp(libro) {
             //Visualizza la finestra di popUp
             if (!this.popUpRemove) this.popUpModify = true;
@@ -80,7 +83,7 @@ Vue.createApp({
             let check = [];
 
             //Prende il codice del genere del libro selezionato
-            let genereCode = biblioteca[ut.indexOf(this.modifica.id, biblioteca)].genere;
+            let genereCode = this.biblioteca[ut.indexOf(this.modifica.id, this.biblioteca)].genere;
 
             //Visualizza checked i check box dei generi del libro
             for (let i = 0; i < generi.length; i++) {
@@ -109,44 +112,55 @@ Vue.createApp({
 
             return genere;
         },
+        //Chiude tutti i popup aperti
         popUpClose() {
+
             this.popUpModify = false;
             this.popUpRemove = false;
         },
+        //Apre il popup per eliminare i libri
         deletePopUp(libro) {
             if (!this.popUpModify) this.popUpRemove = true;
             this.modifica = libro;
         },
-        remove() {
-            console.log(biblioteca);
+        //Rimuove il libro selezionato dal JSON
+        remove: function () {
+            //Chiude la finestra di popup
             this.popUpClose();
+
+            //Al prossimo tick rimuove il libro dal json
+            // noinspection JSIgnoredPromiseFromCall
             this.$nextTick(() => {
-                for (let i = 0; i < biblioteca.length; i++) {
-                    if (biblioteca[i].id === this.modifica.id) {
-                        biblioteca.splice(i, 1);
-                        break;
-                    }
-                }
-                let data = JSON.stringify(biblioteca, null, 2);
+                let index = ut.indexOf(this.modifica.id, this.biblioteca)
+
+                //Rimuove effetivamente il libro
+                this.biblioteca.splice(index, 1);
+                let data = JSON.stringify(this.biblioteca, null, 2);
+
+                //Salva il file con il libro rimosso
                 fs.writeFileSync(path.resolve(__dirname, 'data', 'libri.json'), data)
             })
         },
+        //Funzione che modifica un libro selezionato
         modify(){
-
-            let index = ut.indexOf(this.modifica.id, biblioteca)
+            //Prendo l'indeice del libro che sto modificando
+            let index = ut.indexOf(this.modifica.id, this.biblioteca)
 
             this.modifica.genere = [];
 
+            //Prende i generi li mette nel libro selezionato
             for (let i = 0; i < this.generi.length; i++){
                 if(this.generi[i].check){
                     this.modifica.genere.push(i);
                 }
             }
 
+            //Sostituisco il libro
+            this.biblioteca[index] = this.modifica;
 
-            biblioteca[index] = this.modifica;
 
-            let data = JSON.stringify(biblioteca, null, 2);
+            //Salvo il libro nel JSON
+            let data = JSON.stringify(this.biblioteca, null, 2);
             fs.writeFileSync(path.resolve(__dirname, 'data', 'libri.json'), data)
             this.popUpClose();
         }
