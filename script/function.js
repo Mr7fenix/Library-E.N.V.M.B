@@ -4,66 +4,48 @@ const path = require("path");
 let rawbiblioteca = fs.readFileSync(path.resolve(__dirname, '../data', 'libri.json'));
 let libri = JSON.parse(rawbiblioteca);
 
-//restituisce la lista di tutti gli autori
-function authorList(){
-    //array contenente tutti gli autori
-    let authorList = []
+let sql = require("./database.js")
 
-    for (let i in libri){
-        //controlle se l'autore è gia presente all'iterno dei dati in caso negativo lo aggiunge
-        if (!authorList.includes(libri[i].autore)){
-            authorList.push(libri[i].autore)
-        }
-    }
-    return authorList;
+//restituisce la lista di tutti gli autori
+function authorList() {
+    return sql.query(`SELECT id, name
+                      FROM autori`);
 }
 
 //funzione che restituisce tutti gli editori
-function editorList(){
-    //prelevo dal file gli editori che sono salvati
-    let editorlist = fs.readFileSync(path.resolve(__dirname, '../data', 'editori.txt')).toString().split('~');
-    editorlist.sort();
-
-    return editorlist
+function editorList() {
+    return sql.query("SELECT id, name FROM editori");
 }
 
-//mette al pirmo posto dell'array passato la variabile passata
-function arrayFirs (first, array){
-
-    //crea un nuovo array vuoto e un array con l'array passato
-    let withFirst = []
-    let withoutFirs = array;
-
-    //inserisce al primo posto dell' array la variabile passata
-    withFirst.push(first)
-
-    //inserisce all'interno dell nuovo array l'array passato
-    for (let i in withoutFirs) withFirst.push(withoutFirs[i]);
-
-    return withFirst;
+function bookList(conditions = []) {
+    return sql.query(`SELECT libri.id,
+                             titolo,
+                             aut.name                              AS autore,
+                             edi.name                              As editore,
+                             edi.id                                AS editorId,
+                             aut.id                                AS authorId,
+                             GROUP_CONCAT(gen.id)                  AS genereId,
+                             GROUP_CONCAT(gen.name SEPARATOR ', ') AS genere
+                      FROM libri
+                               LEFT JOIN autori aut ON libri.autore = aut.id
+                               LEFT JOIN editori edi ON libri.editore = edi.id
+                               LEFT JOIN libri_generi lg on libri.id = lg.libro
+                               LEFT JOIN generi gen on gen.id = lg.genere
+                          ${conditions.length > 0 ? "WHERE" + conditions.join(" AND ") : ""}
+                      GROUP BY libri.id
+                      ORDER BY libri.id;
+    `)
 }
 
 //Verifica se un libro con un autore è già presente
-function isPresent(title, editor){
-    for(let i in libri){
-        if (libri[i].name === title) if(libri[i].editore === editor) return true;
-    }
+
+//Funzione che restituisce una lista di generi
+function genereList() {
+    return sql.query(`SELECT *
+                      FROM generi`);
 }
 
-//Funzione che restituisce un array di generi con il case giusto (Case giusto: Example, Case sbagliato: EXAMPLE)
-//TODO: Modificare i generi nel file cosi da non dover più usare questa funzione.
-function genereList(){
-    let generi = fs.readFileSync(path.resolve( __dirname, '../data', 'genere.txt')).toString().split('~');
-
-    for (let i in generi) {
-        generi[i] = generi[i].toLowerCase();
-        generi[i] = generi[i].charAt(0).toUpperCase() + generi[i].slice(1);
-    }
-
-    return generi;
-}
-
-function indexOf(id, biblioteca){
+function indexOf(id, biblioteca) {
     for (let i = 0; i < biblioteca.length; i++) {
         if (biblioteca[i].id === id) {
             return i--;
@@ -71,11 +53,32 @@ function indexOf(id, biblioteca){
     }
 }
 
+function genereChek(libroId, generi) {
+
+    let values;
+    for (let i = 0; i < generi.length; i++) {
+        if ((generi[i])) {
+            if (values === undefined) {
+                values = `(${libroId}, ${generi[i]})`
+            } else {
+                values += `, (${libroId}, ${generi[i]})`
+            }
+        }
+    }
+    return values
+}
+
+//Corregge gli errori fatti nell'inserimento dell titolo
+function corrected(value) {
+    return value.trim().split(/[ ]+/).map(word => word.charAt(0).toUpperCase() + word.substring(1)).join(' ');
+}
+
 module.exports = {
     authorList,
     editorList,
-    arrayFirs,
-    isPresent,
+    bookList,
     genereList,
-    indexOf
+    indexOf,
+    genereChek,
+    corrected
 }

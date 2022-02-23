@@ -20,7 +20,7 @@ module.exports = {
      */
     query: (sql, values = null) => {
         return new Promise((resolve, reject) => {
-            con.query(sql, values, function (err, result, fields) {
+            con.query(sql, values, function (err, result) {
                 if (err) {
                     alert("Errore del database");
                     console.error("Errore della query: " + sql);

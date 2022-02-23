@@ -13,14 +13,16 @@
     </div>
     <label>
         <div>
-            <input class="input-Title input text" type="text" placeholder="Titolo del libro" id="newTitle">
+            <input class="input-Title input text" autofocus type="text" placeholder="Titolo del libro" id="newTitle">
             <datalist id="lis-aut">
-                <option v-for="autore in autori">{{ autore }}</option>
+                <option selected value="">Seleziona autore</option>
+                <option v-for="autore in autori" :value="autore.name">{{ autore.id }}</option>
             </datalist>
-            <input class="input-Autor input text" type="text" placeholder="Nome autore" id="autor" list="lis-aut">
+            <input class="input-Autor input text" type="text" placeholder="Nome autore" id="author" list="lis-aut">
 
             <select id="editor" class="select">
-                <option v-for="editore in editori">{{ editore }}</option>
+                <option selected value="">Seleziona casa editrice</option>
+                <option v-for="editore in editori" :value="editore.id">{{ editore.name }}</option>
             </select>
             <div id="divGenere" class="general-div">
                 <div class="check-div" v-for="genere in generi">

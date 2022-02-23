@@ -6,6 +6,22 @@
 </head>
 <body>
 <div id="app">
+    <div v-if="renameFlag">
+        <p>Rinomina</p>
+        <input v-model="modifica.name" type="text">
+
+        <button @click="rename">Rinomina</button>
+        <button @click="closePopup">Indietro</button>
+    </div>
+    <div v-if="deleteFlag">
+        <h1>Sei sicuro di voler rimuovere: </h1>
+        <h1>{{ modifica.name }}?</h1>
+
+        <div>
+            <button @click="remove">Elimina</button>
+            <button @click="closePopup">Indietro</button>
+        </div>
+    </div>
     <div v-if="addFlag">
         <input v-model="newEditor" type="text">
         <button @click="add">Aggiungi</button>
@@ -13,16 +29,17 @@
     </div>
     <div>
         <button @click="addPopup">Aggiungi Casa editrice</button>
+        <button @click="back">Indietro</button>
         <table>
             <tr>
                 <th>Casa editrice</th>
                 <th>Comandi</th>
             </tr>
             <tr v-for="editore in editori">
-                <td>{{ editore }}</td>
+                <td>{{ editore.name }}</td>
                 <td>
-                    <button>Rinomina</button>
-                    <button>Elimina</button>
+                    <button @click="renamePopup(editore)">Rinomina</button>
+                    <button @click="deletePopup(editore)">Elimina</button>
                 </td>
             </tr>
         </table>

@@ -1,10 +1,6 @@
 const Vue = require('vue');
-const fs = require('fs');
-let path = require('path');
 const ut = require('./script/function.js');
 const sql = require('./script/database.js')
-
-let generi = ut.genereList();
 
 Vue.createApp({
     data() {
@@ -50,28 +46,12 @@ Vue.createApp({
         */
 
 
-        sql.query(`SELECT id, name
-                   FROM autori`).then(result => this.autori = result);
-        sql.query(`SELECT libri.id,
-                          titolo,
-                          aut.name                              AS autore,
-                          edi.name                              As editore,
-                          edi.id                                AS editorId,
-                          aut.id                                AS authorId,
-                          GROUP_CONCAT(gen.id)                  AS genereId,
-                          GROUP_CONCAT(gen.name SEPARATOR ', ') AS genere
-                   FROM libri
-                            LEFT JOIN autori aut ON libri.autore = aut.id
-                            LEFT JOIN editori edi ON libri.editore = edi.id
-                            LEFT JOIN libri_generi lg on libri.id = lg.libro
-                            LEFT JOIN generi gen on gen.id = lg.genere
-                   GROUP BY libri.id
-                   ORDER BY libri.id;
-        `).then(result => {
+        ut.authorList().then(result => this.autori = result);
+        ut.editorList().then(result => this.editori = result);
+        ut.bookList().then(result => {
             this.biblioteca = result;
             this.libri = this.biblioteca;
         });
-        sql.query("SELECT id, name FROM editori").then(result => this.editori = result)
 
     },
     methods: {
@@ -98,46 +78,32 @@ Vue.createApp({
             }
 
             //Query che effetua la ricerca nel database
-            this.libri = await sql.query(`SELECT libri.id,
-                                                 titolo,
-                                                 aut.name                              AS autore,
-                                                 edi.name                              As editore,
-                                                 edi.id                                AS editorId,
-                                                 aut.id                                AS authorId,
-                                                 GROUP_CONCAT(gen.id)                  AS genereId,
-                                                 GROUP_CONCAT(gen.name SEPARATOR ', ') AS genere
-                                          FROM libri
-                                                   LEFT JOIN autori aut ON libri.autore = aut.id
-                                                   LEFT JOIN editori edi ON libri.editore = edi.id
-                                                   LEFT JOIN libri_generi lg on libri.id = lg.libro
-                                                   LEFT JOIN generi gen on gen.id = lg.genere
-                                              ${conditions.length > 0 ? "WHERE" + conditions.join(" AND ") : ""}
-                                          GROUP BY libri.id
-                                          ORDER BY libri.id`, conditionsValue)
+            this.libri = await ut.bookList();
         },
         //Visualizza la finestra di modifica con i dati del libro selezionato già inseriti
-        modifyPopUp(libro) {
+        async modifyPopUp(libro) {
             //Visualizza la finestra di popUp
             if (!this.popUpRemove) this.popUpModify = true;
             //Viene passato il libro selezionato
             this.modifica = {...libro};
 
             //Viene prelevata la lista di tutti i generi
-            let generi = ut.genereList();
+            let generi = await ut.genereList();
             let check = [];
 
             //Prende il codice del genere del libro selezionato
             let genereId = this.biblioteca[ut.indexOf(this.modifica.id, this.biblioteca)].genereId;
-            let genereCode = genereId ? genereId.split(",") : []
+            let genereCode = genereId ? genereId.split(",").map(str => parseInt(str)) : []
 
             //Visualizza checked i check box dei generi del libro
             for (let i = 0; i < generi.length; i++) {
-                check.push({"id": i + 1, "name": generi[i], "check": false})
+                check.push({...generi[i], "check": false})
             }
-            for (let i = 0; i < genereCode.length; i++) {
-                check[parseInt(genereCode[i]) - 1].check = true
+            for (let i = 0; i < check.length; i++) {
+                if (genereCode.includes(check[i].id)) {
+                    check[i].check = true
+                }
             }
-
             //Restituische i generi cheked
             this.generi = check;
         },
@@ -205,10 +171,10 @@ Vue.createApp({
                 alert("Inserire un genere")
             }
         },
-        back(){
+        back() {
             window.location.replace('index.html')
         },
-        reload(){
+        reload() {
             window.location.reload();
         }
     }
