@@ -23,6 +23,7 @@ module.exports = {
             con.query(sql, values, function (err, result, fields) {
                 if (err) {
                     alert("Errore del database");
+                    console.error("Errore della query: " + sql);
                     reject(err);
                     return;
                 }

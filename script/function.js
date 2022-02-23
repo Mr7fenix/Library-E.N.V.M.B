@@ -66,7 +66,7 @@ function genereList(){
 function indexOf(id, biblioteca){
     for (let i = 0; i < biblioteca.length; i++) {
         if (biblioteca[i].id === id) {
-            return i;
+            return i--;
         }
     }
 }
