@@ -3,46 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <title>Case Editrici</title>
+    <link rel="stylesheet" href="./style/bootstrap.min.css" crossorigin="anonymous">
 </head>
 <body>
-<div id="app">
-    <div v-if="renameFlag">
-        <p>Rinomina</p>
-        <input v-model="modifica.name" type="text">
+<div id="app" class="container">
 
-        <button @click="rename">Rinomina</button>
-        <button @click="closePopup">Indietro</button>
+    <div class="modal" tabindex="-1" id="rename">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Rinomina</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <input class="form-control" type="text" v-model="modifica.name">
+                </div>
+                <div class="modal-footer">
+                    <button data-bs-dismiss="modal" class="btn btn-primary" @click="rename">Rinomina</button>
+                    <button data-bs-dismiss="modal" class="btn btn-secondary">Indietro</button>
+                </div>
+            </div>
+        </div>
     </div>
+
     <div v-if="deleteFlag">
         <h1>Sei sicuro di voler rimuovere: </h1>
         <h1>{{ modifica.name }}?</h1>
 
         <div>
-            <button @click="remove">Elimina</button>
+            <button class="btn btn-danger" @click="remove">Elimina</button>
             <button @click="closePopup">Indietro</button>
         </div>
     </div>
+
+
     <div v-if="addFlag">
         <input v-model="newEditor" type="text">
         <button @click="add">Aggiungi</button>
         <button @click="closePopup">Indietro</button>
     </div>
     <div>
-        <button @click="addPopup">Aggiungi Casa editrice</button>
-        <button @click="back">Indietro</button>
-        <table>
-            <tr>
-                <th>Casa editrice</th>
-                <th>Comandi</th>
-            </tr>
-            <tr v-for="editore in editori">
-                <td>{{ editore.name }}</td>
-                <td>
-                    <button @click="renamePopup(editore)">Rinomina</button>
-                    <button @click="deletePopup(editore)">Elimina</button>
-                </td>
-            </tr>
-        </table>
+        <div class="text-end my-2 d-flex">
+            <h5>Cosa vuoi Fare?</h5>
+            <div class="ms-auto">
+                <button class="btn btn-success mx-1" @click="addPopup">Aggiungi Casa editrice</button>
+                <button class="btn btn-danger" @click="back">Indietro</button>
+            </div>
+        </div>
+        <div v-for="editore in editori">
+            <div class="card my-1">
+                <div class="card-body d-flex align-items-center">
+                    <h5 class="card-title">{{editore.name}}</h5>
+                    <div class="ms-auto">
+                        <button class="btn btn-primary mx-1" @click="renamePopup(editore)" data-bs-toggle="modal"
+                                data-bs-target="#rename">Rinomina
+                        </button>
+                        <button class="btn btn-danger" @click="deletePopup(editore)">Elimina</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 </body>

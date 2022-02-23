@@ -1,6 +1,7 @@
 const Vue = require('vue');
 const ut = require('./script/function.js');
 const sql = require('./script/database.js')
+const bootstrap = require('bootstrap')
 
 Vue.createApp({
     data() {
@@ -56,9 +57,8 @@ Vue.createApp({
             this.list();
         },
         async rename(){
+            //TODO fare un errore quando non viene inserito alcun nome
             await sql.query(`UPDATE editori SET name = ? WHERE id = ?`, [this.modifica.name, this.modifica.id])
-
-            this.closePopup();
             this.list();
         },
         back() {
