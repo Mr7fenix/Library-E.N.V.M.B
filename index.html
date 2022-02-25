@@ -5,30 +5,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Biblioteca</title>
+    <link rel="stylesheet" href="/style/bootstrap.min.css">
+    <link rel="stylesheet" href="/style/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<link rel="stylesheet" href="style/style.css">
-<body class="index-body">
-<div class="div-all">
-    <h1 class="text h1-index">Questa è l'app biblioteca cosa vuoi fare?</h1>
-    <div class="btn-index-div">
-        <a href="nuovolibro.html" class="button text btn2 btnShadow">Aggiungi libro</a>
-        <a href="caseeditrici.html" class="button text btn2 btnShadow">Case editrici</a>
-        <a href="cercalibro.html" class="button text btn2 btnShadow">Cerca libro</a>
-    </div>
-    <div class="btn-index-div">
-        <button style="background-color: #ff5252; margin-top: 20px" onclick="window.close()" class="button text btn2">Esci</button>
-    </div>
-
-    <p id="tot" class="text">Caricamento...</p>
-</div>
-<script>
-    // TODO Ri implementare con database.
-        let fs = require('fs');
-        let path = require('path')
-        let biblioteca = fs.readFileSync(path.resolve(__dirname, 'data', 'libri.json'))
-        biblioteca = JSON.parse(biblioteca);
-        let x = biblioteca.length
-        document.getElementById('tot').innerText = 'In totale hai' + ' ' + x + ' ' + 'Libri';
-</script>
+<body>
+<div id="app"></div>
+<script type="module" src="/src/main.js"></script>
 </body>
 </html>

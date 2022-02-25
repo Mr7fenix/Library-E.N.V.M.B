@@ -1,4 +1,4 @@
-const mysql = require('mysql2');
+const mysql = require("mysql2");
 
 const con = mysql.createConnection({
     host: "mario.dicyplay.com",
@@ -12,7 +12,7 @@ const con = mysql.createConnection({
 //    console.log("MySQL -> Connected!");
 //});
 
-module.exports = {
+export default {
     con,
     /**
      * @param {mysql} sql

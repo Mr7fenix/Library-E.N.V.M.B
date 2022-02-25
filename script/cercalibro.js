@@ -1,6 +1,7 @@
 const Vue = require('vue');
 const ut = require('./script/function.js');
 const sql = require('./script/database.js')
+const bootstrap = require('bootstrap')
 
 Vue.createApp({
     data() {
@@ -45,6 +46,9 @@ Vue.createApp({
         //Prendo i dati dal file JSON
         */
 
+        //TODO cliccare sul genere cerca i libri di quel genere
+        //TODO pulsanti modifica ed elimina non funzionano
+
 
         ut.authorList().then(result => this.autori = result);
         ut.editorList().then(result => this.editori = result);
@@ -78,7 +82,7 @@ Vue.createApp({
             }
 
             //Query che effetua la ricerca nel database
-            this.libri = await ut.bookList();
+            this.libri = await ut.bookList(conditions, conditionsValue);
         },
         //Visualizza la finestra di modifica con i dati del libro selezionato già inseriti
         async modifyPopUp(libro) {

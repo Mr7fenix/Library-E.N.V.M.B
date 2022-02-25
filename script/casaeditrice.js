@@ -6,11 +6,7 @@ const bootstrap = require('bootstrap')
 Vue.createApp({
     data() {
         return {
-            editori: [{name: 'Caricamento...'}],
-            addFlag: false,
-            deleteFlag: false,
-            removeFlag: false,
-            renameFlag: false,
+            editori: [],
             newEditor: '',
             modifica: [],
         }
@@ -19,23 +15,10 @@ Vue.createApp({
         this.list();
     },
     methods: {
-        addPopup() {
-            if (!this.deleteFlag) this.addFlag = true;
-        },
         deletePopup(editore) {
             this.modifica = {...editore};
-            if (!this.addFlag) this.deleteFlag = true;
-        },
-        closePopup() {
-            this.deleteFlag = false;
-            this.addFlag = false;
-            this.removeFlag = false;
-            this.renameFlag = false;
-
-
         },
         renamePopup(editore) {
-            this.renameFlag = true;
             this.modifica = {...editore};
 
         },
@@ -45,7 +28,6 @@ Vue.createApp({
                                  VALUES (?)`, ut.corrected(this.newEditor));
             }
 
-            this.closePopup();
             this.list();
         },
         async remove() {
@@ -53,18 +35,25 @@ Vue.createApp({
                              FROM editori
                              WHERE id = ?`, this.modifica.id)
 
-            this.closePopup();
             this.list();
         },
-        async rename(){
+        async rename() {
             //TODO fare un errore quando non viene inserito alcun nome
-            await sql.query(`UPDATE editori SET name = ? WHERE id = ?`, [this.modifica.name, this.modifica.id])
+            await sql.query(`UPDATE editori
+                             SET name = ?
+                             WHERE id = ?`, [this.modifica.name, this.modifica.id])
             this.list();
+        },
+        async search() {
+            let ricerca = document.getElementById("search").value;
+            this.editori = await sql.query(`SELECT id, name
+                                            FROM editori
+                                            WHERE name LIKE '%${ricerca}%'`)
         },
         back() {
             window.location.replace('index.html')
         },
-        list(){
+        list() {
             ut.editorList().then(editori => {
                 this.editori = editori
             });

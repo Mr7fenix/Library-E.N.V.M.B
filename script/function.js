@@ -1,10 +1,4 @@
-const fs = require("fs");
-const path = require("path");
-
-let rawbiblioteca = fs.readFileSync(path.resolve(__dirname, '../data', 'libri.json'));
-let libri = JSON.parse(rawbiblioteca);
-
-let sql = require("./database.js")
+import sql from "./database.js";
 
 //restituisce la lista di tutti gli autori
 function authorList() {
@@ -17,7 +11,7 @@ function editorList() {
     return sql.query("SELECT id, name FROM editori");
 }
 
-function bookList(conditions = []) {
+function bookList(conditions = [], conditionsValue = []) {
     return sql.query(`SELECT libri.id,
                              titolo,
                              aut.name                              AS autore,
@@ -31,10 +25,10 @@ function bookList(conditions = []) {
                                LEFT JOIN editori edi ON libri.editore = edi.id
                                LEFT JOIN libri_generi lg on libri.id = lg.libro
                                LEFT JOIN generi gen on gen.id = lg.genere
-                          ${conditions.length > 0 ? "WHERE" + conditions.join(" AND ") : ""}
+                          ${conditions.length > 0 ? " WHERE " + conditions.join(" AND ") : ""}
                       GROUP BY libri.id
                       ORDER BY libri.id;
-    `)
+    `, conditionsValue)
 }
 
 //Verifica se un libro con un autore è già presente
@@ -73,7 +67,7 @@ function corrected(value) {
     return value.trim().split(/[ ]+/).map(word => word.charAt(0).toUpperCase() + word.substring(1)).join(' ');
 }
 
-module.exports = {
+export default {
     authorList,
     editorList,
     bookList,

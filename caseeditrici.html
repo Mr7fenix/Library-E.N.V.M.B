@@ -3,10 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <title>Case Editrici</title>
-    <link rel="stylesheet" href="./style/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style/bootstrap.min.css">
+    <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
-<div id="app" class="container">
+<div id="app" class="container mt-5 pt-3">
+
+    <nav class="navbar navbar-dark bg-primary fixed-top shadow-nav">
+        <div class="d-flex">
+            <input id="search" class="mx-2 input d-flex align-items-start form-control" placeholder="Casa editrice"
+                   list="editorList">
+            <datalist id="editorList">
+                <option v-for="editore in editori">{{ editore.name }}</option>
+            </datalist>
+            <button class="btn btn-success mx-1 shadow-sm" @click="search"> Ricerca</button>
+            <a href="caseeditrici.html" class="btn btn-secondary mx-1 shadow-sm"> Ripristina </a>
+        </div>
+        <div class="ms-auto mx-2">
+            <button class="btn btn-success mx-1 shadow-sm" data-bs-toggle="modal"
+                    data-bs-target="#add">Aggiungi Casa editrice</button>
+            <button class="btn btn-secondary shadow-sm" @click="back">Indietro</button>
+        </div>
+    </nav>
+
 
     <div class="modal" tabindex="-1" id="rename">
         <div class="modal-dialog">
@@ -26,39 +45,63 @@
         </div>
     </div>
 
-    <div v-if="deleteFlag">
-        <h1>Sei sicuro di voler rimuovere: </h1>
-        <h1>{{ modifica.name }}?</h1>
-
-        <div>
-            <button class="btn btn-danger" @click="remove">Elimina</button>
-            <button @click="closePopup">Indietro</button>
-        </div>
-    </div>
-
-
-    <div v-if="addFlag">
-        <input v-model="newEditor" type="text">
-        <button @click="add">Aggiungi</button>
-        <button @click="closePopup">Indietro</button>
-    </div>
-    <div>
-        <div class="text-end my-2 d-flex">
-            <h5>Cosa vuoi Fare?</h5>
-            <div class="ms-auto">
-                <button class="btn btn-success mx-1" @click="addPopup">Aggiungi Casa editrice</button>
-                <button class="btn btn-danger" @click="back">Indietro</button>
+    <div class="modal" tabindex="-1" id="delete">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h5 class="modal-title">Sicuro di voler eliminare {{ modifica.name }}</h5>
+                </div>
+                <div class="modal-footer">
+                    <button data-bs-dismiss="modal" class="btn btn-danger" @click="remove">Elimina</button>
+                    <button data-bs-dismiss="modal" class="btn btn-secondary">Indietro</button>
+                </div>
             </div>
         </div>
+    </div>
+
+    <div class="modal" tabindex="-1" id="add">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1>Nuova casa editrice</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <input class="form-control" v-model="newEditor" type="text" placeholder="Nome della nuova casa editrice">
+                </div>
+                <div class="modal-footer">
+                    <button data-bs-dismiss="modal" class="btn btn-primary" @click="add">Aggiungi</button>
+                    <button data-bs-dismiss="modal" class="btn btn-secondary">Indietro</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div v-if="!editori.length" v-for="i in 10" class="card my-1 shadow-sm placeholder-glow">
+            <div class="card-body d-flex align-items-center">
+                <h5 class="card-title placeholder w-25"></h5>
+                <div class="ms-auto">
+                    <button class="btn btn-primary mx-1 placeholder">Rinomina</button>
+                    <button class="btn btn-danger placeholder">Elimina</button>
+                </div>
+
+            </div>
+        </div>
+
         <div v-for="editore in editori">
-            <div class="card my-1">
+            <div class="card my-1 shadow-sm">
                 <div class="card-body d-flex align-items-center">
                     <h5 class="card-title">{{editore.name}}</h5>
                     <div class="ms-auto">
                         <button class="btn btn-primary mx-1" @click="renamePopup(editore)" data-bs-toggle="modal"
                                 data-bs-target="#rename">Rinomina
                         </button>
-                        <button class="btn btn-danger" @click="deletePopup(editore)">Elimina</button>
+                        <button class="btn btn-danger" @click="deletePopup(editore)" data-bs-toggle="modal"
+                                data-bs-target="#delete">Elimina</button>
                     </div>
 
                 </div>
@@ -69,3 +112,5 @@
 </body>
 <script src="script/casaeditrice.js"></script>
 </html>
+
+
