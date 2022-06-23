@@ -5,15 +5,19 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "build-windows": "electron-packager . app --platform win32 --arch x64 --out dist/",
+    "build-windows": "electron-packager . app --platform win32 --arch x64 --out LibraryWin-32/ --overwrite",
     "dev": "vite",
     "build-web": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "build:vue": "vite build",
+    "build:ele": "node src/script/build --env=production",
+    "build": "npm run build:vue && npm run build:ele && electron-builder"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@vitejs/plugin-vue": "^2.2.2",
+    "axios": "^0.26.0",
     "electron": "^13.1.7",
     "electron-builder": "^22.11.7",
     "electron-packager": "^15.3.0"

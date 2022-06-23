@@ -33,8 +33,8 @@
 </template>
 
 <script>
-import ut from "../../script/function.js";
-import sql from "../../script/database.js";
+import ut from "../script/function.js";
+import api from "../script/api.js";
 import "bootstrap";
 
 export default {
@@ -75,12 +75,9 @@ export default {
       if (optionAuthor === null) {
         let author = this.getAuthor(authorName);
         if (author === null) {
-          await sql.query(`INSERT INTO autori (name)
-                           VALUES (?)`, authorName)
-          author = await sql.query(`SELECT id
-                                    FROM autori
-                                    ORDER BY id DESC
-                                    LIMIT 1`)[0];
+          author = (await api.post("/author/add", {
+            authorName
+          })).data
         }
         authorId = author.id;
       } else {
@@ -88,12 +85,14 @@ export default {
       }
 
 
-      let newEditor = document.getElementById('editor').value;
+      let editor = document.getElementById('editor').value;
       let newTitolo = document.getElementById('newTitle').value;
 
-      await sql.query(`INSERT INTO libri (titolo, autore, editore)
-                       VALUES (?, ?, ?)`, [newTitolo, authorId, newEditor])
-      let libroId = await sql.query('SELECT id FROM libri ORDER BY id DESC LIMIT 1');
+      let libroId = (await api.post("/book/add", {
+        newTitolo,
+        authorId,
+        editor
+      })).data
 
       for (let i in generi) {
         if (generi[i].check) {
@@ -105,35 +104,18 @@ export default {
       console.log(libroId[0].id)
       let values = ut.genereChek(libroId[0].id, libroGenere)
 
-      await sql.query(`INSERT INTO libri_generi (libro, genere)
-                       VALUES ${values}`);
+      await api.post("/libri_genere/add", {
+        values
+      })
 
-
-      //Controllo degli erroi
-      if (libroGenere.length === 0) {
-        error("Genere non inserito");
-        return;
-      }
-      if (titolo === '') {
-        error("Titolo non inserito");
-        return;
-      }
-      if (document.getElementById('autor').value === '') {
-        error("Autore non inserito");
-        return;
-      }
-      if (editore === 'Seleziona casa editrice') {
-        error("Casa editrice non inserita");
-        return;
-      }
-      document.getElementById('notifica').innerText = 'Libro aggiunto correttamente';
-      document.getElementById('body').style.backgroundColor = '#5eff52';
+      //TODO inserire gli errori di bootstrap
     },
     back() {
       window.location.replace('index.html')
     }
     ,
-//Corregge gli errori fatti nell'inserimento dell autore
+
+    //Corregge gli errori fatti nell'inserimento dell autore
     getAuthor(authorName) {
       authorName = authorName.trim().toLowerCase();
       for (let i = 0; i < this.autori.length; i++) {
@@ -146,8 +128,3 @@ export default {
   }
 };
 </script>
-
-
-<style scoped>
-
-</style>

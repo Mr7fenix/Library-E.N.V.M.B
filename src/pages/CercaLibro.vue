@@ -72,7 +72,7 @@
       </div>
     </div>
     <!-- Card per i libri -->
-    <div v-if="!libri.length" v-for="i in 10" class="card my-2 shadow placeholder-glow">
+    <div v-if="!libri.length" v-for="i in 10" class="card my-2 shadow placeholder-glow" :key="i">
       <div class="card-body d-flex">
         <div style="width: 36%">
           <h4 class="card-title mx-2 placeholder">io sono il re di o o o</h4>
@@ -114,8 +114,8 @@
 </template>
 
 <script>
-import ut from "../../script/function.js";
-import sql from "../../script/database.js";
+import ut from "../script/function.js";
+import api from "../script/api.js";
 import "bootstrap";
 
 export default {
@@ -134,7 +134,6 @@ export default {
   },
   created() {
     //TODO cliccare sul genere cerca i libri di quel genere
-    //TODO pulsanti modifica ed elimina non funzionano
 
 
     ut.authorList().then(result => this.autori = result);
@@ -147,7 +146,7 @@ export default {
   },
   methods: {
     async search() {
-      //Creazione Variebili
+      //Creazione Variabili
       let title = document.getElementById("title").value;
       let author = document.getElementById("autor-list").value;
       let editor = document.getElementById('editor-list').value;
@@ -168,7 +167,7 @@ export default {
         conditionsValue.push(editor);
       }
 
-      //Query che effetua la ricerca nel database
+      //Query che effettua la ricerca nel database
       this.libri = await ut.bookList(conditions, conditionsValue);
     },
     //Visualizza la finestra di modifica con i dati del libro selezionato già inseriti
@@ -183,7 +182,8 @@ export default {
       let check = [];
 
       //Prende il codice del genere del libro selezionato
-      let genereId = this.biblioteca[ut.indexOf(this.modifica.id, this.biblioteca)].genereId;
+      let genereId = this.biblioteca[ut.indexOf(this.modifica.id, this.biblioteca)].genereId
+	console.log(genereId)
       let genereCode = genereId ? genereId.split(",").map(str => parseInt(str)) : []
 
       //Visualizza checked i check box dei generi del libro
@@ -195,7 +195,7 @@ export default {
           check[i].check = true
         }
       }
-      //Restituische i generi cheked
+      //Restituisce i generi checked
       this.generi = check;
     },
     removePopup(libro) {
@@ -203,17 +203,12 @@ export default {
     },
     //Rimuove il libro selezionato dal JSON
     async remove() {
-      //Riozione nella tabella libri_generi
-      await sql.query(`DELETE
-                       FROM libri_generi
-                       WHERE libro = ?`, this.modifica.id)
-
-      //Rimozione nella tabella libro
-      await sql.query(`DELETE
-                       FROM libri
-                       WHERE id = ?`, this.modifica.id)
-
-      //Rieffetua la ricerca per aggiornare la pagina
+      //Rimozione nella tabella libri_generi
+      let id = this.modifica.id
+      await api.post("/book/remove", {
+        id,
+      })
+      //Ri effettua la ricerca per aggiornare la pagina
       await this.search();
     },
     //Funzione che modifica un libro selezionato
@@ -234,20 +229,15 @@ export default {
       }
 
       if (values) {
-        await sql.query(`UPDATE libri
-                         SET titolo  = ?,
-                             autore  = ?,
-                             editore = ?
-                         WHERE id = ?`,
-            [this.modifica.titolo, newAuthor, newEditor, this.modifica.id]
-        );
-
-        await sql.query(`DELETE
-                         FROM libri_generi
-                         WHERE libro = ?`, this.modifica.id)
-        await sql.query(`INSERT INTO libri_generi (libro, genere)
-                         VALUES ${values}`)
-
+        let titolo = this.modifica.titolo;
+        let id = this.modifica.id;
+        await api.post("/book/modify", {
+          values,
+          titolo,
+          newAuthor,
+          newEditor,
+          id
+        })
         await this.search();
       } else {
         alert("Inserire un genere")

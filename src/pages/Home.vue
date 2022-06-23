@@ -8,6 +8,7 @@
         <router-link to="CercaLibro" class="btn btn-success mx-1 shadow">Cerca libro</router-link>
         <button onclick="window.close()" class="btn btn-danger mx-1 shadow">Esci</button>
       </div>
+      <h4 class="mt-3 text-light">Libri attualmente in possesso: {{ nLibri }}</h4>
       <div class="text-center">
 
       </div>
@@ -16,8 +17,20 @@
 </template>
 
 <script>
+import ut from "../script/function"
+
 export default {
-  name: "Home"
+  name: "Home",
+  data() {
+    return {
+      nLibri: 0
+    }
+  },
+  created() {
+    ut.bookList().then(result => {
+      this.nLibri = result.length;
+    })
+  }
 }
 </script>
 

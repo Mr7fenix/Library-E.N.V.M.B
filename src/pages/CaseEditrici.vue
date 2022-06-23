@@ -9,7 +9,7 @@
           <option v-for="editore in editori">{{ editore.name }}</option>
         </datalist>
         <button class="btn btn-success mx-1 shadow-sm" @click="search"> Ricerca</button>
-        <a href="caseeditrici.html" class="btn btn-secondary mx-1 shadow-sm"> Ripristina </a>
+        <a onclick="location.reload()" class="btn btn-secondary mx-1 shadow-sm"> Ripristina </a>
       </div>
       <div class="ms-auto mx-2">
         <button class="btn btn-success mx-1 shadow-sm" data-bs-toggle="modal"
@@ -74,7 +74,7 @@
     </div>
 
     <div>
-      <div v-if="!editori.length" v-for="i in 10" class="card my-1 shadow-sm placeholder-glow">
+      <div v-if="!editori.length" v-for="i in 10" :key="i" class="card my-1 shadow-sm placeholder-glow">
         <div class="card-body d-flex align-items-center">
           <h5 class="card-title placeholder w-25"></h5>
           <div class="ms-auto">
@@ -107,8 +107,8 @@
 </template>
 
 <script>
-import ut from "../../script/function.js";
-import sql from "../../script/database.js";
+import ut from "../script/function.js";
+import api from "../script/api";
 import "bootstrap";
 
 
@@ -133,31 +133,36 @@ export default{
     },
     async add() {
       if (this.newEditor !== undefined) {
-        await sql.query(`INSERT INTO editori (name)
-                         VALUES (?)`, ut.corrected(this.newEditor));
+        await api.post("/editor/add", {
+          newEditor: ut.corrected(this.newEditor),
+        })
       }
 
       this.list();
     },
     async remove() {
-      await sql.query(`DELETE
-                       FROM editori
-                       WHERE id = ?`, this.modifica.id)
+      let id = this.modifica.id;
+      await api.post("/editor/remove", {
+        id
+      })
 
       this.list();
     },
     async rename() {
       //TODO fare un errore quando non viene inserito alcun nome
-      await sql.query(`UPDATE editori
-                       SET name = ?
-                       WHERE id = ?`, [this.modifica.name, this.modifica.id])
+      let name = this.modifica.name;
+      let id = this.modifica.id
+      await api.post("/editor/rename", {
+        name,
+        id,
+      })
       this.list();
     },
     async search() {
       let ricerca = document.getElementById("search").value;
-      this.editori = await sql.query(`SELECT id, name
-                                      FROM editori
-                                      WHERE name LIKE '%${ricerca}%'`)
+      this.editori = (await api.post("/editore/search",{
+        ricerca,
+      })).data;
     },
     back() {
       window.location.replace('index.html')

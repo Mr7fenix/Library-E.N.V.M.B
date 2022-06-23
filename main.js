@@ -13,10 +13,11 @@ function createWindow () {
     const mainWindow = new BrowserWindow({
         width: 800,
         height: 600,
-        frame:true,
-        icon : __dirname  +   '/data/Icon.icns',
+        frame: true,
+        autoHideMenuBar: true,
+        icon : './src/assets/style/icona.ico',
         webPreferences: {
-            preload: path.join(__dirname, 'script/preload.js'),
+            preload: path.join(__dirname, 'src/script/preload.js'),
             nodeIntegration: true,
             contextIsolation: false,
             enableRemoteModule: true,
@@ -26,7 +27,7 @@ function createWindow () {
     if (is_dev) {
         mainWindow.loadURL(`http://localhost:3000`);
     } else {
-        mainWindow.loadFile('dist/index.html');
+        mainWindow.loadFile('./dist/index.html');
     }
 
     // Open the DevTools.
